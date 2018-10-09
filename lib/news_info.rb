@@ -1,7 +1,7 @@
 require 'http'
 require 'yaml'
 
-config = YAML.safe_load(File.read('../config/secrets.yml'))
+config = YAML.safe_load(File.read('config/secrets.yml'))
 
 def news_api_path(path, name)
   'https://newsapi.org/v2/' + path + name
@@ -24,8 +24,8 @@ news_name.each do |name|
   news = news_response.parse
   news_detail = news['articles']
   news_results = news_detail.to_yaml
-  File.write("../spec/fixtures/#{name}news_response.yml", news_response.to_yaml)
-  File.write("../spec/fixtures/#{name}news_results.yml", news_results)
+  File.write("spec/fixtures/#{name}news_response.yml", news_response.to_yaml)
+  File.write("spec/fixtures/#{name}news_results.yml", news_results)
 end
 
 
