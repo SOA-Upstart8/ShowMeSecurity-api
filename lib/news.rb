@@ -1,6 +1,6 @@
 module CodePraise
     #Model for cnn
-    class CNN
+    class NEWS
         def initialize(data)
             @data = data
         end
