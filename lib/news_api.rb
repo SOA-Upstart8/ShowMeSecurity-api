@@ -2,16 +2,18 @@ require 'http'
 require_relative 'news.rb'
 
 
-module CodePraise
+module NewsSearch
     class NewsAPI
         module Errors
             class NotFound < StandardError; end
             class Unauthorized < StandardError; end
+            class TooManyRequests < StandardError; end
         end
 
         HTTP_ERROR = {
             401 => Errors::Unauthorized,
-            404 => Errors::NotFound
+            404 => Errors::NotFound,
+            429 => Errors::TooManyRequests
         }.freeze
 
         def initialize(key, cache: {})
@@ -33,7 +35,7 @@ module CodePraise
         
        
         def news_api_path(quary, from, to, source)
-            "https://newsapi.org/v2/everything?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}&sortBy=popularity"
+            "https://newsapi.org/v2/everything?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}"
         end
 
         def call_news_url(url)
@@ -45,6 +47,10 @@ module CodePraise
 
         def successful?(result)
             HTTP_ERROR.keys.include?(result.code) ? false :true
+        end
+
+        def raise_error(result)
+            raise(HTTP_ERROR[result.code])
         end
     end
 end

@@ -1,4 +1,4 @@
-module CodePraise
+module NewsSearch
     #Model for cnn
     class NEWS
         def initialize(data)

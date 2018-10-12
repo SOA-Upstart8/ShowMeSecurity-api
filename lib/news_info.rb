@@ -4,7 +4,7 @@ require 'yaml'
 config = YAML.safe_load(File.read('config/secrets.yml'))
 
 def news_api_path(quary, from, to, source)
-  "https://newsapi.org/v2/everything?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}&sortBy=popularity"
+  "https://newsapi.org/v2/everything?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}"
 end
 
 def call_news_url(config,url)
@@ -15,19 +15,21 @@ end
 
 news_response = {}
 news_results = {}
-start_date = '2018-10-9'
-end_date = '2018-10-10'
-quary = ''
+start_date = '2018-10-5'
+end_date = '2018-10-12'
+quary = 'Security'
 #HAPPY requests
-news_name =['bbc-news','cnn']
-news_name.each do |name|
-  news_url = news_api_path('top-headlines?sources=', name)
-  news_response= call_news_url(config, news_url)
+sources =['cnn']
+sources.each do |source|
+  news_url = news_api_path(quary, start_date, end_date, source)
+  news_response = call_news_url(config, news_url)
   news = news_response.parse
   news_detail = news['articles']
-  news_results = news_detail.to_yaml
-  File.write("spec/fixtures/#{name}news_response.yml", news_response.to_yaml)
-  File.write("spec/fixtures/#{name}news_results.yml", news_results)
+  news_results['source'] = source
+  news_results['size'] = news_detail.count
+  news_results['articles'] = news_detail
+  File.write("spec/fixtures/#{source}_response.yml", news_response.to_yaml)
+  File.write("spec/fixtures/#{source}_results.yml", news_results.to_yaml)
 end
 
 
