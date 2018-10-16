@@ -5,14 +5,12 @@ require_relative 'news.rb'
 module NewsSearch
     class NewsAPI
         module Errors
-            class NotFound < StandardError; end
             class Unauthorized < StandardError; end
             class TooManyRequests < StandardError; end
         end
 
         HTTP_ERROR = {
             401 => Errors::Unauthorized,
-            404 => Errors::NotFound,
             429 => Errors::TooManyRequests
         }.freeze
 

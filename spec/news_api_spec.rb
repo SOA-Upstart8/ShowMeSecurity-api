@@ -1,5 +1,4 @@
 require_relative 'spec_helper.rb'
-
 describe 'Tests NewsSearch library' do
     VCR.configure do |c|
         c.cassette_library_dir = CASSETTES_FOLDER
@@ -20,9 +19,12 @@ describe 'Tests NewsSearch library' do
             articles = NewsSearch::NewsAPI.new(API_KEY).get_news(QUARY, FROM, TO, SOURCE)
             _(articles.size).must_equal CORRECT['size']
             _(articles[0].title).must_equal CORRECT['articles'][0]['title']
-            _(articles[1].description).must_equal CORRECT['articles'][1]['description']
-            _(articles[2].content).must_equal CORRECT['articles'][2]['content']
-            _(articles[3].author).must_equal CORRECT['articles'][3]['author']
+            _(articles[0].description).must_equal CORRECT['articles'][0]['description']
+            _(articles[0].content).must_equal CORRECT['articles'][0]['content']
+            _(articles[1].author).must_equal CORRECT['articles'][1]['author']
+            _(articles[0].url).must_equal CORRECT['articles'][0]['url']
+            _(articles[0].image).must_equal CORRECT['articles'][0]['urlToImage']
+            _(articles[0].time).must_equal CORRECT['articles'][0]['publishedAt']
         end
         
         it 'SAD: should raise exception when request 30 days ago news' do

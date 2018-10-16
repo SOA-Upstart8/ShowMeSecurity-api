@@ -1,8 +1,12 @@
+require 'simplecov'
+SimpleCov.start
+
 require 'minitest/autorun'
 require 'minitest/rg'
 require 'yaml'
 require 'vcr'
 require 'webmock'
+
 require_relative '../lib/news_api.rb'
 
 QUARY = 'Security'.freeze
