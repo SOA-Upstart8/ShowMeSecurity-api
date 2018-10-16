@@ -3,31 +3,8 @@ require_relative 'news.rb'
 
 
 module NewsSearch
+    # The NewsAPI class is responsible for get news detail.
     class NewsAPI
-        # module Errors
-        #     class Unauthorized < StandardError; end
-        #     class TooManyRequests < StandardError; end
-        # end
-        #
-        # HTTP_ERROR = {
-        #     401 => Errors::Unauthorized,
-        #     429 => Errors::TooManyRequests
-        # }.freeze
-
-        # def initialize(key, cache: {})
-        #     @api_key =  key
-        #     @cache = cache
-        # end
-
-        # def get_news(quary, from, to, source)
-        #     articles = []
-        #     news_url = news_api_path(quary, from, to, source)
-        #     news_response = call_news_url(news_url)
-        #     news = news_response.parse
-        #     news_detail = news['articles']
-        #     news_detail.each {|article| articles << NEWS.new(article)}
-        #     articles
-        # end
 
         def initialize(key)
             @api_key = key
@@ -38,35 +15,13 @@ module NewsSearch
             news_response = Request.new(@api_key)
                                 .news(query, from, to, source)
             news = news_response.parse
-            news_detail = news['articles']
-            news_detail.each {|article| articles << NEWS.new(article)}
+            news['articles'].each {|article| articles << NEWS.new(article)}
             articles
         end
 
-        private 
-        
-       
-        # def news_api_path(quary, from, to, source)
-        #     "https://newsapi.org/v2/everything?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}"
-        # end
-        #
-        # def call_news_url(url)
-        #     result = @cache.fetch(url) do
-        #         HTTP.headers('x-api-key' => @api_key).get(url)
-        #     end
-        #     successful?(result) ? result : raise_error(result)
-        # end
-        #
-        # def successful?(result)
-        #     HTTP_ERROR.keys.include?(result.code) ? false :true
-        # end
-        #
-        # def raise_error(result)
-        #     raise(HTTP_ERROR[result.code])
-        # end
-
+        # The Request class is responsible for send a http request.
         class Request
-            api_path = '"https://newsapi.org/v2/everything'
+            PATH = 'https://newsapi.org/v2/everything'.freeze
 
             def initialize(key, cache: {})
                 @api_key =  key
@@ -74,35 +29,38 @@ module NewsSearch
             end
 
             def news(quary, from, to, source)
-                get(api_path + "?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}")
+                get(PATH + "?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}")
             end
 
             def get(url)
                 result = @cache.fetch(url) do
                     HTTP.headers('x-api-key' => @api_key).get(url)
                 end
+
                 Response.new(result).tap do |response|
                   raise(response.raise_error) unless response.successful?
                 end
-                # successful?(result) ? result : raise_error(result)
             end
         end
 
+        # The Response class is responsible for error requests.
         class Response < SimpleDelegator
+            # Unauthorized is responsible for no access key.
             Unauthorized =  Class.new(StandardError)
+            # TooManyRequests is responsible for too many requests in a given amount of time.
             TooManyRequests = Class.new(StandardError)
 
             HTTP_ERROR = {
-                401 => Errors::Unauthorized,
-                429 => Errors::TooManyRequests
+                401 => Unauthorized,
+                429 => TooManyRequests
             }.freeze
 
-            def successful?(result)
-                HTTP_ERROR.keys.include?(result.code) ? false :true
+            def successful?
+                HTTP_ERROR.keys.include?(code) ? false :true
             end
 
-            def raise_error(result)
-                raise(HTTP_ERROR[result.code])
+            def raise_error
+                HTTP_ERROR[code]
             end
         end
     end

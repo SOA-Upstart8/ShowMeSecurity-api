@@ -30,13 +30,13 @@ describe 'Tests NewsSearch library' do
         it 'SAD: should raise exception when request 30 days ago news' do
             proc do
                NewsSearch::NewsAPI.new(API_KEY).get_news(QUARY, '2018-9-1', TO, SOURCE)
-            end.must_raise NewsSearch::NewsAPI::Errors::TooManyRequests
+            end.must_raise NewsSearch::NewsAPI::Response::TooManyRequests
        end
 
         it 'SAD: should raise exception when unauthorized' do
             proc do
                 NewsSearch::NewsAPI.new('BadAPIKEY').get_news(QUARY, FROM, TO, SOURCE)
-            end.must_raise NewsSearch::NewsAPI::Errors::Unauthorized
+            end.must_raise NewsSearch::NewsAPI::Response::Unauthorized
         end
     end
 end
