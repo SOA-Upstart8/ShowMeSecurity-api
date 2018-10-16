@@ -1,19 +1,20 @@
-require 'minitest/autorun'
-require 'minitest/rg'
-require 'yaml'
-require_relative '../lib/news_api.rb'
+require_relative 'spec_helper.rb'
 
 describe 'Tests NewsSearch library' do
-    QUARY = 'Security'.freeze
-    FROM = '2018-10-5'.freeze
-    TO = '2018-10-12'.freeze
-    SOURCE = 'cnn'.freeze
+    VCR.configure do |c|
+        c.cassette_library_dir = CASSETTES_FOLDER
+        c.hook_into :webmock
+        c.filter_sensitive_data('<NEWS_KEY>'){API_KEY}
+    end
+    
+    before do 
+        VCR.insert_cassette CASSETTE_FILE, record: :new_episodes,
+                match_requests_on: %i[method uri headers]
+    end
 
-    CONFIG = YAML.safe_load(File.read('config/secrets.yml'))
-    API_KEY = CONFIG['API_KEY']
-
-    CORRECT = YAML.safe_load(File.read('spec/fixtures/cnn_results.yml'))
-
+    after do 
+        VCR.eject_cassette
+    end
     describe 'News information' do
         it 'HAPPY: should provide correct news information' do
             articles = NewsSearch::NewsAPI.new(API_KEY).get_news(QUARY, FROM, TO, SOURCE)
