@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'http'
 require 'yaml'
 
@@ -7,9 +9,9 @@ def news_api_path(quary, from, to, source)
   "https://newsapi.org/v2/everything?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}"
 end
 
-def call_news_url(config,url)
+def call_news_url(config, url)
   HTTP.headers(
-          'x-api-key' => config['API_KEY']
+    'x-api-key' => config['API_KEY']
   ).get(url)
 end
 
@@ -18,8 +20,8 @@ news_results = {}
 start_date = '2018-10-5'
 end_date = '2018-10-12'
 quary = 'Security'
-#HAPPY requests
-sources =['cnn']
+# HAPPY requests
+sources = ['cnn']
 sources.each do |source|
   news_url = news_api_path(quary, start_date, end_date, source)
   news_response = call_news_url(config, news_url)
@@ -31,5 +33,3 @@ sources.each do |source|
   File.write("spec/fixtures/#{source}_response.yml", news_response.to_yaml)
   File.write("spec/fixtures/#{source}_results.yml", news_results.to_yaml)
 end
-
-

@@ -3,6 +3,15 @@ task :spec do
   sh 'ruby spec/news_api_spec.rb'
 end
 
+namespace :vcr do
+  desc 'delete cassette fixtures'
+  task :wipe do
+    sh 'rm spec/fixtures/cassettes/*.yml' do |ok, _|
+      puts(ok ? 'Cassettes deleted' : 'No cassettes found')
+    end
+  end
+end
+
 namespace :quality do
   task :flog do
     sh 'flog lib/'
