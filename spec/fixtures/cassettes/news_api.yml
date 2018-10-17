@@ -1,0 +1,280 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://newsapi.org/v2/everything?from=2018-10-5&q=Security&sources=cnn&to=2018-10-12
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<NEWS_API_KEY>"
+      Connection:
+      - close
+      Host:
+      - newsapi.org
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Length:
+      - '15212'
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      X-Cached-Result:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Headers:
+      - x-api-key, authorization
+      X-Cache-Remaining:
+      - '99'
+      X-Cache-Expires:
+      - Wed, 17 Oct 2018 14:12:51 GMT
+      Date:
+      - Wed, 17 Oct 2018 14:08:11 GMT
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"status":"ok","totalResults":88,"articles":[{"source":{"id":"cnn","name":"CNN"},"author":null,"title":"Security
+        camera shows yard turn into ocean","description":"A home security camera on
+        St. George Island, Florida, shows ocean waves rolling through residential
+        yards as Hurricane Michael strikes the Florida Panhandle.","url":"https://www.cnn.com/videos/weather/2018/10/11/st-george-island-storm-surge-camera-orig-vstan-bdk.cnn","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181011124308-st-george-island-mandi-jackson-security-camera-hurricane-michael-1-super-tease.jpg","publishedAt":"2018-10-11T16:53:20Z","content":"Chat
+        with us in Facebook Messenger. Find out what''s happening in the world as
+        it unfolds."},{"source":{"id":"cnn","name":"CNN"},"author":"Andrea Flynn and
+        Dorian Warren","title":"A little-known rule change could hurt most vulnerable","description":"The
+        last 21 months have made clear that the Trump administration and the Republican
+        Party that supports it know no bounds when it comes to punishing immigrants
+        seeking a better, safer and more secure life for themselves and their families.
+        The Wall. The trave…","url":"https://www.cnn.com/2018/10/11/opinions/trump-public-charge-rule-change-warren-flynn/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180412181235-cnnmoney-snap-food-stamps-super-tease.jpg","publishedAt":"2018-10-11T19:36:31Z","content":"Andrea
+        Flynn is a fellow at the Roosevelt Institute, where she researches and writes
+        about issues that impact women and families. Dorian Warren is the incoming
+        president of the Center for Community Change. The views expressed here are
+        solely theirs. View more… [+5867 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Ian
+        Lee, CNN","title":"Israel to US student: Renounce views or leave","description":"Israel
+        has detained an American graduate student at Ben Gurion International Airport
+        for more than a week, accusing her of supporting the Palestinian-led boycott
+        movement of Israel.","url":"https://www.cnn.com/2018/10/10/middleeast/israel-denies-student-entry-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181010115006-01-lara-alqasem-file-super-tease.jpg","publishedAt":"2018-10-10T16:12:16Z","content":"Jerusalem
+        (CNN) Israel has detained an American graduate student at Ben Gurion International
+        Airport for more than a week, accusing her of supporting the Palestinian-led
+        boycott movement of Israel. Lara Alqasem, a 22-year-old of Palestinian heritage
+        from Fort… [+4235 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Ben
+        Westcott and Steven Jiang, CNN","title":"Head of Interpol Meng Hongwei accused
+        of corruption, Chinese government says","description":"The former head of
+        Interpol, who vanished after taking a flight to Beijing, is being held and
+        investigated for corruption, the Chinese Ministry of Public Security said
+        in a statement Monday.","url":"https://www.cnn.com/2018/10/08/asia/interpol-president-china-meng-hongwei-corruption-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181007142109-missing-interpol-president-china-meng-hongwei-screengrab-super-tease.jpg","publishedAt":"2018-10-08T06:31:03Z","content":"(CNN)
+        The former head of Interpol, who vanished after taking a flight to Beijing,
+        is being held and investigated for corruption, the Chinese Ministry of Public
+        Security said in a statement Monday. Meng Hongwei, who was also a vice minister
+        of public security … [+1828 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":null,"title":"Collins
+        hits back at Susan Rice over Senate seat","description":"In an interview with
+        Dana Bash, Susan Collins criticizes former Obama National Security Adviser
+        Susan Rice over Rice stating that she may want to run against her","url":"https://www.cnn.com/videos/politics/2018/10/07/sotu-collins-rice.cnn","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180617220624-susan-rice-june-17-2018-02-super-tease.jpg","publishedAt":"2018-10-07T15:58:15Z","content":"Chat
+        with us in Facebook Messenger. Find out what''s happening in the world as
+        it unfolds."},{"source":{"id":"cnn","name":"CNN"},"author":"Pat Wiedenkeller,
+        CNN","title":"Opinion: People will be talking about this week for decades","description":"Online
+        opinion was dominated this week by the fiery debate over the Brett Kavanaugh
+        nomination. CNN Opinion looks back at the strongest, smartest takes of the
+        week.","url":"https://www.cnn.com/2018/10/07/opinions/people-will-be-talking-about-this-week-for-decades-opinion-wrapup-column/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180928101130-20180928-kavanaugh-opinion-illustration-super-tease.jpg","publishedAt":"2018-10-07T12:33:34Z","content":"In
+        a new series of weekly columns (available soon as a newsletter), we''re looking
+        back at the strongest, smartest opinion takes of the week from CNN and other
+        outlets. (CNN) After weeks of excruciating buildup, the end to the Brett Kavanaugh
+        saga came fast an… [+11493 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Lydia
+        DePillis, CNN","title":"Bigger Social Security checks in store for 2019 as
+        inflation rises","description":"For the second year in a row, US seniors will
+        see increases in their Social Security checks starting in January.","url":"https://www.cnn.com/2018/10/11/politics/social-security-cola-2019/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181011100731-seniors-happy-social-security-stock-super-tease.jpg","publishedAt":"2018-10-11T15:15:12Z","content":"(CNN)
+        For the second year in a row, US seniors will see increases in their Social
+        Security checks starting in January. Recipients will get a 2.8% boost in 2019,
+        higher than last year''s 2% increase -- which followed years of minimal changes
+        in payments. The av… [+1774 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Julia
+        Horowitz, CNN Business","title":"Travelers teams up with Amazon to sell home
+        security kits","description":"Travelers now has an Amazon storefront for home
+        security equipment.","url":"https://www.cnn.com/2018/10/10/business/travelers-amazon-partnership/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181010133127-travelers-insurance-amazon-super-tease.jpg","publishedAt":"2018-10-10T23:17:48Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Bukola
+        Adebayo and Stephanie Busari","title":"\"We heard gunshots all through the
+        day,\" says Cameroon voter","description":"Voters in Cameroon''s troubled
+        north and southwest regions stayed away from Sunday''s elections as violence
+        broke out between security forces and armed separatists, residents told CNN.","url":"https://www.cnn.com/2018/10/08/africa/cameroons-election-voters-turnout-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181008133033-cameroons-election-super-tease.jpg","publishedAt":"2018-10-08T13:23:46Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Mary
+        McDougall, CNN","title":"Bangladesh''s new digital law will silence critics,
+        rights groups say","description":"Bangladesh President Abdul Hamid has approved
+        a controversial new digital security law that rights groups fear could be
+        used to further erode press freedoms and dissenting voices online.","url":"https://www.cnn.com/2018/10/09/asia/bangladesh-digital-law-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181009112323-digital-security-act-super-tease.jpg","publishedAt":"2018-10-09T04:01:02Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Donie
+        O''Sullivan, CNN","title":"Hackers accessed personal information of 30 million
+        Facebook users","description":"Almost 30 million Facebook users'' phone numbers
+        and email address were accessed by hackers in the biggest security breach
+        in the company''s history, Facebook said on Friday.","url":"https://www.cnn.com/2018/10/12/tech/facebook-hack-personal-information-accessed/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181012124335-101218-mark-zuckerberg-facebook-super-tease.jpg","publishedAt":"2018-10-12T16:43:06Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Julia
+        Horowitz, CNN Business","title":"In Facebook, banks see some opportunities
+        — but mostly risks","description":"Facebook could dip its toe deeper into
+        financial services — raising questions about what such relationships would
+        look like, and whether benefits would outweigh concerns about privacy and
+        security.","url":"https://www.cnn.com/2018/10/12/business/banks-facebook-privacy-risks/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180914114811-banks-facebook-super-tease.jpg","publishedAt":"2018-10-12T12:56:04Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Analysis
+        by Steven Jiang, CNN","title":"Ex-Interpol chief''s wife takes on Chinese
+        government","description":"When now-former Interpol chief Meng Hongwei disappeared
+        suddenly last month, his wife did something unexpected: She took up a public
+        fight against the Beijing authorities, a move rarely seen from family members
+        of accused senior Chinese officials.","url":"https://www.cnn.com/2018/10/10/asia/missing-interpol-chief-wife-grace-meng-analysis/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/121022075913-beijing-communist-party-headquarters-super-169.jpg","publishedAt":"2018-10-11T02:55:25Z","content":"Beijing
+        (CNN) When now-former Interpol chief Meng Hongwei disappeared suddenly last
+        month, his wife did something unexpected: She took up a public fight against
+        the Beijing authorities, a move rarely seen from family members of accused
+        senior Chinese official… [+8051 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Oren
+        Liebermann and Ian Lee, CNN","title":"Seven Palestinians shot and killed by
+        Israeli forces in Gaza during violent weekly protests","description":"Seven
+        Palestinians died Friday after being shot by Israeli soldiers along the security
+        fence between Gaza and Israel during violent weekly protests, according to
+        the Palestinian Ministry of Health.","url":"https://www.cnn.com/2018/10/12/middleeast/gaza-protests-palestinians-killed/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181012174313-02-gaza-protests-palestinians-killed-super-tease.jpg","publishedAt":"2018-10-12T22:03:05Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Matthew
+        Robinson, CNN","title":"Italy''s Matteo Salvini calls for 9 p.m. curfew for
+        ''little ethnic shops''","description":"Italy''s hard-line interior minister
+        and deputy prime minister sparked outrage on Thursday after announcing a proposed
+        amendment to his security decree that would force \"little ethnic shops\"
+        to close by 9 p.m.","url":"https://edition.cnn.com/2018/10/12/europe/italy-salvini-shop-curfew-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180627102715-01-matteo-salvini-0620-super-tease.jpg","publishedAt":"2018-10-12T15:55:05Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Eric
+        Bradner, CNN","title":"Susan Rice tweets ''Me'' when asked who could challenge
+        Maine Sen. Susan Collins in 2020","description":"Susan Rice, who was President
+        Barack Obama''s national security adviser, caused a stir Friday afternoon
+        when she tweeted \"Me\" when another former Obama official asked who could
+        challenge Sen. Susan Collins in 2020.","url":"https://www.cnn.com/2018/10/05/politics/susan-rice-collins-maine-senate-2020/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180328160726-susan-rice-super-tease.jpg","publishedAt":"2018-10-05T21:54:13Z","content":"Washington
+        (CNN) Susan Rice, who was President Barack Obama''s national security adviser,
+        caused a stir Friday afternoon when she tweeted \"Me\" when another former
+        Obama official asked who could challenge Sen. Susan Collins in 2020. The short
+        tweet -- which cam… [+1340 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Geneva
+        Sands and Veronica Stracqualursi, CNN","title":"DHS Secretary Nielsen says
+        facilities are ''out of space'' due to huge increase in family border crossings","description":"The
+        Department of Homeland Security is running out of space at its detention facilities
+        for families and unaccompanied children crossing over the US-Mexico border,
+        Secretary Kirstjen Nielsen said in an interview with CNN Friday.","url":"https://www.cnn.com/2018/10/12/politics/kirstjen-nielsen-dhs-family-border-crossings/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180522113219-dhs-secretary-kristjen-nielsen-election-hacking-2-super-tease.jpg","publishedAt":"2018-10-12T20:48:24Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"macamilarincon","title":"Compañía
+        de seguros de Kim Kardashian demanda a su exguardaespaldas por el robo en
+        París","description":"La compañía de seguros que le pagó a Kim Kardashian
+        West después de ser víctima de un millonario robo en París hace dos años acaba
+        de demandar a su exguardaespaldas por fallas de seguridad.","url":"https://cnnespanol.cnn.com/2018/10/05/compania-de-seguros-de-kim-kardashian-demanda-a-su-exguardaespaldas-por-el-robo-en-paris/","urlToImage":"https://cnnespanol2.files.wordpress.com/2018/10/guardaespaldas-kim-kardashia-pascual-duvier.jpg?quality=100&strip=info","publishedAt":"2018-10-05T19:15:55Z","content":"Lo
+        más importante La compañía de seguros que le pagó a Kim Kardashian West después
+        del millonario robo en París acaba de demandar a su exguardaespaldas American
+        International Group presentó una demanda este miércoles en Delaware contra
+        Pascal Duvier y su empr… [+2268 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Manu
+        Raju, CNN Senior Congressional Correspondent","title":"Susan Collins on Susan
+        Rice: ''I really have little interest in what she has to say''","description":"Sen.
+        Susan Collins on Wednesday roundly dismissed an attack from Susan Rice who
+        criticized the Maine Republican over the weekend, suggesting the former national
+        security adviser may challenge Collins in 2020 because \"she betrayed women
+        across this country\" fo…","url":"https://www.cnn.com/2018/10/10/politics/susan-collins-susan-rice/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181005154349-02-susan-collins-senate-floor-super-tease.jpg","publishedAt":"2018-10-10T20:10:22Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Caroline
+        Kelly, CNN","title":"FBI Director: Kavanaugh background probe ''limited in
+        scope''","description":"FBI Director Chris Wray told senators Wednesday that
+        the FBI''s investigation into Christine Blasey Ford''s sexual assault allegation
+        against Supreme Court Justice Brett Kavanaugh was \"limited in scope\" and
+        thus \"consistent with the standard process.\"","url":"https://www.cnn.com/2018/10/10/politics/fbi-wray-kavanaugh-ford-probe/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180628105005-christopher-wray-6-28-super-tease.jpg","publishedAt":"2018-10-10T15:59:00Z","content":"(CNN)
+        FBI Director Chris Wray told senators Wednesday that the FBI''s investigation
+        into Christine Blasey Ford''s sexual assault allegation against Supreme Court
+        Justice Brett Kavanaugh was \"limited in scope\" and thus \"consistent with
+        the standard process.\" For… [+2606 chars]"}]}'
+    http_version: 
+  recorded_at: Wed, 17 Oct 2018 14:08:19 GMT
+- request:
+    method: get
+    uri: https://newsapi.org/v2/everything?from=2018-10-5&q=Security&sources=cnn&to=2018-10-12
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Api-Key:
+      - BadAPIKEY
+      Connection:
+      - close
+      Host:
+      - newsapi.org
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      X-Cached-Result:
+      - 'false'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Headers:
+      - x-api-key, authorization
+      Date:
+      - Wed, 17 Oct 2018 14:08:12 GMT
+      Connection:
+      - close
+      Content-Length:
+      - '162'
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","code":"apiKeyInvalid","message":"Your API key is
+        invalid or incorrect. Check your key, or go to https://newsapi.org to create
+        a free API key."}'
+    http_version: 
+  recorded_at: Wed, 17 Oct 2018 14:08:19 GMT
+- request:
+    method: get
+    uri: https://newsapi.org/v2/everything?from=2018-9-1&q=Security&sources=cnn&to=2018-10-12
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Api-Key:
+      - "<NEWS_API_KEY>"
+      Connection:
+      - close
+      Host:
+      - newsapi.org
+      User-Agent:
+      - http.rb/3.3.0
+  response:
+    status:
+      code: 429
+      message: Too Many Requests
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      X-Cached-Result:
+      - 'false'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Headers:
+      - x-api-key, authorization
+      Date:
+      - Wed, 17 Oct 2018 14:08:13 GMT
+      Connection:
+      - close
+      Content-Length:
+      - '264'
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","code":"parameterInvalid","message":"You are trying
+        to request results too far in the past. Your plan permits you to request articles
+        as far back as 2018-09-16, but you have requested 2018-09-01. To extend this
+        please upgrade your subscription."}'
+    http_version: 
+  recorded_at: Wed, 17 Oct 2018 14:08:20 GMT
+recorded_with: VCR 4.0.0

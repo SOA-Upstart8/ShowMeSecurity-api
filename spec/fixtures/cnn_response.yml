@@ -1,0 +1,206 @@
+--- !ruby/object:HTTP::Response
+version: '1.1'
+uri: !ruby/object:HTTP::URI
+  uri: !ruby/object:Addressable::URI
+    validation_deferred: false
+    scheme: https
+    host: newsapi.org
+    path: "/v2/everything"
+    query: q=Security&from=2018-10-5&to=2018-10-12&sources=cnn
+    authority: newsapi.org
+    uri_string: https://newsapi.org/v2/everything?q=Security&from=2018-10-5&to=2018-10-12&sources=cnn
+    password: 
+    user: 
+    port: 
+status: !ruby/object:HTTP::Response::Status
+  code: 200
+headers: !ruby/object:HTTP::Headers
+  pile:
+  - - Cache-Control
+    - no-cache
+  - - Pragma
+    - no-cache
+  - - Content-Length
+    - '15212'
+  - - Content-Type
+    - application/json; charset=utf-8
+  - - Expires
+    - "-1"
+  - - X-Cached-Result
+    - 'false'
+  - - Access-Control-Allow-Origin
+    - "*"
+  - - Access-Control-Allow-Methods
+    - GET
+  - - Access-Control-Allow-Headers
+    - x-api-key, authorization
+  - - Date
+    - Wed, 17 Oct 2018 14:07:50 GMT
+  - - Connection
+    - close
+proxy_headers: !ruby/object:HTTP::Headers
+  pile: []
+content_type: !ruby/struct:HTTP::ContentType
+  mime_type: application/json
+  charset: utf-8
+body: !ruby/object:HTTP::Response::Body
+  stream: &1 !ruby/object:HTTP::Connection
+    persistent: false
+    keep_alive_timeout: 5.0
+    pending_request: false
+    pending_response: false
+    failed_proxy_connect: false
+    buffer: !binary |-
+      SFRUUC8xLjEgMjAwIE9LDQpDYWNoZS1Db250cm9sOiBuby1jYWNoZQ0KUHJhZ21hOiBuby1jYWNoZQ0KQ29udGVudC1MZW5ndGg6IDE1MjEyDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL2pzb247IGNoYXJzZXQ9dXRmLTgNCkV4cGlyZXM6IC0xDQpYLUNhY2hlZC1SZXN1bHQ6IGZhbHNlDQpBY2Nlc3MtQ29udHJvbC1BbGxvdy1PcmlnaW46ICoNCkFjY2Vzcy1Db250cm9sLUFsbG93LU1ldGhvZHM6IEdFVA0KQWNjZXNzLUNvbnRyb2wtQWxsb3ctSGVhZGVyczogeC1hcGkta2V5LCBhdXRob3JpemF0aW9uDQpEYXRlOiBXZWQsIDE3IE9jdCAyMDE4IDE0OjA3OjUwIEdNVA0KQ29ubmVjdGlvbjogY2xvc2UNCg0KeyJzdGF0dXMiOiJvayIsInRvdGFsUmVzdWx0cyI6ODgsImFydGljbGVzIjpbeyJzb3VyY2UiOnsiaWQiOiJjbm4iLCJuYW1lIjoiQ05OIn0sImF1dGhvciI6bnVsbCwidGl0bGUiOiJTZWN1cml0eSBjYW1lcmEgc2hvd3MgeWFyZCB0dXJuIGludG8gb2NlYW4iLCJkZXNjcmlwdGlvbiI6IkEgaG9tZSBzZWN1cml0eSBjYW1lcmEgb24gU3QuIEdlb3JnZSBJc2xhbmQsIEZsb3JpZGEsIHNob3dzIG9jZWFuIHdhdmVzIHJvbGxpbmcgdGhyb3VnaCByZXNpZGVudGlhbCB5YXJkcyBhcyBIdXJyaWNhbmUgTWljaGFlbCBzdHJpa2VzIHRoZSBGbG9yaWRhIFBhbmhhbmRsZS4iLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tL3ZpZGVvcy93ZWF0aGVyLzIwMTgvMTAvMTEvc3QtZ2VvcmdlLWlzbGFuZC1zdG9ybS1zdXJnZS1jYW1lcmEtb3JpZy12c3Rhbi1iZGsuY25uIiwidXJsVG9JbWFnZSI6Imh0dHBzOi8vY2RuLmNubi5jb20vY25ubmV4dC9kYW0vYXNzZXRzLzE4MTAxMTEyNDMwOC1zdC1nZW9yZ2UtaXNsYW5kLW1hbmRpLWphY2tzb24tc2VjdXJpdHktY2FtZXJhLWh1cnJpY2FuZS1taWNoYWVsLTEtc3VwZXItdGVhc2UuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTExVDE2OjUzOjIwWiIsImNvbnRlbnQiOiJDaGF0IHdpdGggdXMgaW4gRmFjZWJvb2sgTWVzc2VuZ2VyLiBGaW5kIG91dCB3aGF0J3MgaGFwcGVuaW5nIGluIHRoZSB3b3JsZCBhcyBpdCB1bmZvbGRzLiJ9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJBbmRyZWEgRmx5bm4gYW5kIERvcmlhbiBXYXJyZW4iLCJ0aXRsZSI6IkEgbGl0dGxlLWtub3duIHJ1bGUgY2hhbmdlIGNvdWxkIGh1cnQgbW9zdCB2dWxuZXJhYmxlIiwiZGVzY3JpcHRpb24iOiJUaGUgbGFzdCAyMSBtb250aHMgaGF2ZSBtYWRlIGNsZWFyIHRoYXQgdGhlIFRydW1wIGFkbWluaXN0cmF0aW9uIGFuZCB0aGUgUmVwdWJsaWNhbiBQYXJ0eSB0aGF0IHN1cHBvcnRzIGl0IGtub3cgbm8gYm91bmRzIHdoZW4gaXQgY29tZXMgdG8gcHVuaXNoaW5nIGltbWlncmFudHMgc2Vla2luZyBhIGJldHRlciwgc2FmZXIgYW5kIG1vcmUgc2VjdXJlIGxpZmUgZm9yIHRoZW1zZWx2ZXMgYW5kIHRoZWlyIGZhbWlsaWVzLiBUaGUgV2FsbC4gVGhlIHRyYXZl4oCmIiwidXJsIjoiaHR0cHM6Ly93d3cuY25uLmNvbS8yMDE4LzEwLzExL29waW5pb25zL3RydW1wLXB1YmxpYy1jaGFyZ2UtcnVsZS1jaGFuZ2Utd2FycmVuLWZseW5uL2luZGV4Lmh0bWwiLCJ1cmxUb0ltYWdlIjoiaHR0cHM6Ly9jZG4uY25uLmNvbS9jbm5uZXh0L2RhbS9hc3NldHMvMTgwNDEyMTgxMjM1LWNubm1vbmV5LXNuYXAtZm9vZC1zdGFtcHMtc3VwZXItdGVhc2UuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTExVDE5OjM2OjMxWiIsImNvbnRlbnQiOiJBbmRyZWEgRmx5bm4gaXMgYSBmZWxsb3cgYXQgdGhlIFJvb3NldmVsdCBJbnN0aXR1dGUsIHdoZXJlIHNoZSByZXNlYXJjaGVzIGFuZCB3cml0ZXMgYWJvdXQgaXNzdWVzIHRoYXQgaW1wYWN0IHdvbWVuIGFuZCBmYW1pbGllcy4gRG9yaWFuIFdhcnJlbiBpcyB0aGUgaW5jb21pbmcgcHJlc2lkZW50IG9mIHRoZSBDZW50ZXIgZm9yIENvbW11bml0eSBDaGFuZ2UuIFRoZSB2aWV3cyBleHByZXNzZWQgaGVyZSBhcmUgc29sZWx5IHRoZWlycy4gVmlldyBtb3Jl4oCmIFsrNTg2NyBjaGFyc10ifSx7InNvdXJjZSI6eyJpZCI6ImNubiIsIm5hbWUiOiJDTk4ifSwiYXV0aG9yIjoiSWFuIExlZSwgQ05OIiwidGl0bGUiOiJJc3JhZWwgdG8gVVMgc3R1ZGVudDogUmVub3VuY2Ugdmlld3Mgb3IgbGVhdmUiLCJkZXNjcmlwdGlvbiI6IklzcmFlbCBoYXMgZGV0YWluZWQgYW4gQW1lcmljYW4gZ3JhZHVhdGUgc3R1ZGVudCBhdCBCZW4gR3VyaW9uIEludGVybmF0aW9uYWwgQWlycG9ydCBmb3IgbW9yZSB0aGFuIGEgd2VlaywgYWNjdXNpbmcgaGVyIG9mIHN1cHBvcnRpbmcgdGhlIFBhbGVzdGluaWFuLWxlZCBib3ljb3R0IG1vdmVtZW50IG9mIElzcmFlbC4iLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMTAvbWlkZGxlZWFzdC9pc3JhZWwtZGVuaWVzLXN0dWRlbnQtZW50cnktaW50bC9pbmRleC5odG1sIiwidXJsVG9JbWFnZSI6Imh0dHBzOi8vY2RuLmNubi5jb20vY25ubmV4dC9kYW0vYXNzZXRzLzE4MTAxMDExNTAwNi0wMS1sYXJhLWFscWFzZW0tZmlsZS1zdXBlci10ZWFzZS5qcGciLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMTBUMTY6MTI6MTZaIiwiY29udGVudCI6IkplcnVzYWxlbSAoQ05OKSBJc3JhZWwgaGFzIGRldGFpbmVkIGFuIEFtZXJpY2FuIGdyYWR1YXRlIHN0dWRlbnQgYXQgQmVuIEd1cmlvbiBJbnRlcm5hdGlvbmFsIEFpcnBvcnQgZm9yIG1vcmUgdGhhbiBhIHdlZWssIGFjY3VzaW5nIGhlciBvZiBzdXBwb3J0aW5nIHRoZSBQYWxlc3Rpbmlhbi1sZWQgYm95Y290dCBtb3ZlbWVudCBvZiBJc3JhZWwuIExhcmEgQWxxYXNlbSwgYSAyMi15ZWFyLW9sZCBvZiBQYWxlc3RpbmlhbiBoZXJpdGFnZSBmcm9tIEZvcnTigKYgWys0MjM1IGNoYXJzXSJ9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJCZW4gV2VzdGNvdHQgYW5kIFN0ZXZlbiBKaWFuZywgQ05OIiwidGl0bGUiOiJIZWFkIG9mIEludGVycG9sIE1lbmcgSG9uZ3dlaSBhY2N1c2VkIG9mIGNvcnJ1cHRpb24sIENoaW5lc2UgZ292ZXJubWVudCBzYXlzIiwiZGVzY3JpcHRpb24iOiJUaGUgZm9ybWVyIGhlYWQgb2YgSW50ZXJwb2wsIHdobyB2YW5pc2hlZCBhZnRlciB0YWtpbmcgYSBmbGlnaHQgdG8gQmVpamluZywgaXMgYmVpbmcgaGVsZCBhbmQgaW52ZXN0aWdhdGVkIGZvciBjb3JydXB0aW9uLCB0aGUgQ2hpbmVzZSBNaW5pc3RyeSBvZiBQdWJsaWMgU2VjdXJpdHkgc2FpZCBpbiBhIHN0YXRlbWVudCBNb25kYXkuIiwidXJsIjoiaHR0cHM6Ly93d3cuY25uLmNvbS8yMDE4LzEwLzA4L2FzaWEvaW50ZXJwb2wtcHJlc2lkZW50LWNoaW5hLW1lbmctaG9uZ3dlaS1jb3JydXB0aW9uLWludGwvaW5kZXguaHRtbCIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODEwMDcxNDIxMDktbWlzc2luZy1pbnRlcnBvbC1wcmVzaWRlbnQtY2hpbmEtbWVuZy1ob25nd2VpLXNjcmVlbmdyYWItc3VwZXItdGVhc2UuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTA4VDA2OjMxOjAzWiIsImNvbnRlbnQiOiIoQ05OKSBUaGUgZm9ybWVyIGhlYWQgb2YgSW50ZXJwb2wsIHdobyB2YW5pc2hlZCBhZnRlciB0YWtpbmcgYSBmbGlnaHQgdG8gQmVpamluZywgaXMgYmVpbmcgaGVsZCBhbmQgaW52ZXN0aWdhdGVkIGZvciBjb3JydXB0aW9uLCB0aGUgQ2hpbmVzZSBNaW5pc3RyeSBvZiBQdWJsaWMgU2VjdXJpdHkgc2FpZCBpbiBhIHN0YXRlbWVudCBNb25kYXkuIE1lbmcgSG9uZ3dlaSwgd2hvIHdhcyBhbHNvIGEgdmljZSBtaW5pc3RlciBvZiBwdWJsaWMgc2VjdXJpdHkg4oCmIFsrMTgyOCBjaGFyc10ifSx7InNvdXJjZSI6eyJpZCI6ImNubiIsIm5hbWUiOiJDTk4ifSwiYXV0aG9yIjpudWxsLCJ0aXRsZSI6IkNvbGxpbnMgaGl0cyBiYWNrIGF0IFN1c2FuIFJpY2Ugb3ZlciBTZW5hdGUgc2VhdCIsImRlc2NyaXB0aW9uIjoiSW4gYW4gaW50ZXJ2aWV3IHdpdGggRGFuYSBCYXNoLCBTdXNhbiBDb2xsaW5zIGNyaXRpY2l6ZXMgZm9ybWVyIE9iYW1hIE5hdGlvbmFsIFNlY3VyaXR5IEFkdmlzZXIgU3VzYW4gUmljZSBvdmVyIFJpY2Ugc3RhdGluZyB0aGF0IHNoZSBtYXkgd2FudCB0byBydW4gYWdhaW5zdCBoZXIiLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tL3ZpZGVvcy9wb2xpdGljcy8yMDE4LzEwLzA3L3NvdHUtY29sbGlucy1yaWNlLmNubiIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODA2MTcyMjA2MjQtc3VzYW4tcmljZS1qdW5lLTE3LTIwMTgtMDItc3VwZXItdGVhc2UuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTA3VDE1OjU4OjE1WiIsImNvbnRlbnQiOiJDaGF0IHdpdGggdXMgaW4gRmFjZWJvb2sgTWVzc2VuZ2VyLiBGaW5kIG91dCB3aGF0J3MgaGFwcGVuaW5nIGluIHRoZSB3b3JsZCBhcyBpdCB1bmZvbGRzLiJ9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJQYXQgV2llZGVua2VsbGVyLCBDTk4iLCJ0aXRsZSI6Ik9waW5pb246IFBlb3BsZSB3aWxsIGJlIHRhbGtpbmcgYWJvdXQgdGhpcyB3ZWVrIGZvciBkZWNhZGVzIiwiZGVzY3JpcHRpb24iOiJPbmxpbmUgb3BpbmlvbiB3YXMgZG9taW5hdGVkIHRoaXMgd2VlayBieSB0aGUgZmllcnkgZGViYXRlIG92ZXIgdGhlIEJyZXR0IEthdmFuYXVnaCBub21pbmF0aW9uLiBDTk4gT3BpbmlvbiBsb29rcyBiYWNrIGF0IHRoZSBzdHJvbmdlc3QsIHNtYXJ0ZXN0IHRha2VzIG9mIHRoZSB3ZWVrLiIsInVybCI6Imh0dHBzOi8vd3d3LmNubi5jb20vMjAxOC8xMC8wNy9vcGluaW9ucy9wZW9wbGUtd2lsbC1iZS10YWxraW5nLWFib3V0LXRoaXMtd2Vlay1mb3ItZGVjYWRlcy1vcGluaW9uLXdyYXB1cC1jb2x1bW4vaW5kZXguaHRtbCIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODA5MjgxMDExMzAtMjAxODA5Mjgta2F2YW5hdWdoLW9waW5pb24taWxsdXN0cmF0aW9uLXN1cGVyLXRlYXNlLmpwZyIsInB1Ymxpc2hlZEF0IjoiMjAxOC0xMC0wN1QxMjozMzozNFoiLCJjb250ZW50IjoiSW4gYSBuZXcgc2VyaWVzIG9mIHdlZWtseSBjb2x1bW5zIChhdmFpbGFibGUgc29vbiBhcyBhIG5ld3NsZXR0ZXIpLCB3ZSdyZSBsb29raW5nIGJhY2sgYXQgdGhlIHN0cm9uZ2VzdCwgc21hcnRlc3Qgb3BpbmlvbiB0YWtlcyBvZiB0aGUgd2VlayBmcm9tIENOTiBhbmQgb3RoZXIgb3V0bGV0cy4gKENOTikgQWZ0ZXIgd2Vla3Mgb2YgZXhjcnVjaWF0aW5nIGJ1aWxkdXAsIHRoZSBlbmQgdG8gdGhlIEJyZXR0IEthdmFuYXVnaCBzYWdhIGNhbWUgZmFzdCBhbuKApiBbKzExNDkzIGNoYXJzXSJ9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJMeWRpYSBEZVBpbGxpcywgQ05OIiwidGl0bGUiOiJCaWdnZXIgU29jaWFsIFNlY3VyaXR5IGNoZWNrcyBpbiBzdG9yZSBmb3IgMjAxOSBhcyBpbmZsYXRpb24gcmlzZXMiLCJkZXNjcmlwdGlvbiI6IkZvciB0aGUgc2Vjb25kIHllYXIgaW4gYSByb3csIFVTIHNlbmlvcnMgd2lsbCBzZWUgaW5jcmVhc2VzIGluIHRoZWlyIFNvY2lhbCBTZWN1cml0eSBjaGVja3Mgc3RhcnRpbmcgaW4gSmFudWFyeS4iLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMTEvcG9saXRpY3Mvc29jaWFsLXNlY3VyaXR5LWNvbGEtMjAxOS9pbmRleC5odG1sIiwidXJsVG9JbWFnZSI6Imh0dHBzOi8vY2RuLmNubi5jb20vY25ubmV4dC9kYW0vYXNzZXRzLzE4MTAxMTEwMDczMS1zZW5pb3JzLWhhcHB5LXNvY2lhbC1zZWN1cml0eS1zdG9jay1zdXBlci10ZWFzZS5qcGciLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMTFUMTU6MTU6MTJaIiwiY29udGVudCI6IihDTk4pIEZvciB0aGUgc2Vjb25kIHllYXIgaW4gYSByb3csIFVTIHNlbmlvcnMgd2lsbCBzZWUgaW5jcmVhc2VzIGluIHRoZWlyIFNvY2lhbCBTZWN1cml0eSBjaGVja3Mgc3RhcnRpbmcgaW4gSmFudWFyeS4gUmVjaXBpZW50cyB3aWxsIGdldCBhIDIuOCUgYm9vc3QgaW4gMjAxOSwgaGlnaGVyIHRoYW4gbGFzdCB5ZWFyJ3MgMiUgaW5jcmVhc2UgLS0gd2hpY2ggZm9sbG93ZWQgeWVhcnMgb2YgbWluaW1hbCBjaGFuZ2VzIGluIHBheW1lbnRzLiBUaGUgYXbigKYgWysxNzc0IGNoYXJzXSJ9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJKdWxpYSBIb3Jvd2l0eiwgQ05OIEJ1c2luZXNzIiwidGl0bGUiOiJUcmF2ZWxlcnMgdGVhbXMgdXAgd2l0aCBBbWF6b24gdG8gc2VsbCBob21lIHNlY3VyaXR5IGtpdHMiLCJkZXNjcmlwdGlvbiI6IlRyYXZlbGVycyBub3cgaGFzIGFuIEFtYXpvbiBzdG9yZWZyb250IGZvciBob21lIHNlY3VyaXR5IGVxdWlwbWVudC4iLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMTAvYnVzaW5lc3MvdHJhdmVsZXJzLWFtYXpvbi1wYXJ0bmVyc2hpcC9pbmRleC5odG1sIiwidXJsVG9JbWFnZSI6Imh0dHBzOi8vY2RuLmNubi5jb20vY25ubmV4dC9kYW0vYXNzZXRzLzE4MTAxMDEzMzEyNy10cmF2ZWxlcnMtaW5zdXJhbmNlLWFtYXpvbi1zdXBlci10ZWFzZS5qcGciLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMTBUMjM6MTc6NDhaIiwiY29udGVudCI6bnVsbH0seyJzb3VyY2UiOnsiaWQiOiJjbm4iLCJuYW1lIjoiQ05OIn0sImF1dGhvciI6IkJ1a29sYSBBZGViYXlvIGFuZCBTdGVwaGFuaWUgQnVzYXJpIiwidGl0bGUiOiJcIldlIGhlYXJkIGd1bnNob3RzIGFsbCB0aHJvdWdoIHRoZSBkYXksXCIgc2F5cyBDYW1lcm9vbiB2b3RlciIsImRlc2NyaXB0aW9uIjoiVm90ZXJzIGluIENhbWVyb29uJ3MgdHJvdWJsZWQgbm9ydGggYW5kIHNvdXRod2VzdCByZWdpb25zIHN0YXllZCBhd2F5IGZyb20gU3VuZGF5J3MgZWxlY3Rpb25zIGFzIHZpb2xlbmNlIGJyb2tlIG91dCBiZXR3ZWVuIHNlY3VyaXR5IGZvcmNlcyBhbmQgYXJtZWQgc2VwYXJhdGlzdHMsIHJlc2lkZW50cyB0b2xkIENOTi4iLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMDgvYWZyaWNhL2NhbWVyb29ucy1lbGVjdGlvbi12b3RlcnMtdHVybm91dC1pbnRsL2luZGV4Lmh0bWwiLCJ1cmxUb0ltYWdlIjoiaHR0cHM6Ly9jZG4uY25uLmNvbS9jbm5uZXh0L2RhbS9hc3NldHMvMTgxMDA4MTMzMDMzLWNhbWVyb29ucy1lbGVjdGlvbi1zdXBlci10ZWFzZS5qcGciLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMDhUMTM6MjM6NDZaIiwiY29udGVudCI6bnVsbH0seyJzb3VyY2UiOnsiaWQiOiJjbm4iLCJuYW1lIjoiQ05OIn0sImF1dGhvciI6Ik1hcnkgTWNEb3VnYWxsLCBDTk4iLCJ0aXRsZSI6IkJhbmdsYWRlc2gncyBuZXcgZGlnaXRhbCBsYXcgd2lsbCBzaWxlbmNlIGNyaXRpY3MsIHJpZ2h0cyBncm91cHMgc2F5IiwiZGVzY3JpcHRpb24iOiJCYW5nbGFkZXNoIFByZXNpZGVudCBBYmR1bCBIYW1pZCBoYXMgYXBwcm92ZWQgYSBjb250cm92ZXJzaWFsIG5ldyBkaWdpdGFsIHNlY3VyaXR5IGxhdyB0aGF0IHJpZ2h0cyBncm91cHMgZmVhciBjb3VsZCBiZSB1c2VkIHRvIGZ1cnRoZXIgZXJvZGUgcHJlc3MgZnJlZWRvbXMgYW5kIGRpc3NlbnRpbmcgdm9pY2VzIG9ubGluZS4iLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMDkvYXNpYS9iYW5nbGFkZXNoLWRpZ2l0YWwtbGF3LWludGwvaW5kZXguaHRtbCIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODEwMDkxMTIzMjMtZGlnaXRhbC1zZWN1cml0eS1hY3Qtc3VwZXItdGVhc2UuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTA5VDA0OjAxOjAyWiIsImNvbnRlbnQiOm51bGx9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJEb25pZSBPJ1N1bGxpdmFuLCBDTk4iLCJ0aXRsZSI6IkhhY2tlcnMgYWNjZXNzZWQgcGVyc29uYWwgaW5mb3JtYXRpb24gb2YgMzAgbWlsbGlvbiBGYWNlYm9vayB1c2VycyIsImRlc2NyaXB0aW9uIjoiQWxtb3N0IDMwIG1pbGxpb24gRmFjZWJvb2sgdXNlcnMnIHBob25lIG51bWJlcnMgYW5kIGVtYWlsIGFkZHJlc3Mgd2VyZSBhY2Nlc3NlZCBieSBoYWNrZXJzIGluIHRoZSBiaWdnZXN0IHNlY3VyaXR5IGJyZWFjaCBpbiB0aGUgY29tcGFueSdzIGhpc3RvcnksIEZhY2Vib29rIHNhaWQgb24gRnJpZGF5LiIsInVybCI6Imh0dHBzOi8vd3d3LmNubi5jb20vMjAxOC8xMC8xMi90ZWNoL2ZhY2Vib29rLWhhY2stcGVyc29uYWwtaW5mb3JtYXRpb24tYWNjZXNzZWQvaW5kZXguaHRtbCIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODEwMTIxMjQzMzUtMTAxMjE4LW1hcmstenVja2VyYmVyZy1mYWNlYm9vay1zdXBlci10ZWFzZS5qcGciLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMTJUMTY6NDM6MDZaIiwiY29udGVudCI6bnVsbH0seyJzb3VyY2UiOnsiaWQiOiJjbm4iLCJuYW1lIjoiQ05OIn0sImF1dGhvciI6Ikp1bGlhIEhvcm93aXR6LCBDTk4gQnVzaW5lc3MiLCJ0aXRsZSI6IkluIEZhY2Vib29rLCBiYW5rcyBzZWUgc29tZSBvcHBvcnR1bml0aWVzIOKAlCBidXQgbW9zdGx5IHJpc2tzIiwiZGVzY3JpcHRpb24iOiJGYWNlYm9vayBjb3VsZCBkaXAgaXRzIHRvZSBkZWVwZXIgaW50byBmaW5hbmNpYWwgc2VydmljZXMg4oCUIHJhaXNpbmcgcXVlc3Rpb25zIGFib3V0IHdoYXQgc3VjaCByZWxhdGlvbnNoaXBzIHdvdWxkIGxvb2sgbGlrZSwgYW5kIHdoZXRoZXIgYmVuZWZpdHMgd291bGQgb3V0d2VpZ2ggY29uY2VybnMgYWJvdXQgcHJpdmFjeSBhbmQgc2VjdXJpdHkuIiwidXJsIjoiaHR0cHM6Ly93d3cuY25uLmNvbS8yMDE4LzEwLzEyL2J1c2luZXNzL2JhbmtzLWZhY2Vib29rLXByaXZhY3ktcmlza3MvaW5kZXguaHRtbCIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODA5MTQxMTQ4MTEtYmFua3MtZmFjZWJvb2stc3VwZXItdGVhc2UuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTEyVDEyOjU2OjA0WiIsImNvbnRlbnQiOm51bGx9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJBbmFseXNpcyBieSBTdGV2ZW4gSmlhbmcsIENOTiIsInRpdGxlIjoiRXgtSW50ZXJwb2wgY2hpZWYncyB3aWZlIHRha2VzIG9uIENoaW5lc2UgZ292ZXJubWVudCIsImRlc2NyaXB0aW9uIjoiV2hlbiBub3ctZm9ybWVyIEludGVycG9sIGNoaWVmIE1lbmcgSG9uZ3dlaSBkaXNhcHBlYXJlZCBzdWRkZW5seSBsYXN0IG1vbnRoLCBoaXMgd2lmZSBkaWQgc29tZXRoaW5nIHVuZXhwZWN0ZWQ6IFNoZSB0b29rIHVwIGEgcHVibGljIGZpZ2h0IGFnYWluc3QgdGhlIEJlaWppbmcgYXV0aG9yaXRpZXMsIGEgbW92ZSByYXJlbHkgc2VlbiBmcm9tIGZhbWlseSBtZW1iZXJzIG9mIGFjY3VzZWQgc2VuaW9yIENoaW5lc2Ugb2ZmaWNpYWxzLiIsInVybCI6Imh0dHBzOi8vd3d3LmNubi5jb20vMjAxOC8xMC8xMC9hc2lhL21pc3NpbmctaW50ZXJwb2wtY2hpZWYtd2lmZS1ncmFjZS1tZW5nLWFuYWx5c2lzL2luZGV4Lmh0bWwiLCJ1cmxUb0ltYWdlIjoiaHR0cHM6Ly9jZG4uY25uLmNvbS9jbm5uZXh0L2RhbS9hc3NldHMvMTIxMDIyMDc1OTEzLWJlaWppbmctY29tbXVuaXN0LXBhcnR5LWhlYWRxdWFydGVycy1zdXBlci0xNjkuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTExVDAyOjU1OjI1WiIsImNvbnRlbnQiOiJCZWlqaW5nIChDTk4pIFdoZW4gbm93LWZvcm1lciBJbnRlcnBvbCBjaGllZiBNZW5nIEhvbmd3ZWkgZGlzYXBwZWFyZWQgc3VkZGVubHkgbGFzdCBtb250aCwgaGlzIHdpZmUgZGlkIHNvbWV0aGluZyB1bmV4cGVjdGVkOiBTaGUgdG9vayB1cCBhIHB1YmxpYyBmaWdodCBhZ2FpbnN0IHRoZSBCZWlqaW5nIGF1dGhvcml0aWVzLCBhIG1vdmUgcmFyZWx5IHNlZW4gZnJvbSBmYW1pbHkgbWVtYmVycyBvZiBhY2N1c2VkIHNlbmlvciBDaGluZXNlIG9mZmljaWFs4oCmIFsrODA1MSBjaGFyc10ifSx7InNvdXJjZSI6eyJpZCI6ImNubiIsIm5hbWUiOiJDTk4ifSwiYXV0aG9yIjoiT3JlbiBMaWViZXJtYW5uIGFuZCBJYW4gTGVlLCBDTk4iLCJ0aXRsZSI6IlNldmVuIFBhbGVzdGluaWFucyBzaG90IGFuZCBraWxsZWQgYnkgSXNyYWVsaSBmb3JjZXMgaW4gR2F6YSBkdXJpbmcgdmlvbGVudCB3ZWVrbHkgcHJvdGVzdHMiLCJkZXNjcmlwdGlvbiI6IlNldmVuIFBhbGVzdGluaWFucyBkaWVkIEZyaWRheSBhZnRlciBiZWluZyBzaG90IGJ5IElzcmFlbGkgc29sZGllcnMgYWxvbmcgdGhlIHNlY3VyaXR5IGZlbmNlIGJldHdlZW4gR2F6YSBhbmQgSXNyYWVsIGR1cmluZyB2aW9sZW50IHdlZWtseSBwcm90ZXN0cywgYWNjb3JkaW5nIHRvIHRoZSBQYWxlc3RpbmlhbiBNaW5pc3RyeSBvZiBIZWFsdGguIiwidXJsIjoiaHR0cHM6Ly93d3cuY25uLmNvbS8yMDE4LzEwLzEyL21pZGRsZWVhc3QvZ2F6YS1wcm90ZXN0cy1wYWxlc3RpbmlhbnMta2lsbGVkL2luZGV4Lmh0bWwiLCJ1cmxUb0ltYWdlIjoiaHR0cHM6Ly9jZG4uY25uLmNvbS9jbm5uZXh0L2RhbS9hc3NldHMvMTgxMDEyMTc0MzEzLTAyLWdhemEtcHJvdGVzdHMtcGFsZXN0aW5pYW5zLWtpbGxlZC1zdXBlci10ZWFzZS5qcGciLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMTJUMjI6MDM6MDVaIiwiY29udGVudCI6bnVsbH0seyJzb3VyY2UiOnsiaWQiOiJjbm4iLCJuYW1lIjoiQ05OIn0sImF1dGhvciI6Ik1hdHRoZXcgUm9iaW5zb24sIENOTiIsInRpdGxlIjoiSXRhbHkncyBNYXR0ZW8gU2FsdmluaSBjYWxscyBmb3IgOSBwLm0uIGN1cmZldyBmb3IgJ2xpdHRsZSBldGhuaWMgc2hvcHMnIiwiZGVzY3JpcHRpb24iOiJJdGFseSdzIGhhcmQtbGluZSBpbnRlcmlvciBtaW5pc3RlciBhbmQgZGVwdXR5IHByaW1lIG1pbmlzdGVyIHNwYXJrZWQgb3V0cmFnZSBvbiBUaHVyc2RheSBhZnRlciBhbm5vdW5jaW5nIGEgcHJvcG9zZWQgYW1lbmRtZW50IHRvIGhpcyBzZWN1cml0eSBkZWNyZWUgdGhhdCB3b3VsZCBmb3JjZSBcImxpdHRsZSBldGhuaWMgc2hvcHNcIiB0byBjbG9zZSBieSA5IHAubS4iLCJ1cmwiOiJodHRwczovL2VkaXRpb24uY25uLmNvbS8yMDE4LzEwLzEyL2V1cm9wZS9pdGFseS1zYWx2aW5pLXNob3AtY3VyZmV3LWludGwvaW5kZXguaHRtbCIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODA2MjcxMDI3MTUtMDEtbWF0dGVvLXNhbHZpbmktMDYyMC1zdXBlci10ZWFzZS5qcGciLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMTJUMTU6NTU6MDVaIiwiY29udGVudCI6bnVsbH0seyJzb3VyY2UiOnsiaWQiOiJjbm4iLCJuYW1lIjoiQ05OIn0sImF1dGhvciI6IkVyaWMgQnJhZG5lciwgQ05OIiwidGl0bGUiOiJTdXNhbiBSaWNlIHR3ZWV0cyAnTWUnIHdoZW4gYXNrZWQgd2hvIGNvdWxkIGNoYWxsZW5nZSBNYWluZSBTZW4uIFN1c2FuIENvbGxpbnMgaW4gMjAyMCIsImRlc2NyaXB0aW9uIjoiU3VzYW4gUmljZSwgd2hvIHdhcyBQcmVzaWRlbnQgQmFyYWNrIE9iYW1hJ3MgbmF0aW9uYWwgc2VjdXJpdHkgYWR2aXNlciwgY2F1c2VkIGEgc3RpciBGcmlkYXkgYWZ0ZXJub29uIHdoZW4gc2hlIHR3ZWV0ZWQgXCJNZVwiIHdoZW4gYW5vdGhlciBmb3JtZXIgT2JhbWEgb2ZmaWNpYWwgYXNrZWQgd2hvIGNvdWxkIGNoYWxsZW5nZSBTZW4uIFN1c2FuIENvbGxpbnMgaW4gMjAyMC4iLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMDUvcG9saXRpY3Mvc3VzYW4tcmljZS1jb2xsaW5zLW1haW5lLXNlbmF0ZS0yMDIwL2luZGV4Lmh0bWwiLCJ1cmxUb0ltYWdlIjoiaHR0cHM6Ly9jZG4uY25uLmNvbS9jbm5uZXh0L2RhbS9hc3NldHMvMTgwMzI4MTYwNzI2LXN1c2FuLXJpY2Utc3VwZXItdGVhc2UuanBnIiwicHVibGlzaGVkQXQiOiIyMDE4LTEwLTA1VDIxOjU0OjEzWiIsImNvbnRlbnQiOiJXYXNoaW5ndG9uIChDTk4pIFN1c2FuIFJpY2UsIHdobyB3YXMgUHJlc2lkZW50IEJhcmFjayBPYmFtYSdzIG5hdGlvbmFsIHNlY3VyaXR5IGFkdmlzZXIsIGNhdXNlZCBhIHN0aXIgRnJpZGF5IGFmdGVybm9vbiB3aGVuIHNoZSB0d2VldGVkIFwiTWVcIiB3aGVuIGFub3RoZXIgZm9ybWVyIE9iYW1hIG9mZmljaWFsIGFza2VkIHdobyBjb3VsZCBjaGFsbGVuZ2UgU2VuLiBTdXNhbiBDb2xsaW5zIGluIDIwMjAuIFRoZSBzaG9ydCB0d2VldCAtLSB3aGljaCBjYW3igKYgWysxMzQwIGNoYXJzXSJ9LHsic291cmNlIjp7ImlkIjoiY25uIiwibmFtZSI6IkNOTiJ9LCJhdXRob3IiOiJHZW5ldmEgU2FuZHMgYW5kIFZlcm9uaWNhIFN0cmFjcXVhbHVyc2ksIENOTiIsInRpdGxlIjoiREhTIFNlY3JldGFyeSBOaWVsc2VuIHNheXMgZmFjaWxpdGllcyBhcmUgJ291dCBvZiBzcGFjZScgZHVlIHRvIGh1Z2UgaW5jcmVhc2UgaW4gZmFtaWx5IGJvcmRlciBjcm9zc2luZ3MiLCJkZXNjcmlwdGlvbiI6IlRoZSBEZXBhcnRtZW50IG9mIEhvbWVsYW5kIFNlY3VyaXR5IGlzIHJ1bm5pbmcgb3V0IG9mIHNwYWNlIGF0IGl0cyBkZXRlbnRpb24gZmFjaWxpdGllcyBmb3IgZmFtaWxpZXMgYW5kIHVuYWNjb21wYW5pZWQgY2hpbGRyZW4gY3Jvc3Npbmcgb3ZlciB0aGUgVVMtTWV4aWNvIGJvcmRlciwgU2VjcmV0YXJ5IEtpcnN0amVuIE5pZWxzZW4gc2FpZCBpbiBhbiBpbnRlcnZpZXcgd2l0aCBDTk4gRnJpZGF5LiIsInVybCI6Imh0dHBzOi8vd3d3LmNubi5jb20vMjAxOC8xMC8xMi9wb2xpdGljcy9raXJzdGplbi1uaWVsc2VuLWRocy1mYW1pbHktYm9yZGVyLWNyb3NzaW5ncy9pbmRleC5odG1sIiwidXJsVG9JbWFnZSI6Imh0dHBzOi8vY2RuLmNubi5jb20vY25ubmV4dC9kYW0vYXNzZXRzLzE4MDUyMjExMzIxOS1kaHMtc2VjcmV0YXJ5LWtyaXN0amVuLW5pZWxzZW4tZWxlY3Rpb24taGFja2luZy0yLXN1cGVyLXRlYXNlLmpwZyIsInB1Ymxpc2hlZEF0IjoiMjAxOC0xMC0xMlQyMDo0ODoyNFoiLCJjb250ZW50IjpudWxsfSx7InNvdXJjZSI6eyJpZCI6ImNubiIsIm5hbWUiOiJDTk4ifSwiYXV0aG9yIjoibWFjYW1pbGFyaW5jb24iLCJ0aXRsZSI6IkNvbXBhw7HDrWEgZGUgc2VndXJvcyBkZSBLaW0gS2FyZGFzaGlhbiBkZW1hbmRhIGEgc3UgZXhndWFyZGFlc3BhbGRhcyBwb3IgZWwgcm9ibyBlbiBQYXLDrXMiLCJkZXNjcmlwdGlvbiI6IkxhIGNvbXBhw7HDrWEgZGUgc2VndXJvcyBxdWUgbGUgcGFnw7MgYSBLaW0gS2FyZGFzaGlhbiBXZXN0IGRlc3B1w6lzIGRlIHNlciB2w61jdGltYSBkZSB1biBtaWxsb25hcmlvIHJvYm8gZW4gUGFyw61zIGhhY2UgZG9zIGHDsW9zIGFjYWJhIGRlIGRlbWFuZGFyIGEgc3UgZXhndWFyZGFlc3BhbGRhcyBwb3IgZmFsbGFzIGRlIHNlZ3VyaWRhZC4iLCJ1cmwiOiJodHRwczovL2NubmVzcGFub2wuY25uLmNvbS8yMDE4LzEwLzA1L2NvbXBhbmlhLWRlLXNlZ3Vyb3MtZGUta2ltLWthcmRhc2hpYW4tZGVtYW5kYS1hLXN1LWV4Z3VhcmRhZXNwYWxkYXMtcG9yLWVsLXJvYm8tZW4tcGFyaXMvIiwidXJsVG9JbWFnZSI6Imh0dHBzOi8vY25uZXNwYW5vbDIuZmlsZXMud29yZHByZXNzLmNvbS8yMDE4LzEwL2d1YXJkYWVzcGFsZGFzLWtpbS1rYXJkYXNoaWEtcGFzY3VhbC1kdXZpZXIuanBnP3F1YWxpdHk9MTAwJnN0cmlwPWluZm8iLCJwdWJsaXNoZWRBdCI6IjIwMTgtMTAtMDVUMTk6MTU6NTVaIiwiY29udGVudCI6IkxvIG3DoXMgaW1wb3J0YW50ZSBMYSBjb21wYcOxw61hIGRlIHNlZ3Vyb3MgcXVlIGxlIHBhZ8OzIGEgS2ltIEthcmRhc2hpYW4gV2VzdCBkZXNwdcOpcyBkZWwgbWlsbG9uYXJpbyByb2JvIGVuIFBhcsOtcyBhY2FiYSBkZSBkZW1hbmRhciBhIHN1IGV4Z3VhcmRhZXNwYWxkYXMgQW1lcmljYW4gSW50ZXJuYXRpb25hbCBHcm91cCBwcmVzZW50w7MgdW5hIGRlbWFuZGEgZXN0ZSBtacOpcmNvbGVzIGVuIERlbGF3YXJlIGNvbnRyYSBQYXNjYWwgRHV2aWVyIHkgc3UgZW1wcuKApiBbKzIyNjggY2hhcnNdIn0seyJzb3VyY2UiOnsiaWQiOiJjbm4iLCJuYW1lIjoiQ05OIn0sImF1dGhvciI6Ik1hbnUgUmFqdSwgQ05OIFNlbmlvciBDb25ncmVzc2lvbmFsIENvcnJlc3BvbmRlbnQiLCJ0aXRsZSI6IlN1c2FuIENvbGxpbnMgb24gU3VzYW4gUmljZTogJ0kgcmVhbGx5IGhhdmUgbGl0dGxlIGludGVyZXN0IGluIHdoYXQgc2hlIGhhcyB0byBzYXknIiwiZGVzY3JpcHRpb24iOiJTZW4uIFN1c2FuIENvbGxpbnMgb24gV2VkbmVzZGF5IHJvdW5kbHkgZGlzbWlzc2VkIGFuIGF0dGFjayBmcm9tIFN1c2FuIFJpY2Ugd2hvIGNyaXRpY2l6ZWQgdGhlIE1haW5lIFJlcHVibGljYW4gb3ZlciB0aGUgd2Vla2VuZCwgc3VnZ2VzdGluZyB0aGUgZm9ybWVyIG5hdGlvbmFsIHNlY3VyaXR5IGFkdmlzZXIgbWF5IGNoYWxsZW5nZSBDb2xsaW5zIGluIDIwMjAgYmVjYXVzZSBcInNoZSBiZXRyYXllZCB3b21lbiBhY3Jvc3MgdGhpcyBjb3VudHJ5XCIgZm/igKYiLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMTAvcG9saXRpY3Mvc3VzYW4tY29sbGlucy1zdXNhbi1yaWNlL2luZGV4Lmh0bWwiLCJ1cmxUb0ltYWdlIjoiaHR0cHM6Ly9jZG4uY25uLmNvbS9jbm5uZXh0L2RhbS9hc3NldHMvMTgxMDA1MTU0MzQ5LTAyLXN1c2FuLWNvbGxpbnMtc2VuYXRlLWZsb29yLXN1cGVyLXRlYXNlLmpwZyIsInB1Ymxpc2hlZEF0IjoiMjAxOC0xMC0xMFQyMDoxMDoyMloiLCJjb250ZW50IjpudWxsfSx7InNvdXJjZSI6eyJpZCI6ImNubiIsIm5hbWUiOiJDTk4ifSwiYXV0aG9yIjoiQ2Fyb2xpbmUgS2VsbHksIENOTiIsInRpdGxlIjoiRkJJIERpcmVjdG9yOiBLYXZhbmF1Z2ggYmFja2dyb3VuZCBwcm9iZSAnbGltaXRlZCBpbiBzY29wZSciLCJkZXNjcmlwdGlvbiI6IkZCSSBEaXJlY3RvciBDaHJpcyBXcmF5IHRvbGQgc2VuYXRvcnMgV2VkbmVzZGF5IHRoYXQgdGhlIEZCSSdzIGludmVzdGlnYXRpb24gaW50byBDaHJpc3RpbmUgQmxhc2V5IEZvcmQncyBzZXh1YWwgYXNzYXVsdCBhbGxlZ2F0aW9uIGFnYWluc3QgU3VwcmVtZSBDb3VydCBKdXN0aWNlIEJyZXR0IEthdmFuYXVnaCB3YXMgXCJsaW1pdGVkIGluIHNjb3BlXCIgYW5kIHRodXMgXCJjb25zaXN0ZW50IHdpdGggdGhlIHN0YW5kYXJkIHByb2Nlc3MuXCIiLCJ1cmwiOiJodHRwczovL3d3dy5jbm4uY29tLzIwMTgvMTAvMTAvcG9saXRpY3MvZmJpLXdyYXkta2F2YW5hdWdoLWZvcmQtcHJvYmUvaW5kZXguaHRtbCIsInVybFRvSW1hZ2UiOiJodHRwczovL2Nkbi5jbm4uY29tL2Nubm5leHQvZGFtL2Fzc2V0cy8xODA2MjgxMDUwMDUtY2hyaXN0b3BoZXItd3JheS02LTI4LXN1cGVyLXRlYXNlLmpwZyIsInB1Ymxpc2hlZEF0IjoiMjAxOC0xMC0xMFQxNTo1OTowMFoiLCJjb250ZW50IjoiKENOTikgRkJJIERpcmVjdG9yIENocmlzIFdyYXkgdG9sZCBzZW5hdG9ycyBXZWRuZXNkYXkgdGhhdCB0aGUgRkJJJ3MgaW52ZXN0aWdhdGlvbiBpbnRvIENocmlzdGluZSBCbGFzZXkgRm9yZCdzIHNleHVhbCBhc3NhdWx0IGFsbGVnYXRpb24gYWdhaW5zdCBTdXByZW1lIENvdXJ0IEp1c3RpY2UgQnJldHQgS2F2YW5hdWdoIHdhcyBcImxpbWl0ZWQgaW4gc2NvcGVcIiBhbmQgdGh1cyBcImNvbnNpc3RlbnQgd2l0aCB0aGUgc3RhbmRhcmQgcHJvY2Vzcy5cIiBGb3LigKYgWysyNjA2IGNoYXJzXSJ9XX0=
+    parser: !ruby/object:HTTP::Response::Parser
+      parser: !ruby/object:HTTP::Parser {}
+      finished: false
+      headers: 
+      chunk: 
+    socket: !ruby/object:HTTP::Timeout::Null
+      options: {}
+      socket: !ruby/object:OpenSSL::SSL::SSLSocket
+        context: !ruby/object:OpenSSL::SSL::SSLContext
+          max_proto_version: 
+          min_proto_version: 769
+          verify_mode: 1
+          verify_hostname: true
+          cert_store: !ruby/object:OpenSSL::X509::Store
+            verify_callback: 
+            error: 
+            error_string: 
+            chain: 
+            time: 
+        io: !ruby/object:TCPSocket {}
+        eof: false
+        rbuffer: ''
+        sync: true
+        hostname: newsapi.org
+        sync_close: true
+        wbuffer: ''
+    keep_alive: false
+  connection: *1
+  streaming: false
+  contents: '{"status":"ok","totalResults":88,"articles":[{"source":{"id":"cnn","name":"CNN"},"author":null,"title":"Security
+    camera shows yard turn into ocean","description":"A home security camera on St.
+    George Island, Florida, shows ocean waves rolling through residential yards as
+    Hurricane Michael strikes the Florida Panhandle.","url":"https://www.cnn.com/videos/weather/2018/10/11/st-george-island-storm-surge-camera-orig-vstan-bdk.cnn","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181011124308-st-george-island-mandi-jackson-security-camera-hurricane-michael-1-super-tease.jpg","publishedAt":"2018-10-11T16:53:20Z","content":"Chat
+    with us in Facebook Messenger. Find out what''s happening in the world as it unfolds."},{"source":{"id":"cnn","name":"CNN"},"author":"Andrea
+    Flynn and Dorian Warren","title":"A little-known rule change could hurt most vulnerable","description":"The
+    last 21 months have made clear that the Trump administration and the Republican
+    Party that supports it know no bounds when it comes to punishing immigrants seeking
+    a better, safer and more secure life for themselves and their families. The Wall.
+    The trave…","url":"https://www.cnn.com/2018/10/11/opinions/trump-public-charge-rule-change-warren-flynn/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180412181235-cnnmoney-snap-food-stamps-super-tease.jpg","publishedAt":"2018-10-11T19:36:31Z","content":"Andrea
+    Flynn is a fellow at the Roosevelt Institute, where she researches and writes
+    about issues that impact women and families. Dorian Warren is the incoming president
+    of the Center for Community Change. The views expressed here are solely theirs.
+    View more… [+5867 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Ian Lee,
+    CNN","title":"Israel to US student: Renounce views or leave","description":"Israel
+    has detained an American graduate student at Ben Gurion International Airport
+    for more than a week, accusing her of supporting the Palestinian-led boycott movement
+    of Israel.","url":"https://www.cnn.com/2018/10/10/middleeast/israel-denies-student-entry-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181010115006-01-lara-alqasem-file-super-tease.jpg","publishedAt":"2018-10-10T16:12:16Z","content":"Jerusalem
+    (CNN) Israel has detained an American graduate student at Ben Gurion International
+    Airport for more than a week, accusing her of supporting the Palestinian-led boycott
+    movement of Israel. Lara Alqasem, a 22-year-old of Palestinian heritage from Fort…
+    [+4235 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Ben Westcott and
+    Steven Jiang, CNN","title":"Head of Interpol Meng Hongwei accused of corruption,
+    Chinese government says","description":"The former head of Interpol, who vanished
+    after taking a flight to Beijing, is being held and investigated for corruption,
+    the Chinese Ministry of Public Security said in a statement Monday.","url":"https://www.cnn.com/2018/10/08/asia/interpol-president-china-meng-hongwei-corruption-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181007142109-missing-interpol-president-china-meng-hongwei-screengrab-super-tease.jpg","publishedAt":"2018-10-08T06:31:03Z","content":"(CNN)
+    The former head of Interpol, who vanished after taking a flight to Beijing, is
+    being held and investigated for corruption, the Chinese Ministry of Public Security
+    said in a statement Monday. Meng Hongwei, who was also a vice minister of public
+    security … [+1828 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":null,"title":"Collins
+    hits back at Susan Rice over Senate seat","description":"In an interview with
+    Dana Bash, Susan Collins criticizes former Obama National Security Adviser Susan
+    Rice over Rice stating that she may want to run against her","url":"https://www.cnn.com/videos/politics/2018/10/07/sotu-collins-rice.cnn","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180617220624-susan-rice-june-17-2018-02-super-tease.jpg","publishedAt":"2018-10-07T15:58:15Z","content":"Chat
+    with us in Facebook Messenger. Find out what''s happening in the world as it unfolds."},{"source":{"id":"cnn","name":"CNN"},"author":"Pat
+    Wiedenkeller, CNN","title":"Opinion: People will be talking about this week for
+    decades","description":"Online opinion was dominated this week by the fiery debate
+    over the Brett Kavanaugh nomination. CNN Opinion looks back at the strongest,
+    smartest takes of the week.","url":"https://www.cnn.com/2018/10/07/opinions/people-will-be-talking-about-this-week-for-decades-opinion-wrapup-column/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180928101130-20180928-kavanaugh-opinion-illustration-super-tease.jpg","publishedAt":"2018-10-07T12:33:34Z","content":"In
+    a new series of weekly columns (available soon as a newsletter), we''re looking
+    back at the strongest, smartest opinion takes of the week from CNN and other outlets.
+    (CNN) After weeks of excruciating buildup, the end to the Brett Kavanaugh saga
+    came fast an… [+11493 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Lydia
+    DePillis, CNN","title":"Bigger Social Security checks in store for 2019 as inflation
+    rises","description":"For the second year in a row, US seniors will see increases
+    in their Social Security checks starting in January.","url":"https://www.cnn.com/2018/10/11/politics/social-security-cola-2019/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181011100731-seniors-happy-social-security-stock-super-tease.jpg","publishedAt":"2018-10-11T15:15:12Z","content":"(CNN)
+    For the second year in a row, US seniors will see increases in their Social Security
+    checks starting in January. Recipients will get a 2.8% boost in 2019, higher than
+    last year''s 2% increase -- which followed years of minimal changes in payments.
+    The av… [+1774 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Julia Horowitz,
+    CNN Business","title":"Travelers teams up with Amazon to sell home security kits","description":"Travelers
+    now has an Amazon storefront for home security equipment.","url":"https://www.cnn.com/2018/10/10/business/travelers-amazon-partnership/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181010133127-travelers-insurance-amazon-super-tease.jpg","publishedAt":"2018-10-10T23:17:48Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Bukola
+    Adebayo and Stephanie Busari","title":"\"We heard gunshots all through the day,\"
+    says Cameroon voter","description":"Voters in Cameroon''s troubled north and southwest
+    regions stayed away from Sunday''s elections as violence broke out between security
+    forces and armed separatists, residents told CNN.","url":"https://www.cnn.com/2018/10/08/africa/cameroons-election-voters-turnout-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181008133033-cameroons-election-super-tease.jpg","publishedAt":"2018-10-08T13:23:46Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Mary
+    McDougall, CNN","title":"Bangladesh''s new digital law will silence critics, rights
+    groups say","description":"Bangladesh President Abdul Hamid has approved a controversial
+    new digital security law that rights groups fear could be used to further erode
+    press freedoms and dissenting voices online.","url":"https://www.cnn.com/2018/10/09/asia/bangladesh-digital-law-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181009112323-digital-security-act-super-tease.jpg","publishedAt":"2018-10-09T04:01:02Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Donie
+    O''Sullivan, CNN","title":"Hackers accessed personal information of 30 million
+    Facebook users","description":"Almost 30 million Facebook users'' phone numbers
+    and email address were accessed by hackers in the biggest security breach in the
+    company''s history, Facebook said on Friday.","url":"https://www.cnn.com/2018/10/12/tech/facebook-hack-personal-information-accessed/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181012124335-101218-mark-zuckerberg-facebook-super-tease.jpg","publishedAt":"2018-10-12T16:43:06Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Julia
+    Horowitz, CNN Business","title":"In Facebook, banks see some opportunities — but
+    mostly risks","description":"Facebook could dip its toe deeper into financial
+    services — raising questions about what such relationships would look like, and
+    whether benefits would outweigh concerns about privacy and security.","url":"https://www.cnn.com/2018/10/12/business/banks-facebook-privacy-risks/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180914114811-banks-facebook-super-tease.jpg","publishedAt":"2018-10-12T12:56:04Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Analysis
+    by Steven Jiang, CNN","title":"Ex-Interpol chief''s wife takes on Chinese government","description":"When
+    now-former Interpol chief Meng Hongwei disappeared suddenly last month, his wife
+    did something unexpected: She took up a public fight against the Beijing authorities,
+    a move rarely seen from family members of accused senior Chinese officials.","url":"https://www.cnn.com/2018/10/10/asia/missing-interpol-chief-wife-grace-meng-analysis/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/121022075913-beijing-communist-party-headquarters-super-169.jpg","publishedAt":"2018-10-11T02:55:25Z","content":"Beijing
+    (CNN) When now-former Interpol chief Meng Hongwei disappeared suddenly last month,
+    his wife did something unexpected: She took up a public fight against the Beijing
+    authorities, a move rarely seen from family members of accused senior Chinese
+    official… [+8051 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Oren Liebermann
+    and Ian Lee, CNN","title":"Seven Palestinians shot and killed by Israeli forces
+    in Gaza during violent weekly protests","description":"Seven Palestinians died
+    Friday after being shot by Israeli soldiers along the security fence between Gaza
+    and Israel during violent weekly protests, according to the Palestinian Ministry
+    of Health.","url":"https://www.cnn.com/2018/10/12/middleeast/gaza-protests-palestinians-killed/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181012174313-02-gaza-protests-palestinians-killed-super-tease.jpg","publishedAt":"2018-10-12T22:03:05Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Matthew
+    Robinson, CNN","title":"Italy''s Matteo Salvini calls for 9 p.m. curfew for ''little
+    ethnic shops''","description":"Italy''s hard-line interior minister and deputy
+    prime minister sparked outrage on Thursday after announcing a proposed amendment
+    to his security decree that would force \"little ethnic shops\" to close by 9
+    p.m.","url":"https://edition.cnn.com/2018/10/12/europe/italy-salvini-shop-curfew-intl/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180627102715-01-matteo-salvini-0620-super-tease.jpg","publishedAt":"2018-10-12T15:55:05Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Eric
+    Bradner, CNN","title":"Susan Rice tweets ''Me'' when asked who could challenge
+    Maine Sen. Susan Collins in 2020","description":"Susan Rice, who was President
+    Barack Obama''s national security adviser, caused a stir Friday afternoon when
+    she tweeted \"Me\" when another former Obama official asked who could challenge
+    Sen. Susan Collins in 2020.","url":"https://www.cnn.com/2018/10/05/politics/susan-rice-collins-maine-senate-2020/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180328160726-susan-rice-super-tease.jpg","publishedAt":"2018-10-05T21:54:13Z","content":"Washington
+    (CNN) Susan Rice, who was President Barack Obama''s national security adviser,
+    caused a stir Friday afternoon when she tweeted \"Me\" when another former Obama
+    official asked who could challenge Sen. Susan Collins in 2020. The short tweet
+    -- which cam… [+1340 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Geneva
+    Sands and Veronica Stracqualursi, CNN","title":"DHS Secretary Nielsen says facilities
+    are ''out of space'' due to huge increase in family border crossings","description":"The
+    Department of Homeland Security is running out of space at its detention facilities
+    for families and unaccompanied children crossing over the US-Mexico border, Secretary
+    Kirstjen Nielsen said in an interview with CNN Friday.","url":"https://www.cnn.com/2018/10/12/politics/kirstjen-nielsen-dhs-family-border-crossings/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180522113219-dhs-secretary-kristjen-nielsen-election-hacking-2-super-tease.jpg","publishedAt":"2018-10-12T20:48:24Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"macamilarincon","title":"Compañía
+    de seguros de Kim Kardashian demanda a su exguardaespaldas por el robo en París","description":"La
+    compañía de seguros que le pagó a Kim Kardashian West después de ser víctima de
+    un millonario robo en París hace dos años acaba de demandar a su exguardaespaldas
+    por fallas de seguridad.","url":"https://cnnespanol.cnn.com/2018/10/05/compania-de-seguros-de-kim-kardashian-demanda-a-su-exguardaespaldas-por-el-robo-en-paris/","urlToImage":"https://cnnespanol2.files.wordpress.com/2018/10/guardaespaldas-kim-kardashia-pascual-duvier.jpg?quality=100&strip=info","publishedAt":"2018-10-05T19:15:55Z","content":"Lo
+    más importante La compañía de seguros que le pagó a Kim Kardashian West después
+    del millonario robo en París acaba de demandar a su exguardaespaldas American
+    International Group presentó una demanda este miércoles en Delaware contra Pascal
+    Duvier y su empr… [+2268 chars]"},{"source":{"id":"cnn","name":"CNN"},"author":"Manu
+    Raju, CNN Senior Congressional Correspondent","title":"Susan Collins on Susan
+    Rice: ''I really have little interest in what she has to say''","description":"Sen.
+    Susan Collins on Wednesday roundly dismissed an attack from Susan Rice who criticized
+    the Maine Republican over the weekend, suggesting the former national security
+    adviser may challenge Collins in 2020 because \"she betrayed women across this
+    country\" fo…","url":"https://www.cnn.com/2018/10/10/politics/susan-collins-susan-rice/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/181005154349-02-susan-collins-senate-floor-super-tease.jpg","publishedAt":"2018-10-10T20:10:22Z","content":null},{"source":{"id":"cnn","name":"CNN"},"author":"Caroline
+    Kelly, CNN","title":"FBI Director: Kavanaugh background probe ''limited in scope''","description":"FBI
+    Director Chris Wray told senators Wednesday that the FBI''s investigation into
+    Christine Blasey Ford''s sexual assault allegation against Supreme Court Justice
+    Brett Kavanaugh was \"limited in scope\" and thus \"consistent with the standard
+    process.\"","url":"https://www.cnn.com/2018/10/10/politics/fbi-wray-kavanaugh-ford-probe/index.html","urlToImage":"https://cdn.cnn.com/cnnnext/dam/assets/180628105005-christopher-wray-6-28-super-tease.jpg","publishedAt":"2018-10-10T15:59:00Z","content":"(CNN)
+    FBI Director Chris Wray told senators Wednesday that the FBI''s investigation
+    into Christine Blasey Ford''s sexual assault allegation against Supreme Court
+    Justice Brett Kavanaugh was \"limited in scope\" and thus \"consistent with the
+    standard process.\" For… [+2606 chars]"}]}'
+  encoding: !ruby/encoding UTF-8
