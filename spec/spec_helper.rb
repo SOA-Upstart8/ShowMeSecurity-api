@@ -9,11 +9,11 @@ require 'yaml'
 require 'vcr'
 require 'webmock'
 
-require_relative '../lib/news_api.rb'
+require_relative '../init.rb'
 
-QUARY = 'Security'
-FROM = '2018-10-5'
-TO = '2018-10-12'
+QUERY = 'Web'
+FROM = '2018-10-20'
+TO = '2018-10-24'
 SOURCE = 'cnn'
 
 CONFIG = YAML.safe_load(File.read('config/secrets.yml'))

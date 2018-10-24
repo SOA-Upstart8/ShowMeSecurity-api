@@ -17,9 +17,9 @@ end
 
 news_response = {}
 news_results = {}
-start_date = '2018-10-5'
-end_date = '2018-10-12'
-quary = 'Security'
+start_date = '2018-10-20'
+end_date = '2018-10-24'
+quary = 'Web'
 # HAPPY requests
 sources = ['cnn']
 sources.each do |source|
@@ -30,6 +30,6 @@ sources.each do |source|
   news_results['source'] = source
   news_results['size'] = news_detail.count
   news_results['articles'] = news_detail
-  File.write("spec/fixtures/#{source}_response.yml", news_response.to_yaml)
+  #File.write("spec/fixtures/#{source}_response.yml", news_response.to_yaml)
   File.write("spec/fixtures/#{source}_results.yml", news_results.to_yaml)
 end
