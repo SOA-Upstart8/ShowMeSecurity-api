@@ -20,9 +20,17 @@ describe 'Tests NewsSearch library' do
     it 'HAPPY: should provide correct news information' do
       news = NewsSentence::News::NewsMapper
         .new(API_KEY).search(QUERY, FROM, TO, SOURCE)
-      _(news[0].source).must_equal CORRECT['articles'][0]['source']['name']
-      _(news[0].title).must_equal CORRECT['articles'][0]['title']
-      _(news[0].content).must_equal CORRECT['articles'][0]['content']
+      _(news[0].source).must_equal CORRECTNEWS['articles'][0]['source']['name']
+      _(news[0].title).must_equal CORRECTNEWS['articles'][0]['title']
+      _(news[0].content).must_equal CORRECTNEWS['articles'][0]['content']
+    end
+
+    it 'HAPPY: should provide correct story information' do
+      story = NewsSentence::Court::CourtMapper
+        .new.search(PAGE, TYPE, YEAR)
+      _(story[0].type).must_equal CORRECTSTORY[0]['identity']['type']
+      _(story[0].year).must_equal CORRECTSTORY[0]['identity']['year']
+      _(story[0].word).must_equal CORRECTSTORY[0]['identity']['word']
     end
 
     it 'SAD: should raise exception when request 30 days ago news' do
@@ -35,7 +43,7 @@ describe 'Tests NewsSearch library' do
     it 'SAD: should raise exception when unauthorized' do
       proc do
         NewsSentence::News::NewsMapper
-          .new("Bad Api Key").search(QUERY, FROM, TO, SOURCE)
+          .new('Bad Api Key').search(QUERY, FROM, TO, SOURCE)
       end.must_raise NewsSentence::News::Api::Response::Unauthorized
     end
   end

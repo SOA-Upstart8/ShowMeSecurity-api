@@ -1,6 +1,6 @@
 desc 'run tests'
 task :spec do
-  sh 'ruby spec/gateway_news_spec.rb'
+  sh 'ruby spec/gateway_spec.rb'
 end
 
 namespace :vcr do

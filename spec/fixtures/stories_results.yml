@@ -1,0 +1,356 @@
+---
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 579
+  reason: 定應執行之刑
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/TYD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-579
+  court:
+    name: 臺灣桃園地方法院
+    simple_name: 桃園地院
+    code: TYD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 290
+  reason: 保護管束
+  adjudged_on: 
+  pronounced_on: 
+  judges_name:
+  - 施俊堯
+  - 李麗珠
+  - 郭豫珍
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name:
+  - 臺灣高等法院檢察署檢察官
+  - 張宏男
+  detail_url: https://api.jrf.org.tw/TPH/%E5%88%91%E4%BA%8B-105-%E8%81%B2-290
+  court:
+    name: 臺灣高等法院
+    simple_name: 高院
+    code: TPH
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 244
+  reason: 聲請具保停止羈押
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/CYD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-244
+  court:
+    name: 臺灣嘉義地方法院
+    simple_name: 嘉義地院
+    code: CYD
+- identity:
+    type: 刑事
+    year: 105
+    word: 原交附民
+    number: 6
+  reason: 因（刑事罪名）附帶民訴
+  adjudged_on: 
+  pronounced_on: 
+  judges_name:
+  - 廖曉萍
+  - 謝欣宓
+  - 廖晉賦
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name:
+  - 谷素華
+  - 黃惠萍
+  detail_url: https://api.jrf.org.tw/HLD/%E5%88%91%E4%BA%8B-105-%E5%8E%9F%E4%BA%A4%E9%99%84%E6%B0%91-6
+  court:
+    name: 臺灣花蓮地方法院
+    simple_name: 花蓮地院
+    code: HLD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 175
+  reason: 聲請付保護管束
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/KSH/%E5%88%91%E4%BA%8B-105-%E8%81%B2-175
+  court:
+    name: 臺灣高等法院高雄分院
+    simple_name: 高雄高分院
+    code: KSH
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 3682
+  reason: 聲請付與卷內筆錄
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/TYD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-3682
+  court:
+    name: 臺灣桃園地方法院
+    simple_name: 桃園地院
+    code: TYD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲再
+    number: 16
+  reason: 聲請再審
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/TPD/%E5%88%91%E4%BA%8B-105-%E8%81%B2%E5%86%8D-16
+  court:
+    name: 臺灣臺北地方法院
+    simple_name: 臺北地院
+    code: TPD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 279
+  reason: 聲請付保護管束
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/KSH/%E5%88%91%E4%BA%8B-105-%E8%81%B2-279
+  court:
+    name: 臺灣高等法院高雄分院
+    simple_name: 高雄高分院
+    code: KSH
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 4604
+  reason: 定其應執行刑
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/PCD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-4604
+  court:
+    name: 臺灣新北地方法院
+    simple_name: 新北地院
+    code: PCD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲判
+    number: 50
+  reason: 聲請交付審判
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/TPD/%E5%88%91%E4%BA%8B-105-%E8%81%B2%E5%88%A4-50
+  court:
+    name: 臺灣臺北地方法院
+    simple_name: 臺北地院
+    code: TPD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 1490
+  reason: 聲請定其應執行刑
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/MLD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-1490
+  court:
+    name: 臺灣苗栗地方法院
+    simple_name: 苗栗地院
+    code: MLD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 4822
+  reason: 聲請假釋期中付保護管束
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/TCD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-4822
+  court:
+    name: 臺灣臺中地方法院
+    simple_name: 臺中地院
+    code: TCD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 3909
+  reason: 定其應執行刑
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/PCD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-3909
+  court:
+    name: 臺灣新北地方法院
+    simple_name: 新北地院
+    code: PCD
+- identity:
+    type: 刑事
+    year: 105
+    word: 審簡附民
+    number: 5
+  reason: 損害賠償
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name:
+  - 陳人瑋
+  - 李偉宏
+  detail_url: https://api.jrf.org.tw/SLD/%E5%88%91%E4%BA%8B-105-%E5%AF%A9%E7%B0%A1%E9%99%84%E6%B0%91-5
+  court:
+    name: 臺灣士林地方法院
+    simple_name: 士林地院
+    code: SLD
+- identity:
+    type: 刑事
+    year: 105
+    word: 壢簡附民
+    number: 61
+  reason: 請求賠償損害
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/TYD/%E5%88%91%E4%BA%8B-105-%E5%A3%A2%E7%B0%A1%E9%99%84%E6%B0%91-61
+  court:
+    name: 臺灣桃園地方法院
+    simple_name: 桃園地院
+    code: TYD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 179
+  reason: 聲請定應執行之刑
+  adjudged_on: 
+  pronounced_on: 
+  judges_name:
+  - 黃佳琪
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name:
+  - 臺灣臺中地方法院檢察署檢察官
+  - 顏安樂
+  detail_url: https://api.jrf.org.tw/TCD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-179
+  court:
+    name: 臺灣臺中地方法院
+    simple_name: 臺中地院
+    code: TCD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 1166
+  reason: 付保護管束
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/CYD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-1166
+  court:
+    name: 臺灣嘉義地方法院
+    simple_name: 嘉義地院
+    code: CYD
+- identity:
+    type: 刑事
+    year: 105
+    word: 簡
+    number: 5507
+  reason: 
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/KSD/%E5%88%91%E4%BA%8B-105-%E7%B0%A1-5507
+  court:
+    name: 臺灣高雄地方法院
+    simple_name: 高雄地院
+    code: KSD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 5100
+  reason: 聲請定應執行之刑
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/TCD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-5100
+  court:
+    name: 臺灣臺中地方法院
+    simple_name: 臺中地院
+    code: TCD
+- identity:
+    type: 刑事
+    year: 105
+    word: 聲
+    number: 3894
+  reason: 聲請假釋期中交付保護管束
+  adjudged_on: 
+  pronounced_on: 
+  judges_name: []
+  prosecutors_name: []
+  lawyers_name: []
+  parties_name: []
+  detail_url: https://api.jrf.org.tw/KSD/%E5%88%91%E4%BA%8B-105-%E8%81%B2-3894
+  court:
+    name: 臺灣高雄地方法院
+    simple_name: 高雄地院
+    code: KSD
