@@ -1,0 +1,44 @@
+script[src="https://code.jquery.com/jquery-3.3.1.min.js"]
+link[rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"]
+link[href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"]
+script[src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"]
+link[href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css"]
+
+.container
+  form role="form" action="/news" method='POST' id='show-project-form'
+    .row.vertical-align.query-bar
+      .col-md-3.col-sm-6
+        input { 
+          type='text' name='query'
+          id='query' class="form-control"
+          placeholder="e.g. Bitcoin"
+        }
+      .col-md-2.col-sm-6
+        input { 
+          type='text' name='from'
+          id='from_datepicker' class="form-control"
+          placeholder="e.g. 2018-10-01"
+        }
+      .col-md-2.col-sm-6
+        input { 
+          type='text' name='to'
+          id='to_datepicker' class="form-control"
+          placeholder="e.g. 2018-10-15"
+        }
+      .col-md-3.col-sm-6
+        input { 
+          type='text' name='source'
+          id='source' class="form-control"
+          placeholder="e.g. CNN"
+        }
+      .col-md-2.col-sm-3
+        button { 
+          type='submit' id='repo-form-submit' class='submit' 
+          value='submit' class="btn btn-success" 
+        } Search
+    .row
+      .col-md-12.blank-row
+
+script
+  |  $('#from_datepicker').datepicker({ uiLibrary: 'bootstrap4', format: 'yyyy-mm-dd' });
+     $('#to_datepicker').datepicker({ uiLibrary: 'bootstrap4', format: 'yyyy-mm-dd' });
