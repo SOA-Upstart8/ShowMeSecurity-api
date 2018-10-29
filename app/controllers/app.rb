@@ -10,6 +10,7 @@ module NewsSentence
     plugin :assets, css: 'style.css', path: 'app/views/assets'
     plugin :halt
 
+    # load css
     route do |routing|
         routing.assets
 
@@ -34,9 +35,9 @@ module NewsSentence
             routing.on String, String, String, String do |query, from, to, source|
                 # GET /news/query/from/to/source
                 routing.get do
-                    news = NewsSentence::News::NewsMapper.new(API_KEY).search(query, from, to, source)
+                    news_detail = News::NewsMapper.new('3798d8d9b44744c3969cf344ce02df14').search(query, from, to, source)
                     
-                    view 'news', locals: { news_detail: news }
+                    view 'news', locals: { news: news_detail }
                 end
             end
         end

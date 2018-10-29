@@ -9,12 +9,12 @@ module NewsSentence
       include Dry::Types.module
 
       attribute :id, Integer.optional
-      attribute :source, Strict::String
-      attribute :title, Strict::String
-      attribute :url, Strict::String
-      attribute :image, Strict::String
-      attribute :time, Strict::String
-      attribute :content, Strict::String
+      attribute :source, String.optional
+      attribute :title, String.optional
+      attribute :url, String.optional
+      attribute :image, String.optional
+      attribute :time, String.optional
+      attribute :content, String.optional
     end
   end
 end

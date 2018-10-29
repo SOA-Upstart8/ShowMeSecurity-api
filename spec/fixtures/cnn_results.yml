@@ -1,6 +1,6 @@
 ---
 source: cnn
-size: 6
+size: 7
 articles:
 - source:
     id: cnn
@@ -80,6 +80,23 @@ articles:
     de Banksy desde aquella infame subasta de Sotheby's en Londres cuando "Girl With
     Balloon" quedó cortada en fragmentos después de que fuera vendida por 1,4 millones
     de dólares. Despué… [+2749 chars]
+- source:
+    id: cnn
+    name: CNN
+  author: Melissa Velásquez Loaiza
+  title: "¿Por qué las grandes compañías tecnológicas están poniendo sus sedes en
+    Colombia?"
+  description: Colombia es un lugar atractivo para las grandes tecnológicas que han
+    puesto sus ojos en este país. Recientemente Amazon se sumó a la lista de otras
+    grandes compañías como Google, Facebook y Netflix en llegar a este país. ¿Cuál
+    es su atractivo? Expertos nos cu…
+  url: https://cnnespanol.cnn.com/2018/10/24/por-que-las-grandes-companias-tecnologicas-estan-poniendo-sus-sedes-en-colombia/
+  urlToImage: https://cnnespanol2.files.wordpress.com/2018/10/180918163055-amazon-office-seattle-full-169.jpg?quality=100&strip=info&w=1200
+  publishedAt: '2018-10-24T16:16:18Z'
+  content: "(CNN Español) - Recientemente Amazon, la segunda compañía de Estados Unidos
+    en cruzar la marca del billón de dólares, abrió en Colombia un centro de operaciones,
+    sumándose a la lista de otras gigantes tecnológicas como Google, Facebook y Netflix,
+    que tienen s… [+7473 chars]"
 - source:
     id: cnn
     name: CNN
