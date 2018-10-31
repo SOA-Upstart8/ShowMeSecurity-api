@@ -16,7 +16,9 @@ module NewsSentence
 
         # GET /
         routing.root do
-            view 'home'
+            home_news = News::NewsMapper.new('3798d8d9b44744c3969cf344ce02df14').search_headlines('tw')
+
+            view 'home', locals: { home: home_news }
         end
 
         routing.on 'news' do

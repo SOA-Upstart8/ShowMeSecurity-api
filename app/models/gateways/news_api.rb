@@ -13,9 +13,14 @@ module NewsSentence
         Request.new(@api_key).news(query, from, to, source).parse
       end
 
+      def get_headlines(country)
+        Request.new(@api_key).headlines(country).parse
+      end
+
       # The Request class is responsible for send a http request.
       class Request
         PATH = 'https://newsapi.org/v2/everything'.freeze
+        HEADLINES = 'https://newsapi.org/v2/top-headlines'.freeze
 
         def initialize(key)
           @api_key = key
@@ -23,6 +28,10 @@ module NewsSentence
 
         def news(quary, from, to, source)
           get(PATH + "?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}")
+        end
+
+        def headlines(country)
+          get(HEADLINES + "?country=#{country}")
         end
 
         def get(url)

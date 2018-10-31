@@ -18,6 +18,15 @@ module NewsSentence
         end
       end
 
+      def search_headlines(country)
+        data = @gateway.get_headlines(country)
+        puts 'data'
+        data = data['articles']
+        data.map do |news|
+          NewsMapper.build_entity(news)
+        end
+      end
+
       def self.build_entity(data)
         DataMapper.new(data).build_entity
       end

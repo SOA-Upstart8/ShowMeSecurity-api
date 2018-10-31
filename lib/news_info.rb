@@ -17,11 +17,11 @@ end
 
 news_response = {}
 news_results = {}
-start_date = '2018-10-20'
-end_date = '2018-10-24'
-quary = 'Web'
+start_date = '2018-10-01'
+end_date = '2018-10-15'
+quary = 'taiwan'
 # HAPPY requests
-sources = ['cnn']
+sources = ['bbc']
 sources.each do |source|
   news_url = news_api_path(quary, start_date, end_date, source)
   news_response = call_news_url(config, news_url)
