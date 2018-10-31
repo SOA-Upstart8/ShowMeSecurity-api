@@ -11,7 +11,7 @@ end
 
 def call_news_url(config, url)
   HTTP.headers(
-    'x-api-key' => config['API_KEY']
+    'x-api-key' => config['NEWS_API_KEY']
   ).get(url)
 end
 
