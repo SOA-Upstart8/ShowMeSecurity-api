@@ -41,8 +41,8 @@ module NewsSentence
         )
       end
 
-      private 
-      
+      private
+
       def source
         @data['source']['name']
       end

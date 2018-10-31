@@ -16,15 +16,12 @@ FROM = '2018-10-20'
 TO = '2018-10-24'
 SOURCE = 'cnn'
 
-PAGE = 1
-TYPE = '刑事'
-YEAR = 105
-
 CONFIG = YAML.safe_load(File.read('config/secrets.yml'))
-API_KEY = CONFIG['API_KEY']
+NEWS_API_KEY = CONFIG['NEWS_API_KEY']
+SEC_API_KEY = CONFIG['SEC_API_KEY']
 
 CORRECTNEWS = YAML.safe_load(File.read('spec/fixtures/cnn_results.yml'))
-CORRECTSTORY = YAML.safe_load(File.read('spec/fixtures/stories_results.yml'))
+CORRECTCVE = YAML.safe_load(File.read('spec/fixtures/vulner_results.yml'))
 
 CASSETTES_FOLDER = 'spec/fixtures/cassettes'
-CASSETTE_FILE = 'news_api'
+CASSETTE_FILE = 'api_test'

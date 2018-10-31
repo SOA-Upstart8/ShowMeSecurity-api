@@ -2,31 +2,40 @@
 
 require 'http'
 module NewsSentence
-  module News
+  module CVE
     # The NewsAPI class is responsible for get news detail.
     class Api
       def initialize(key)
         @api_key = key
       end
 
-      def get_news(query, from, to, source)
-        Request.new(@api_key).news(query, from, to, source).parse
+      def latest_cve
+        Request.new(@api_key).latest.parse
+      end
+
+      def search_cve(query)
+        Request.new(@api_key).search(query).parse
       end
 
       # The Request class is responsible for send a http request.
       class Request
-        PATH = 'https://newsapi.org/v2/everything'.freeze
+        LATEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&X-API-KEY='.freeze
+        SEARCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/search?'.freeze
 
         def initialize(key)
           @api_key = key
         end
 
-        def news(quary, from, to, source)
-          get(PATH + "?q=#{quary}&from=#{from}&to=#{to}&sources=#{source}")
+        def latest
+          get(LATEST_PATH + @api_key)
+        end
+
+        def search(query)
+          get(SEARCH_PATH + "q=#{query}&fields=tweet&X-API-KEY=" + @api_key)
         end
 
         def get(url)
-          result = HTTP.headers('x-api-key' => @api_key).get(url)
+          result = HTTP.get(url)
           Response.new(result).tap do |response|
             raise(response.raise_error) unless response.successful?
           end
@@ -35,14 +44,16 @@ module NewsSentence
 
       # The Response class is responsible for error requests.
       class Response < SimpleDelegator
-        # Unauthorized is responsible for no access key.
+        NotFound = Class.new(StandardError)
         Unauthorized = Class.new(StandardError)
-        # TooOldNews is responsible for rejecting to access 30 days ago news.
-        TooOldNews = Class.new(StandardError)
+        InvalidCredential = Class.new(StandardError)
+        LimitExceeded = Class.new(StandardError)
 
         HTTP_ERROR = {
           401 => Unauthorized,
-          429 => TooOldNews
+          403 => InvalidCredential,
+          404 => NotFound,
+          429 => LimitExceeded
         }.freeze
 
         def successful?
