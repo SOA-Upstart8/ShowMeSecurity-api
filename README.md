@@ -1,5 +1,6 @@
-# NewsSentence  
-We want to combine news and court verdicts api. We will analysis Taiwan crime news and verdict and visualize to the map.
-For example, i'm curious about murder events distribution, our website will show the distribution and provide user news associate with murder event.
+# ShowMeSecurity 
+This site will collect the latest security vulnerabilities and grab some expert opinions from tweeter.
+We combine secbuzzer and news api, and hope that users who use our website can quickly learn about the latest security information.
 
- 
+##secbuzzer api: https://api.secbuzzer.cyber00rn.org/home
+##news api: https://newsapi.org/
