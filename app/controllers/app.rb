@@ -16,30 +16,27 @@ module NewsSentence
 
         # GET /
         routing.root do
-            home_news = News::NewsMapper.new('3798d8d9b44744c3969cf344ce02df14').search_headlines('tw')
+            latest_cve = CVE::CVEMapper.new('80f3b0b6099e4df08bb8c8cee57e4c53').latest
 
-            view 'home', locals: { home: home_news }
+            view 'home', locals: { latest: latest_cve }
         end
 
-        routing.on 'news' do
+        routing.on 'cve' do
             routing.is do
-                # POST /news/
+                # POST /cve/
                 routing.post do
                     query = routing.params['query']
-                    from = routing.params['from']
-                    to = routing.params['to']
-                    source = routing.params['source']
 
-                    routing.redirect "news/#{query}/#{from}/#{to}/#{source}"
+                    routing.redirect "cve/#{query}"
                 end
             end
 
-            routing.on String, String, String, String do |query, from, to, source|
-                # GET /news/query/from/to/source
+            routing.on String do |query|
+                # GET /cve/query
                 routing.get do
-                    news_detail = News::NewsMapper.new('3798d8d9b44744c3969cf344ce02df14').search(query, from, to, source)
+                    cve_result = CVE::CVEMapper.new('80f3b0b6099e4df08bb8c8cee57e4c53').search(query)
                     
-                    view 'news', locals: { news: news_detail }
+                    view 'cve', locals: { cve: cve_result, search: query }
                 end
             end
         end

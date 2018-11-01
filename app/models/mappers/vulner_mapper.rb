@@ -18,7 +18,7 @@ module NewsSentence
         end
       end
 
-      def search(query = 'web')
+      def search(query)
         data = @gateway.search_cve(query)
         data = data['cves']
         data.map do |cve|

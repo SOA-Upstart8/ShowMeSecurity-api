@@ -4,15 +4,15 @@
             small
               |    (SMS)
           h4.my-4
-            | latest common vulnerables and exposures
-          - latest.each do |latest|
+            | CVE Results for #{search}
+          - cve.each do |cve|
             .card.mb-4
               .card-body
                 h2.card-title
-                  = latest.CVE_ID
+                  = cve.CVE_ID
                 p.card-text
-                  = latest.overview
-                a.btn.btn-primary[href="#{latest.references[0]}" target="_blank"]
+                  = cve.overview
+                a.btn.btn-primary[href="#{cve.references[0]}" target="_blank"]
                   | Read More →
               .card-footer.text-muted
-                |  Released on #{latest.release_date}
+                |  Released on #{cve.release_date}
