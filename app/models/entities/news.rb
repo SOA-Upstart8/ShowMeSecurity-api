@@ -2,7 +2,7 @@
 
 require 'dry-struct'
 
-module NewsSentence
+module SMS
   module Entity
     # Model for cnn
     class News < Dry::Struct

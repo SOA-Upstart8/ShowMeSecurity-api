@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module NewsSentence
+module SMS
   module CVE
     # Data Mapper: NewsApi data -> News entity
     class ExpertMapper
@@ -15,7 +15,7 @@ module NewsSentence
         end
 
         def build_entity
-          NewsSentence::Entity::Expert.new(
+          SMS::Entity::Expert.new(
             user_id: user_id,
             image: image,
             follower_count: follower_count,

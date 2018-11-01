@@ -2,7 +2,7 @@
 
 require 'dry-struct'
 require_relative 'tweet.rb'
-module NewsSentence
+module SMS
   module Entity
     # Model for CVE
     class CVE < Dry::Struct

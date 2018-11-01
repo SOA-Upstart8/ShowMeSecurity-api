@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module NewsSentence
+module SMS
   module News
     # Data Mapper: NewsApi data -> News entity
     class NewsMapper
@@ -39,7 +39,7 @@ module NewsSentence
       end
 
       def build_entity
-        NewsSentence::Entity::News.new(
+        SMS::Entity::News.new(
           id: nil,
           source: source,
           title: title,

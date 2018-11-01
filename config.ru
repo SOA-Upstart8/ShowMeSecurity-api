@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
 require_relative './init.rb'
-run NewsSentence::App.freeze.app
+run SMS::App.freeze.app

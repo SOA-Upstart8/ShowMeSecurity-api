@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module NewsSentence
+module SMS
   module CVE
     # Data Mapper: NewsApi data -> News entity
     class CVEMapper
@@ -37,7 +37,7 @@ module NewsSentence
         end
 
         def build_entity
-          NewsSentence::Entity::CVE.new(
+          SMS::Entity::CVE.new(
             id: nil,
             overview: overview,
             tweet_count: tweet_count,

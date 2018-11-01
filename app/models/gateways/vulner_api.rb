@@ -1,7 +1,7 @@
 # frozen_string_literal: false
 
 require 'http'
-module NewsSentence
+module SMS
   module CVE
     # The NewsAPI class is responsible for get news detail.
     class Api

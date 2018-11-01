@@ -2,7 +2,7 @@
 
 require 'dry-struct'
 require_relative 'expert.rb'
-module NewsSentence
+module SMS
   module Entity
     # Model for tweet
     class Tweet < Dry::Struct

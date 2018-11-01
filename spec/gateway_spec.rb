@@ -19,7 +19,7 @@ describe 'Tests API library' do
   end
   describe 'News information' do
     it 'HAPPY: should provide correct news information' do
-      news = NewsSentence::News::NewsMapper
+      news = SMS::News::NewsMapper
         .new(NEWS_API_KEY).search(QUERY, FROM, TO, SOURCE)
       _(news[0].source).must_equal CORRECTNEWS['articles'][0]['source']['name']
       _(news[0].title).must_equal CORRECTNEWS['articles'][0]['title']
@@ -28,22 +28,22 @@ describe 'Tests API library' do
 
     it 'SAD: should raise exception when request 30 days ago news' do
       proc do
-        NewsSentence::News::NewsMapper
+        SMS::News::NewsMapper
           .new(NEWS_API_KEY).search(QUERY, '2018-9-1', TO, SOURCE)
-      end.must_raise NewsSentence::News::Api::Response::TooOldNews
+      end.must_raise SMS::News::Api::Response::TooOldNews
     end
 
     it 'SAD: should raise exception when News API unauthorized' do
       proc do
-        NewsSentence::News::NewsMapper
+        SMS::News::NewsMapper
           .new('Bad Api Key').search(QUERY, FROM, TO, SOURCE)
-      end.must_raise NewsSentence::News::Api::Response::Unauthorized
+      end.must_raise SMS::News::Api::Response::Unauthorized
     end
   end
 
   describe 'SEC information' do
     it 'HAPPY: should provide correct CVE information' do
-      CVEs = NewsSentence::CVE::CVEMapper
+      CVEs = SMS::CVE::CVEMapper
         .new(SEC_API_KEY).search
       CVEs.each_with_index do |cve, id|
         _(cve.overview).must_equal CORRECTCVE[id]['overview']
@@ -62,9 +62,9 @@ describe 'Tests API library' do
 
     it 'SAD: should raise exception when SEC API unauthorized' do
       proc do
-        NewsSentence::CVE::CVEMapper
+        SMS::CVE::CVEMapper
           .new('').latest
-      end.must_raise NewsSentence::CVE::Api::Response::InvalidCredential
+      end.must_raise SMS::CVE::Api::Response::InvalidCredential
     end
   end
 end
