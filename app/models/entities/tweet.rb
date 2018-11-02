@@ -15,6 +15,10 @@ module SMS
       attribute :retweet_count, Strict::Integer
       attribute :owner, Expert
       attribute :time, Params::DateTime
+
+      def to_attr_hash
+        to_hash.reject { |key, _| %i[id owner].include? key }
+      end
     end
   end
 end

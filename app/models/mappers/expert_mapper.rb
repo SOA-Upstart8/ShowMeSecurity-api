@@ -16,6 +16,7 @@ module SMS
 
         def build_entity
           SMS::Entity::Expert.new(
+            id: nil,
             user_id: user_id,
             image: image,
             follower_count: follower_count,

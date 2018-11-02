@@ -12,35 +12,38 @@ module SMS
 
     # load css
     route do |routing|
-        routing.assets
+      routing.assets
 
-        # GET /
-        routing.root do
-            latest_cve = CVE::CVEMapper.new('80f3b0b6099e4df08bb8c8cee57e4c53').latest
+      # GET /
+      routing.root do
+        latest_cve = CVE::CVEMapper.new(App.config.SEC_API_KEY).latest
+        latest_cve.each do |cve|
+          Vulnerability::For.entity(cve).create(cve)
+        end
+        view 'home', locals: { latest: latest_cve }
+      end
 
-            view 'home', locals: { latest: latest_cve }
+      routing.on 'cve' do
+        routing.is do
+          # POST /cve/
+          routing.post do
+            query = routing.params['query']
+
+            routing.redirect "cve/#{query}"
+          end
         end
 
-        routing.on 'cve' do
-            routing.is do
-                # POST /cve/
-                routing.post do
-                    query = routing.params['query']
-
-                    routing.redirect "cve/#{query}"
-                end
+        routing.on String do |query|
+          # GET /cve/query
+          routing.get do
+            cve_result = CVE::CVEMapper.new(App.config.SEC_API_KEY).search(query)
+            cve_result.each do |cve|
+              Vulnerability::For.entity(cve).create(cve)
             end
-
-            routing.on String do |query|
-                # GET /cve/query
-                routing.get do
-                    cve_result = CVE::CVEMapper.new('80f3b0b6099e4df08bb8c8cee57e4c53').search(query)
-                    
-                    view 'cve', locals: { cve: cve_result, search: query }
-                end
-            end
+            view 'cve', locals: { cve: cve_result, search: query }
+          end
         end
+      end
     end
-
   end
 end

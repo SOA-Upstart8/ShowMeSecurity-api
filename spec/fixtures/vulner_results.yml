@@ -1,6 +1,2260 @@
 ---
 - CVSS_V3_confidentiality: 
   vultype: 
+  overview: Session fixation vulnerability in SYNO.PhotoStation.Auth in Synology Photo
+    Station before 6.8.7-3481 allows remote attackers to hijack web sessions via the
+    PHPSESSID parameter.
+  CVSS_V3_privileges_required: 
+  CVSS_V3_user_interaction: 
+  CVSS_V3_attack_vector: 
+  tweets:
+    tweets:
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: |-
+        CVE-2018-13282
+
+        Session fixation vulnerability in SYNO.PhotoStation.Auth in Synology Photo Station before 6.8.7-348… https://t.co/bqb7ZleCbc
+      "@timestamp": '2018-11-01T06:04:43.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057876065337651200
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/bqb7ZleCbc
+          expanded_url: https://twitter.com/i/web/status/1057876065337651200
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541052283020'
+      source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
+      in_reply_to_screen_name: 
+      id_str: '1057876065337651200'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 941389496771399680
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 294
+        protected: false
+        id_str: '941389496771399680'
+        default_profile_image: false
+        listed_count: 13
+        utc_offset: 
+        statuses_count: 37375
+        description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
+          account || https://vulmon.com/searchfeed?q=* for RSS feed
+        friends_count: 2
+        location: 
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Vulmon Vulnerability Feed
+        lang: en
+        profile_background_tile: false
+        favourites_count: 12
+        screen_name: VulmonFeeds
+        notifications: 
+        url: http://vulmon.com/rss
+        created_at: Thu Dec 14 19:28:41 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 217
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 194
+            - 217
+            url: https://t.co/e47OdRnBqL
+            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-13282
+            display_url: vulmon.com/vulnerabilityd…
+        full_text: |-
+          CVE-2018-13282
+
+          Session fixation vulnerability in SYNO.PhotoStation.Auth in Synology Photo Station before 6.8.7-3481 allows remote attackers to hijack web sessions via the PHPSESSID parameter.
+
+          https://t.co/e47OdRnBqL
+      created_at: Thu Nov 01 06:04:43 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: |-
+        CVE-2018-13282
+
+        Session fixation vulnerability in SYNO.PhotoStation.Auth in Synology Photo Station before 6.8.7-348… https://t.co/SXnvhWMSQi
+      "@timestamp": '2018-10-31T22:43:42.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057765081583362049
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/SXnvhWMSQi
+          expanded_url: https://twitter.com/i/web/status/1057765081583362049
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541025822431'
+      source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
+      in_reply_to_screen_name: 
+      id_str: '1057765081583362049'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 941389496771399680
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 295
+        protected: false
+        id_str: '941389496771399680'
+        default_profile_image: false
+        listed_count: 13
+        utc_offset: 
+        statuses_count: 37320
+        description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
+          account || https://vulmon.com/searchfeed?q=* for RSS feed
+        friends_count: 2
+        location: 
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Vulmon Vulnerability Feed
+        lang: en
+        profile_background_tile: false
+        favourites_count: 12
+        screen_name: VulmonFeeds
+        notifications: 
+        url: http://vulmon.com/rss
+        created_at: Thu Dec 14 19:28:41 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 217
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 194
+            - 217
+            url: https://t.co/e47OdRnBqL
+            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-13282
+            display_url: vulmon.com/vulnerabilityd…
+        full_text: |-
+          CVE-2018-13282
+
+          Session fixation vulnerability in SYNO.PhotoStation.Auth in Synology Photo Station before 6.8.7-3481 allows remote attackers to hijack web sessions via the PHPSESSID parameter.
+
+          https://t.co/e47OdRnBqL
+      created_at: Wed Oct 31 22:43:42 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: CVE-2018-13282 - Session fixation vulnerability in SYNO.PhotoStation.Auth
+        in Synology Photo Station before  ... https://t.co/VrmFxHJxT2
+      "@timestamp": '2018-10-31T18:33:50.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057702201349627911
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 112
+          - 135
+          url: https://t.co/VrmFxHJxT2
+          expanded_url: https://www.secnews24.com/2018/10/31/cve-2018-13282-session-fixation-vulnerability-in-syno-photostation-auth-in-synology-photo-station-before/
+          display_url: secnews24.com/2018/10/31/cve…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541010830615'
+      source: <a href="https://www.secnews24.com" rel="nofollow">SecNews24</a>
+      in_reply_to_screen_name: 
+      id_str: '1057702201349627911'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 824346807039905796
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 216
+        protected: false
+        id_str: '824346807039905796'
+        default_profile_image: false
+        listed_count: 11
+        utc_offset: 
+        statuses_count: 236
+        description: IT Security, Cyber Security, Network Security, Enterprise Security,
+          Virus & Threats, Vulnerability, Exploit, Cybercrime News and more from around
+          the world.
+        friends_count: 115
+        location: 
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_banner_url: https://pbs.twimg.com/profile_banners/824346807039905796/1487157214
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: SecNews24
+        lang: en
+        profile_background_tile: false
+        favourites_count: 0
+        screen_name: secnews24
+        notifications: 
+        url: https://www.secnews24.com
+        created_at: Wed Jan 25 20:02:49 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      created_at: Wed Oct 31 18:33:50 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: |-
+        RT:
+
+        CVE-2018-13282 Session fixation vulnerability in SYNO.PhotoStation.Auth in Synology Photo Station before 6.8.7… https://t.co/kRY8EOL5Zk
+      "@timestamp": '2018-10-31T16:35:14.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057672355932237825
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/kRY8EOL5Zk
+          expanded_url: https://twitter.com/i/web/status/1057672355932237825
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541003714913'
+      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
+      in_reply_to_screen_name: 
+      id_str: '1057672355932237825'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 920420001965678592
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 1075
+        protected: false
+        id_str: '920420001965678592'
+        default_profile_image: false
+        listed_count: 11
+        utc_offset: 
+        statuses_count: 12662
+        description: Product Manager (PM), Reporting @Qualys. Aligning Security, Governance,
+          Risk, and Compliance with People, Processes, and Technology.⭐My tweets are
+          my own.⭐
+        friends_count: 4217
+        location: California, USA
+        profile_link_color: FB0707
+        profile_image_url: http://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_banner_url: https://pbs.twimg.com/profile_banners/920420001965678592/1538559481
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: 'Debra M. Fezza Reed #Dare2Dream #RegisterToVote'
+        lang: en
+        profile_background_tile: false
+        favourites_count: 22849
+        screen_name: SecRiskRptSME
+        notifications: 
+        url: http://www.qualys.com
+        created_at: Tue Oct 17 22:43:23 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 253
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 197
+            - 220
+            url: https://t.co/9duRtCubPd
+            expanded_url: http://bit.ly/2Rm3cVQ
+            display_url: bit.ly/2Rm3cVQ
+        full_text: |-
+          RT:
+
+          CVE-2018-13282 Session fixation vulnerability in SYNO.PhotoStation.Auth in Synology Photo Station before 6.8.7-3481 allows remote attackers to hijack web sessions via the PHPSESSID parameter. https://t.co/9duRtCubPd
+
+          — CVE (CVEnew) October 31, 2018
+      created_at: Wed Oct 31 16:35:14 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: CVE-2018-13282 Session fixation vulnerability in SYNO.PhotoStation.Auth
+        in Synology Photo Station before 6.8.7-3481… https://t.co/b6GM73TFGU
+      "@timestamp": '2018-10-31T16:30:38.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057671195632590849
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/b6GM73TFGU
+          expanded_url: https://twitter.com/i/web/status/1057671195632590849
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541003438276'
+      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
+      in_reply_to_screen_name: 
+      id_str: '1057671195632590849'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 381963910
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 207
+        protected: false
+        id_str: '381963910'
+        default_profile_image: false
+        listed_count: 135
+        utc_offset: 
+        statuses_count: 42731
+        description: I work for eyeT Systems, a niche IT integration and support company
+          in South Australia. Thoughts are my own :)
+        friends_count: 326
+        location: South Australia, Australia
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_banner_url: https://pbs.twimg.com/profile_banners/381963910/1463629010
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Daniel @ eyeT Systems
+        lang: en
+        profile_background_tile: false
+        favourites_count: 10
+        screen_name: eyeTSystems
+        notifications: 
+        url: https://www.eyeTSystems.com.au
+        created_at: Thu Sep 29 07:50:04 +0000 2011
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 216
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 193
+            - 216
+            url: https://t.co/O4HHqyhKpM
+            expanded_url: http://bit.ly/2Rm3cVQ
+            display_url: bit.ly/2Rm3cVQ
+        full_text: CVE-2018-13282 Session fixation vulnerability in SYNO.PhotoStation.Auth
+          in Synology Photo Station before 6.8.7-3481 allows remote attackers to hijack
+          web sessions via the PHPSESSID parameter.  https://t.co/O4HHqyhKpM
+      created_at: Wed Oct 31 16:30:38 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: CVE-2018-13282 Session fixation vulnerability in SYNO.PhotoStation.Auth
+        in Synology Photo Station before 6.8.7-3481… https://t.co/YaXvEfGV7X
+      "@timestamp": '2018-10-31T16:30:34.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057671179450961920
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/YaXvEfGV7X
+          expanded_url: https://twitter.com/i/web/status/1057671179450961920
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541003434418'
+      source: <a href="http://cve.mitre.org/cve/" rel="nofollow">CVENEW</a>
+      in_reply_to_screen_name: 
+      id_str: '1057671179450961920'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 821806287461740544
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 9955
+        protected: false
+        id_str: '821806287461740544'
+        default_profile_image: false
+        listed_count: 222
+        utc_offset: 
+        statuses_count: 27112
+        description: 'Official account maintained by the CVE Team to notify the community
+          of new CVE IDs. For additional data feeds see: https://cve.mitre.org/cve/data_feeds.html.'
+        friends_count: 2
+        location: 
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: F5F8FA
+        profile_banner_url: https://pbs.twimg.com/profile_banners/821806287461740544/1491503268
+        profile_background_image_url: ''
+        name: CVE
+        lang: en
+        profile_background_tile: false
+        favourites_count: 0
+        screen_name: CVEnew
+        notifications: 
+        url: https://cveform.mitre.org
+        created_at: Wed Jan 18 19:47:42 +0000 2017
+        profile_background_image_url_https: ''
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 216
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 193
+            - 216
+            url: https://t.co/2c8fNWIHWm
+            expanded_url: http://bit.ly/2Rm3cVQ
+            display_url: bit.ly/2Rm3cVQ
+        full_text: CVE-2018-13282 Session fixation vulnerability in SYNO.PhotoStation.Auth
+          in Synology Photo Station before 6.8.7-3481 allows remote attackers to hijack
+          web sessions via the PHPSESSID parameter.  https://t.co/2c8fNWIHWm
+      created_at: Wed Oct 31 16:30:34 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    retweets: []
+  exploit: 0
+  exploit_date_timestamp: 
+  references:
+  - Resource: []
+    Hyperlink: https://www.synology.com/en-global/support/security/Synology_SA_18_37
+  CVSS_V3_scope: 
+  tweet_count: 5
+  affected_product: 
+  affected_vendor: 
+  affected_product_detail: 
+  last_revised_timestamp: 1540944000000
+  CVE_ID: CVE-2018-13282
+  title: 
+  last_revised: '2018-10-31T00:00:00Z'
+  zeroday_price: 
+  CVSS_V3_base_score: 
+  exploit_date: 
+  original_release_date: '2018-10-31T00:00:00Z'
+  CVSS_V3_impact_score: 
+  CVSS_V3_attack_complexity: 
+  original_release_date_timestamp: 1540944000000
+  retweet_count: 1
+  CWEID: 
+- CVSS_V3_confidentiality: 
+  vultype: 
+  overview: The Apache Web Server (httpd) specific code that normalised the requested
+    path before matching it to the URI-worker map in Apache Tomcat JK (mod_jk) Connector
+    1.2.0 to 1.2.44 did not handle some edge cases correctly. If only a sub-set of
+    the URLs supported by Tomcat were exposed via httpd, then it was possible for
+    a specially constructed request to expose application functionality through the
+    reverse proxy that was not intended for clients accessing the application via
+    the reverse proxy. It was also possible in some configurations for a specially
+    constructed request to bypass the access controls configured in httpd. While there
+    is some overlap between this issue and CVE-2018-1323, they are not identical.
+  CVSS_V3_privileges_required: 
+  CVSS_V3_user_interaction: 
+  CVSS_V3_attack_vector: 
+  tweets:
+    tweets:
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: https://t.co/oW8uAL8RJo
+      "@timestamp": '2018-11-01T23:57:14.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058145974877532160
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 0
+          - 23
+          url: https://t.co/oW8uAL8RJo
+          expanded_url: https://github.com/immunIT/CVE-2018-11759/
+          display_url: github.com/immunIT/CVE-20…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541116634469'
+      source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+        for Android</a>
+      in_reply_to_screen_name: 
+      id_str: '1058145974877532160'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 2910780354
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/978825203152138241/_tKGyQoB_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 75
+        protected: false
+        id_str: '2910780354'
+        default_profile_image: false
+        listed_count: 2
+        utc_offset: 
+        statuses_count: 2050
+        description: 
+        friends_count: 1455
+        location: 
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/978825203152138241/_tKGyQoB_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: C0DEED
+        profile_banner_url: https://pbs.twimg.com/profile_banners/2910780354/1522204978
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: lee
+        lang: zh-cn
+        profile_background_tile: false
+        favourites_count: 3562
+        screen_name: j0rivet
+        notifications: 
+        url: 
+        created_at: Wed Nov 26 10:45:36 +0000 2014
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: und
+      created_at: Thu Nov 01 23:57:14 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: |-
+        CVE-2018-11759 Apache Tomcat JK (mod_jk) Connector path traversal
+        https://t.co/05SEo6bKqG
+      "@timestamp": '2018-11-01T23:21:50.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058137068264538112
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 66
+          - 89
+          url: https://t.co/05SEo6bKqG
+          expanded_url: http://mail-archives.us.apache.org/mod_mbox/www-announce/201810.mbox/%3C16a616e5-5245-f26a-a5a4-2752b2826703@apache.org%3E
+          display_url: mail-archives.us.apache.org/mod_mbox/www-a…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541114510967'
+      source: <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      in_reply_to_screen_name: 
+      id_str: '1058137068264538112'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 922012198217572353
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/1034052448447430656/nv8XqHFn_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 177
+        protected: false
+        id_str: '922012198217572353'
+        default_profile_image: false
+        listed_count: 0
+        utc_offset: 
+        statuses_count: 1409
+        description: IT系、セキュリティやニュースなどを。
+        friends_count: 913
+        location: 
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/1034052448447430656/nv8XqHFn_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: F5F8FA
+        profile_background_image_url: ''
+        name: shigeru_1234
+        lang: ja
+        profile_background_tile: false
+        favourites_count: 13
+        screen_name: taka_tana_sec
+        notifications: 
+        url: 
+        created_at: Sun Oct 22 08:10:12 +0000 2017
+        profile_background_image_url_https: ''
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      created_at: Thu Nov 01 23:21:50 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    retweets:
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @TheHackersNews: Apache has released an important #security update
+        to address a vulnerability (CVE-2018-11759) in Apache Tomcat JK Conne…'
+      "@timestamp": '2018-11-01T21:41:38.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058111848996732929
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 18
+          id: 209811713
+          screen_name: TheHackersNews
+          name: The Hacker News
+          id_str: '209811713'
+        symbols: []
+        hashtags:
+        - indices:
+          - 53
+          - 62
+          text: security
+        urls: []
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541108498225'
+      source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+        for Android</a>
+      in_reply_to_screen_name: 
+      id_str: '1058111848996732929'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 3
+        contributors: 
+        truncated: true
+        text: 'Apache has released an important #security update to address a vulnerability
+          (CVE-2018-11759) in Apache Tomcat JK C… https://t.co/H0gYzUKXdZ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057898645448736773
+        favorite_count: 120
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags:
+          - indices:
+            - 33
+            - 42
+            text: security
+          urls:
+          - indices:
+            - 117
+            - 140
+            url: https://t.co/H0gYzUKXdZ
+            expanded_url: https://twitter.com/i/web/status/1057898645448736773
+            display_url: twitter.com/i/web/status/1…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+        in_reply_to_screen_name: 
+        id_str: '1057898645448736773'
+        retweet_count: 92
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 209811713
+          default_profile: false
+          verified: true
+          profile_image_url_https: https://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          profile_sidebar_fill_color: '252429'
+          profile_text_color: '666666'
+          followers_count: 505361
+          protected: false
+          id_str: '209811713'
+          default_profile_image: false
+          listed_count: 8789
+          utc_offset: 
+          statuses_count: 28354
+          description: "Most trusted, widely acknowledged news source for cybersecurity
+            researchers, hackers, technologists, enthusiasts and nerds. Contact \U0001F4E8
+            admin@thehackernews.com"
+          friends_count: 2877
+          location: The Internet
+          profile_link_color: 006CD8
+          profile_image_url: http://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: '325192'
+          profile_banner_url: https://pbs.twimg.com/profile_banners/209811713/1468999622
+          profile_background_image_url: http://abs.twimg.com/images/themes/theme15/bg.png
+          name: The Hacker News
+          lang: en
+          profile_background_tile: false
+          favourites_count: 7569
+          screen_name: TheHackersNews
+          notifications: 
+          url: https://thehackernews.com/
+          created_at: Fri Oct 29 23:55:25 +0000 2010
+          profile_background_image_url_https: https://abs.twimg.com/images/themes/theme15/bg.png
+          time_zone: 
+          profile_sidebar_border_color: FFFFFF
+          translator_type: regular
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        extended_tweet:
+          display_text_range:
+          - 0
+          - 276
+          entities:
+            user_mentions: []
+            symbols: []
+            hashtags:
+            - indices:
+              - 33
+              - 42
+              text: security
+            urls:
+            - indices:
+              - 253
+              - 276
+              url: https://t.co/CAxxyGYt8W
+              expanded_url: http://mail-archives.us.apache.org/mod_mbox/www-announce/201810.mbox/%3C16a616e5-5245-f26a-a5a4-2752b2826703@apache.org%3E
+              display_url: mail-archives.us.apache.org/mod_mbox/www-a…
+          full_text: "Apache has released an important #security update to address
+            a vulnerability (CVE-2018-11759) in Apache Tomcat JK Connectors 1.2.0
+            to 1.2.44 that could allow remote attackers to bypass the access \ncontrols
+            configured in httpd and access sensitive info\n\nhttps://t.co/CAxxyGYt8W"
+        created_at: Thu Nov 01 07:34:26 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 955958146438021121
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/955961590490136576/NtnWHQlc_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 19
+        protected: false
+        id_str: '955958146438021121'
+        default_profile_image: false
+        listed_count: 1
+        utc_offset: 
+        statuses_count: 712
+        description: Embedded Software Engineer. Network Security specialist
+        friends_count: 113
+        location: Vancouver, British Columbia
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/955961590490136576/NtnWHQlc_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: F5F8FA
+        profile_background_image_url: ''
+        name: Hovig Stepanyan
+        lang: en
+        profile_background_tile: false
+        favourites_count: 2192
+        screen_name: hovigstep
+        notifications: 
+        url: 
+        created_at: Wed Jan 24 00:19:17 +0000 2018
+        profile_background_image_url_https: ''
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      lang: en
+      created_at: Thu Nov 01 21:41:38 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @piedpiper1616: GitHub - immunIT/CVE-2018-11759: Proof of concept
+        showing how to exploit the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+      "@timestamp": '2018-11-01T21:32:01.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058109428212350978
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 17
+          id: 864133873424187392
+          screen_name: piedpiper1616
+          name: blueblue
+          id_str: '864133873424187392'
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 111
+          - 134
+          url: https://t.co/6PMmbNyloQ
+          expanded_url: https://github.com/immunIT/CVE-2018-11759/
+          display_url: github.com/immunIT/CVE-20…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541107921065'
+      source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+        for Android</a>
+      in_reply_to_screen_name: 
+      id_str: '1058109428212350978'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 0
+        contributors: 
+        truncated: false
+        text: 'GitHub - immunIT/CVE-2018-11759: Proof of concept showing how to exploit
+          the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057952412776857600
+        favorite_count: 20
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 92
+            - 115
+            url: https://t.co/6PMmbNyloQ
+            expanded_url: https://github.com/immunIT/CVE-2018-11759/
+            display_url: github.com/immunIT/CVE-20…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twicca.r246.jp/" rel="nofollow">twicca</a>
+        in_reply_to_screen_name: 
+        id_str: '1057952412776857600'
+        retweet_count: 20
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 864133873424187392
+          default_profile: true
+          verified: false
+          profile_image_url_https: https://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          profile_sidebar_fill_color: DDEEF6
+          profile_text_color: '333333'
+          followers_count: 405
+          protected: false
+          id_str: '864133873424187392'
+          default_profile_image: false
+          listed_count: 9
+          utc_offset: 
+          statuses_count: 722
+          description: セキュリティ関連の情報収集用・悪用禁止
+          friends_count: 31
+          location: 日本
+          profile_link_color: 1DA1F2
+          profile_image_url: http://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: F5F8FA
+          profile_background_image_url: ''
+          name: blueblue
+          lang: ja
+          profile_background_tile: false
+          favourites_count: 872
+          screen_name: piedpiper1616
+          notifications: 
+          url: https://github.com/blue1616
+          created_at: Mon May 15 15:02:25 +0000 2017
+          profile_background_image_url_https: ''
+          time_zone: 
+          profile_sidebar_border_color: C0DEED
+          translator_type: none
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        created_at: Thu Nov 01 11:08:05 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 199932807
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+        profile_sidebar_fill_color: EFEFEF
+        profile_text_color: '333333'
+        followers_count: 34
+        protected: false
+        id_str: '199932807'
+        default_profile_image: false
+        listed_count: 0
+        utc_offset: 
+        statuses_count: 469
+        description: 
+        friends_count: 395
+        location: 
+        profile_link_color: '009999'
+        profile_image_url: http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+        following: 
+        geo_enabled: false
+        profile_background_color: '131516'
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme14/bg.gif
+        name: Hakan
+        lang: tr
+        profile_background_tile: true
+        favourites_count: 0
+        screen_name: 0xR
+        notifications: 
+        url: 
+        created_at: Fri Oct 08 01:56:50 +0000 2010
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme14/bg.gif
+        time_zone: 
+        profile_sidebar_border_color: EEEEEE
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      created_at: Thu Nov 01 21:32:01 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @piedpiper1616: GitHub - immunIT/CVE-2018-11759: Proof of concept
+        showing how to exploit the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+      "@timestamp": '2018-11-01T20:31:09.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058094111121641472
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 17
+          id: 864133873424187392
+          screen_name: piedpiper1616
+          name: blueblue
+          id_str: '864133873424187392'
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 111
+          - 134
+          url: https://t.co/6PMmbNyloQ
+          expanded_url: https://github.com/immunIT/CVE-2018-11759/
+          display_url: github.com/immunIT/CVE-20…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541104269186'
+      source: <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+      in_reply_to_screen_name: 
+      id_str: '1058094111121641472'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 0
+        contributors: 
+        truncated: false
+        text: 'GitHub - immunIT/CVE-2018-11759: Proof of concept showing how to exploit
+          the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057952412776857600
+        favorite_count: 17
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 92
+            - 115
+            url: https://t.co/6PMmbNyloQ
+            expanded_url: https://github.com/immunIT/CVE-2018-11759/
+            display_url: github.com/immunIT/CVE-20…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twicca.r246.jp/" rel="nofollow">twicca</a>
+        in_reply_to_screen_name: 
+        id_str: '1057952412776857600'
+        retweet_count: 19
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 864133873424187392
+          default_profile: true
+          verified: false
+          profile_image_url_https: https://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          profile_sidebar_fill_color: DDEEF6
+          profile_text_color: '333333'
+          followers_count: 404
+          protected: false
+          id_str: '864133873424187392'
+          default_profile_image: false
+          listed_count: 9
+          utc_offset: 
+          statuses_count: 722
+          description: セキュリティ関連の情報収集用・悪用禁止
+          friends_count: 31
+          location: 日本
+          profile_link_color: 1DA1F2
+          profile_image_url: http://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: F5F8FA
+          profile_background_image_url: ''
+          name: blueblue
+          lang: ja
+          profile_background_tile: false
+          favourites_count: 872
+          screen_name: piedpiper1616
+          notifications: 
+          url: https://github.com/blue1616
+          created_at: Mon May 15 15:02:25 +0000 2017
+          profile_background_image_url_https: ''
+          time_zone: 
+          profile_sidebar_border_color: C0DEED
+          translator_type: none
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        created_at: Thu Nov 01 11:08:05 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 296387955
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/986725144335998979/tf7C6ZGH_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '141014'
+        followers_count: 9505
+        protected: false
+        id_str: '296387955'
+        default_profile_image: false
+        listed_count: 370
+        utc_offset: 
+        statuses_count: 18952
+        description: 
+        friends_count: 1015
+        location: 
+        profile_link_color: '0084B4'
+        profile_image_url: http://pbs.twimg.com/profile_images/986725144335998979/tf7C6ZGH_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: C0DEED
+        profile_banner_url: https://pbs.twimg.com/profile_banners/296387955/1421694991
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: m3g9tr0n
+        lang: en
+        profile_background_tile: false
+        favourites_count: 766
+        screen_name: m3g9tr0n
+        notifications: 
+        url: 
+        created_at: Tue May 10 17:35:44 +0000 2011
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      created_at: Thu Nov 01 20:31:09 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @TheHackersNews: Apache has released an important #security update
+        to address a vulnerability (CVE-2018-11759) in Apache Tomcat JK Conne…'
+      "@timestamp": '2018-11-01T20:23:20.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058092144660021248
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 18
+          id: 209811713
+          screen_name: TheHackersNews
+          name: The Hacker News
+          id_str: '209811713'
+        symbols: []
+        hashtags:
+        - indices:
+          - 53
+          - 62
+          text: security
+        urls: []
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541103800345'
+      source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+        for Android</a>
+      in_reply_to_screen_name: 
+      id_str: '1058092144660021248'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 3
+        contributors: 
+        truncated: true
+        text: 'Apache has released an important #security update to address a vulnerability
+          (CVE-2018-11759) in Apache Tomcat JK C… https://t.co/H0gYzUKXdZ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057898645448736773
+        favorite_count: 119
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags:
+          - indices:
+            - 33
+            - 42
+            text: security
+          urls:
+          - indices:
+            - 117
+            - 140
+            url: https://t.co/H0gYzUKXdZ
+            expanded_url: https://twitter.com/i/web/status/1057898645448736773
+            display_url: twitter.com/i/web/status/1…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+        in_reply_to_screen_name: 
+        id_str: '1057898645448736773'
+        retweet_count: 91
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 209811713
+          default_profile: false
+          verified: true
+          profile_image_url_https: https://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          profile_sidebar_fill_color: '252429'
+          profile_text_color: '666666'
+          followers_count: 505348
+          protected: false
+          id_str: '209811713'
+          default_profile_image: false
+          listed_count: 8795
+          utc_offset: 
+          statuses_count: 28354
+          description: "Most trusted, widely acknowledged news source for cybersecurity
+            researchers, hackers, technologists, enthusiasts and nerds. Contact \U0001F4E8
+            admin@thehackernews.com"
+          friends_count: 2877
+          location: The Internet
+          profile_link_color: 006CD8
+          profile_image_url: http://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: '325192'
+          profile_banner_url: https://pbs.twimg.com/profile_banners/209811713/1468999622
+          profile_background_image_url: http://abs.twimg.com/images/themes/theme15/bg.png
+          name: The Hacker News
+          lang: en
+          profile_background_tile: false
+          favourites_count: 7569
+          screen_name: TheHackersNews
+          notifications: 
+          url: https://thehackernews.com/
+          created_at: Fri Oct 29 23:55:25 +0000 2010
+          profile_background_image_url_https: https://abs.twimg.com/images/themes/theme15/bg.png
+          time_zone: 
+          profile_sidebar_border_color: FFFFFF
+          translator_type: regular
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        extended_tweet:
+          display_text_range:
+          - 0
+          - 276
+          entities:
+            user_mentions: []
+            symbols: []
+            hashtags:
+            - indices:
+              - 33
+              - 42
+              text: security
+            urls:
+            - indices:
+              - 253
+              - 276
+              url: https://t.co/CAxxyGYt8W
+              expanded_url: http://mail-archives.us.apache.org/mod_mbox/www-announce/201810.mbox/%3C16a616e5-5245-f26a-a5a4-2752b2826703@apache.org%3E
+              display_url: mail-archives.us.apache.org/mod_mbox/www-a…
+          full_text: "Apache has released an important #security update to address
+            a vulnerability (CVE-2018-11759) in Apache Tomcat JK Connectors 1.2.0
+            to 1.2.44 that could allow remote attackers to bypass the access \ncontrols
+            configured in httpd and access sensitive info\n\nhttps://t.co/CAxxyGYt8W"
+        created_at: Thu Nov 01 07:34:26 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 937095642635296768
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/937105532648751104/x_-JxpCo_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 50
+        protected: false
+        id_str: '937095642635296768'
+        default_profile_image: false
+        listed_count: 3
+        utc_offset: 
+        statuses_count: 2116
+        description: InfoSec & Software Architecture
+        friends_count: 167
+        location: New York, NY
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/937105532648751104/x_-JxpCo_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: F5F8FA
+        profile_banner_url: https://pbs.twimg.com/profile_banners/937095642635296768/1512257005
+        profile_background_image_url: ''
+        name: Ht0 Consulting LLC
+        lang: en
+        profile_background_tile: false
+        favourites_count: 1514
+        screen_name: ht0_llc
+        notifications: 
+        url: http://www.ht0.co
+        created_at: Sat Dec 02 23:06:26 +0000 2017
+        profile_background_image_url_https: ''
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      lang: en
+      created_at: Thu Nov 01 20:23:20 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @TheHackersNews: Apache has released an important #security update
+        to address a vulnerability (CVE-2018-11759) in Apache Tomcat JK Conne…'
+      "@timestamp": '2018-11-01T20:23:10.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058092104436584451
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 18
+          id: 209811713
+          screen_name: TheHackersNews
+          name: The Hacker News
+          id_str: '209811713'
+        symbols: []
+        hashtags:
+        - indices:
+          - 53
+          - 62
+          text: security
+        urls: []
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541103790755'
+      source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+        for Android</a>
+      in_reply_to_screen_name: 
+      id_str: '1058092104436584451'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 3
+        contributors: 
+        truncated: true
+        text: 'Apache has released an important #security update to address a vulnerability
+          (CVE-2018-11759) in Apache Tomcat JK C… https://t.co/H0gYzUKXdZ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057898645448736773
+        favorite_count: 119
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags:
+          - indices:
+            - 33
+            - 42
+            text: security
+          urls:
+          - indices:
+            - 117
+            - 140
+            url: https://t.co/H0gYzUKXdZ
+            expanded_url: https://twitter.com/i/web/status/1057898645448736773
+            display_url: twitter.com/i/web/status/1…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+        in_reply_to_screen_name: 
+        id_str: '1057898645448736773'
+        retweet_count: 90
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 209811713
+          default_profile: false
+          verified: true
+          profile_image_url_https: https://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          profile_sidebar_fill_color: '252429'
+          profile_text_color: '666666'
+          followers_count: 505348
+          protected: false
+          id_str: '209811713'
+          default_profile_image: false
+          listed_count: 8795
+          utc_offset: 
+          statuses_count: 28354
+          description: "Most trusted, widely acknowledged news source for cybersecurity
+            researchers, hackers, technologists, enthusiasts and nerds. Contact \U0001F4E8
+            admin@thehackernews.com"
+          friends_count: 2877
+          location: The Internet
+          profile_link_color: 006CD8
+          profile_image_url: http://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: '325192'
+          profile_banner_url: https://pbs.twimg.com/profile_banners/209811713/1468999622
+          profile_background_image_url: http://abs.twimg.com/images/themes/theme15/bg.png
+          name: The Hacker News
+          lang: en
+          profile_background_tile: false
+          favourites_count: 7569
+          screen_name: TheHackersNews
+          notifications: 
+          url: https://thehackernews.com/
+          created_at: Fri Oct 29 23:55:25 +0000 2010
+          profile_background_image_url_https: https://abs.twimg.com/images/themes/theme15/bg.png
+          time_zone: 
+          profile_sidebar_border_color: FFFFFF
+          translator_type: regular
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        extended_tweet:
+          display_text_range:
+          - 0
+          - 276
+          entities:
+            user_mentions: []
+            symbols: []
+            hashtags:
+            - indices:
+              - 33
+              - 42
+              text: security
+            urls:
+            - indices:
+              - 253
+              - 276
+              url: https://t.co/CAxxyGYt8W
+              expanded_url: http://mail-archives.us.apache.org/mod_mbox/www-announce/201810.mbox/%3C16a616e5-5245-f26a-a5a4-2752b2826703@apache.org%3E
+              display_url: mail-archives.us.apache.org/mod_mbox/www-a…
+          full_text: "Apache has released an important #security update to address
+            a vulnerability (CVE-2018-11759) in Apache Tomcat JK Connectors 1.2.0
+            to 1.2.44 that could allow remote attackers to bypass the access \ncontrols
+            configured in httpd and access sensitive info\n\nhttps://t.co/CAxxyGYt8W"
+        created_at: Thu Nov 01 07:34:26 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 2276504906
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/880969302047956993/c9d7gCKV_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 471
+        protected: false
+        id_str: '2276504906'
+        default_profile_image: false
+        listed_count: 120
+        utc_offset: 
+        statuses_count: 14795
+        description: |-
+          #InfoSec, #science, #space, #feminism, and the oxford comma.
+          Sic Gorgiamus Allos Subjectatos Nunc
+        friends_count: 1658
+        location: New York, NY
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/880969302047956993/c9d7gCKV_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_banner_url: https://pbs.twimg.com/profile_banners/2276504906/1498874425
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Not a malicious AI bent on world domination
+        lang: en
+        profile_background_tile: false
+        favourites_count: 26190
+        screen_name: AdamGrandt
+        notifications: 
+        url: 
+        created_at: Sat Jan 04 18:49:57 +0000 2014
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      lang: en
+      created_at: Thu Nov 01 20:23:10 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @piedpiper1616: GitHub - immunIT/CVE-2018-11759: Proof of concept
+        showing how to exploit the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+      "@timestamp": '2018-11-01T19:51:20.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058084091382390784
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 17
+          id: 864133873424187392
+          screen_name: piedpiper1616
+          name: blueblue
+          id_str: '864133873424187392'
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 111
+          - 134
+          url: https://t.co/6PMmbNyloQ
+          expanded_url: https://github.com/immunIT/CVE-2018-11759/
+          display_url: github.com/immunIT/CVE-20…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541101880294'
+      source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+        for Android</a>
+      in_reply_to_screen_name: 
+      id_str: '1058084091382390784'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 0
+        contributors: 
+        truncated: false
+        text: 'GitHub - immunIT/CVE-2018-11759: Proof of concept showing how to exploit
+          the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057952412776857600
+        favorite_count: 17
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 92
+            - 115
+            url: https://t.co/6PMmbNyloQ
+            expanded_url: https://github.com/immunIT/CVE-2018-11759/
+            display_url: github.com/immunIT/CVE-20…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twicca.r246.jp/" rel="nofollow">twicca</a>
+        in_reply_to_screen_name: 
+        id_str: '1057952412776857600'
+        retweet_count: 18
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 864133873424187392
+          default_profile: true
+          verified: false
+          profile_image_url_https: https://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          profile_sidebar_fill_color: DDEEF6
+          profile_text_color: '333333'
+          followers_count: 404
+          protected: false
+          id_str: '864133873424187392'
+          default_profile_image: false
+          listed_count: 9
+          utc_offset: 
+          statuses_count: 722
+          description: セキュリティ関連の情報収集用・悪用禁止
+          friends_count: 31
+          location: 日本
+          profile_link_color: 1DA1F2
+          profile_image_url: http://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: F5F8FA
+          profile_background_image_url: ''
+          name: blueblue
+          lang: ja
+          profile_background_tile: false
+          favourites_count: 872
+          screen_name: piedpiper1616
+          notifications: 
+          url: https://github.com/blue1616
+          created_at: Mon May 15 15:02:25 +0000 2017
+          profile_background_image_url_https: ''
+          time_zone: 
+          profile_sidebar_border_color: C0DEED
+          translator_type: none
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        created_at: Thu Nov 01 11:08:05 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 1006053003634364416
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/1009205432735453184/xbow4jQk_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 17
+        protected: false
+        id_str: '1006053003634364416'
+        default_profile_image: false
+        listed_count: 0
+        utc_offset: 
+        statuses_count: 617
+        description: Prost0 $
+        friends_count: 234
+        location: 
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/1009205432735453184/xbow4jQk_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: F5F8FA
+        profile_banner_url: https://pbs.twimg.com/profile_banners/1006053003634364416/1528697351
+        profile_background_image_url: ''
+        name: OneDollar
+        lang: ru
+        profile_background_tile: false
+        favourites_count: 29
+        screen_name: OneDolllar
+        notifications: 
+        url: 
+        created_at: Mon Jun 11 05:58:22 +0000 2018
+        profile_background_image_url_https: ''
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      created_at: Thu Nov 01 19:51:20 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @piedpiper1616: GitHub - immunIT/CVE-2018-11759: Proof of concept
+        showing how to exploit the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+      "@timestamp": '2018-11-01T19:42:18.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058081820871397376
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 17
+          id: 864133873424187392
+          screen_name: piedpiper1616
+          name: blueblue
+          id_str: '864133873424187392'
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 111
+          - 134
+          url: https://t.co/6PMmbNyloQ
+          expanded_url: https://github.com/immunIT/CVE-2018-11759/
+          display_url: github.com/immunIT/CVE-20…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541101338962'
+      source: <a href="https://tapbots.com/software/tweetbot/mac" rel="nofollow">Tweetbot
+        for Mac</a>
+      in_reply_to_screen_name: 
+      id_str: '1058081820871397376'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 0
+        contributors: 
+        truncated: false
+        text: 'GitHub - immunIT/CVE-2018-11759: Proof of concept showing how to exploit
+          the CVE-2018-11759 https://t.co/6PMmbNyloQ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057952412776857600
+        favorite_count: 17
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 92
+            - 115
+            url: https://t.co/6PMmbNyloQ
+            expanded_url: https://github.com/immunIT/CVE-2018-11759/
+            display_url: github.com/immunIT/CVE-20…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twicca.r246.jp/" rel="nofollow">twicca</a>
+        in_reply_to_screen_name: 
+        id_str: '1057952412776857600'
+        retweet_count: 17
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 864133873424187392
+          default_profile: true
+          verified: false
+          profile_image_url_https: https://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          profile_sidebar_fill_color: DDEEF6
+          profile_text_color: '333333'
+          followers_count: 403
+          protected: false
+          id_str: '864133873424187392'
+          default_profile_image: false
+          listed_count: 9
+          utc_offset: 
+          statuses_count: 722
+          description: セキュリティ関連の情報収集用・悪用禁止
+          friends_count: 31
+          location: 日本
+          profile_link_color: 1DA1F2
+          profile_image_url: http://pbs.twimg.com/profile_images/864850495260639232/Dc1F7l4y_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: F5F8FA
+          profile_background_image_url: ''
+          name: blueblue
+          lang: ja
+          profile_background_tile: false
+          favourites_count: 872
+          screen_name: piedpiper1616
+          notifications: 
+          url: https://github.com/blue1616
+          created_at: Mon May 15 15:02:25 +0000 2017
+          profile_background_image_url_https: ''
+          time_zone: 
+          profile_sidebar_border_color: C0DEED
+          translator_type: none
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        created_at: Thu Nov 01 11:08:05 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 42357741
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/1031493077154889728/kONYQD4k_normal.jpg
+        profile_sidebar_fill_color: 281E17
+        profile_text_color: 7A5C45
+        followers_count: 2981
+        protected: false
+        id_str: '42357741'
+        default_profile_image: false
+        listed_count: 169
+        utc_offset: 
+        statuses_count: 11522
+        description: 'DPO & ISO | #ZATAZ co-founder | ISO 27001 LI & ISO 27032 #Cybersecurity
+          LM & ISO 22301 LI & CDPO | $views != my employer && RT =! endorsement'
+        friends_count: 1378
+        location: Luxembourg
+        profile_link_color: 54493E
+        profile_image_url: http://pbs.twimg.com/profile_images/1031493077154889728/kONYQD4k_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: 3C2C22
+        profile_banner_url: https://pbs.twimg.com/profile_banners/42357741/1534762220
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme9/bg.gif
+        name: Eric Romang
+        lang: en
+        profile_background_tile: false
+        favourites_count: 108
+        screen_name: eromang
+        notifications: 
+        url: http://eromang.zataz.com
+        created_at: Mon May 25 05:36:27 +0000 2009
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme9/bg.gif
+        time_zone: 
+        profile_sidebar_border_color: 7A5C45
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      created_at: Thu Nov 01 19:42:18 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: 'RT @TheHackersNews: Apache has released an important #security update
+        to address a vulnerability (CVE-2018-11759) in Apache Tomcat JK Conne…'
+      "@timestamp": '2018-11-01T19:30:39.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1058078885739409408
+      favorite_count: 0
+      entities:
+        user_mentions:
+        - indices:
+          - 3
+          - 18
+          id: 209811713
+          screen_name: TheHackersNews
+          name: The Hacker News
+          id_str: '209811713'
+        symbols: []
+        hashtags:
+        - indices:
+          - 53
+          - 62
+          text: security
+        urls: []
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541100639172'
+      source: <a href="http://twitter.com/download/android" rel="nofollow">Twitter
+        for Android</a>
+      in_reply_to_screen_name: 
+      id_str: '1058078885739409408'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      retweeted_status:
+        quote_count: 3
+        contributors: 
+        truncated: true
+        text: 'Apache has released an important #security update to address a vulnerability
+          (CVE-2018-11759) in Apache Tomcat JK C… https://t.co/H0gYzUKXdZ'
+        is_quote_status: false
+        in_reply_to_status_id: 
+        reply_count: 0
+        id: 1057898645448736773
+        favorite_count: 117
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags:
+          - indices:
+            - 33
+            - 42
+            text: security
+          urls:
+          - indices:
+            - 117
+            - 140
+            url: https://t.co/H0gYzUKXdZ
+            expanded_url: https://twitter.com/i/web/status/1057898645448736773
+            display_url: twitter.com/i/web/status/1…
+        retweeted: false
+        coordinates: 
+        source: <a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>
+        in_reply_to_screen_name: 
+        id_str: '1057898645448736773'
+        retweet_count: 89
+        in_reply_to_user_id: 
+        favorited: false
+        user:
+          follow_request_sent: 
+          profile_use_background_image: true
+          contributors_enabled: false
+          id: 209811713
+          default_profile: false
+          verified: true
+          profile_image_url_https: https://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          profile_sidebar_fill_color: '252429'
+          profile_text_color: '666666'
+          followers_count: 505337
+          protected: false
+          id_str: '209811713'
+          default_profile_image: false
+          listed_count: 8791
+          utc_offset: 
+          statuses_count: 28354
+          description: "Most trusted, widely acknowledged news source for cybersecurity
+            researchers, hackers, technologists, enthusiasts and nerds. Contact \U0001F4E8
+            admin@thehackernews.com"
+          friends_count: 2877
+          location: The Internet
+          profile_link_color: 006CD8
+          profile_image_url: http://pbs.twimg.com/profile_images/723571201449295877/-KeG1OdO_normal.jpg
+          following: 
+          geo_enabled: false
+          profile_background_color: '325192'
+          profile_banner_url: https://pbs.twimg.com/profile_banners/209811713/1468999622
+          profile_background_image_url: http://abs.twimg.com/images/themes/theme15/bg.png
+          name: The Hacker News
+          lang: en
+          profile_background_tile: false
+          favourites_count: 7569
+          screen_name: TheHackersNews
+          notifications: 
+          url: https://thehackernews.com/
+          created_at: Fri Oct 29 23:55:25 +0000 2010
+          profile_background_image_url_https: https://abs.twimg.com/images/themes/theme15/bg.png
+          time_zone: 
+          profile_sidebar_border_color: FFFFFF
+          translator_type: regular
+          is_translator: false
+        geo: 
+        in_reply_to_user_id_str: 
+        possibly_sensitive: false
+        lang: en
+        extended_tweet:
+          display_text_range:
+          - 0
+          - 276
+          entities:
+            user_mentions: []
+            symbols: []
+            hashtags:
+            - indices:
+              - 33
+              - 42
+              text: security
+            urls:
+            - indices:
+              - 253
+              - 276
+              url: https://t.co/CAxxyGYt8W
+              expanded_url: http://mail-archives.us.apache.org/mod_mbox/www-announce/201810.mbox/%3C16a616e5-5245-f26a-a5a4-2752b2826703@apache.org%3E
+              display_url: mail-archives.us.apache.org/mod_mbox/www-a…
+          full_text: "Apache has released an important #security update to address
+            a vulnerability (CVE-2018-11759) in Apache Tomcat JK Connectors 1.2.0
+            to 1.2.44 that could allow remote attackers to bypass the access \ncontrols
+            configured in httpd and access sensitive info\n\nhttps://t.co/CAxxyGYt8W"
+        created_at: Thu Nov 01 07:34:26 +0000 2018
+        filter_level: low
+        in_reply_to_status_id_str: 
+        place: 
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 1879864784
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+        profile_sidebar_fill_color: EFEFEF
+        profile_text_color: '333333'
+        followers_count: 236
+        protected: false
+        id_str: '1879864784'
+        default_profile_image: false
+        listed_count: 343
+        utc_offset: 
+        statuses_count: 6097
+        description: "----Su socio tecnológico para asegurar su infraestructura IT----
+          \    Windows, Cisco, VMware, Hyper-V, ESX, Linux, VOIP, Virtualización,
+          Pentest, Seguridad WEB"
+        friends_count: 432
+        location: 
+        profile_link_color: '009999'
+        profile_image_url: http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png
+        following: 
+        geo_enabled: false
+        profile_background_color: '131516'
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme14/bg.gif
+        name: Securing-IT
+        lang: es
+        profile_background_tile: true
+        favourites_count: 4106
+        screen_name: Securing_IT
+        notifications: 
+        url: http://www.securing-it.com.ar
+        created_at: Wed Sep 18 15:25:55 +0000 2013
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme14/bg.gif
+        time_zone: 
+        profile_sidebar_border_color: EEEEEE
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      lang: en
+      created_at: Thu Nov 01 19:30:39 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+  exploit: 0
+  exploit_date_timestamp: 
+  references:
+  - Resource: []
+    Hyperlink: https://lists.apache.org/thread.html/6d564bb0ab73d6b3efdd1d6b1c075d1a2c84ecd84a4159d6122529ad@%3Cannounce.tomcat.apache.org%3E
+  CVSS_V3_scope: 
+  tweet_count: 25
+  affected_product: 
+  affected_vendor: 
+  affected_product_detail: 
+  last_revised_timestamp: 1540944000000
+  CVE_ID: CVE-2018-11759
+  title: 
+  last_revised: '2018-10-31T00:00:00Z'
+  zeroday_price: 
+  CVSS_V3_base_score: 
+  exploit_date: 
+  original_release_date: '2018-10-31T00:00:00Z'
+  CVSS_V3_impact_score: 
+  CVSS_V3_attack_complexity: 
+  original_release_date_timestamp: 1540944000000
+  retweet_count: 120
+  CWEID: 
+- CVSS_V3_confidentiality: 
+  vultype: 
   overview: An issue was discovered in com\mingsoft\basic\action\web\FileAction.java
     in MCMS 4.6.5. Since the upload interface does not verify the user login status,
     you can use this interface to upload files without setting a cookie. First, start
@@ -12,6 +2266,344 @@
   CVSS_V3_attack_vector: 
   tweets:
     tweets:
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: |-
+        CVE-2018-18830
+
+        An issue was discovered in com\mingsoft\basic\action\web\https://t.co/1HqAaAUeCk in MCMS 4.6.5. Sin… https://t.co/OWFv0kUDGM
+      "@timestamp": '2018-11-01T12:29:43.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057972954980642817
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 73
+          - 96
+          url: https://t.co/1HqAaAUeCk
+          expanded_url: http://FileAction.java
+          display_url: FileAction.java
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/OWFv0kUDGM
+          expanded_url: https://twitter.com/i/web/status/1057972954980642817
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1541075383311'
+      source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
+      in_reply_to_screen_name: 
+      id_str: '1057972954980642817'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 941389496771399680
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 294
+        protected: false
+        id_str: '941389496771399680'
+        default_profile_image: false
+        listed_count: 13
+        utc_offset: 
+        statuses_count: 37387
+        description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
+          account || https://vulmon.com/searchfeed?q=* for RSS feed
+        friends_count: 2
+        location: 
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Vulmon Vulnerability Feed
+        lang: en
+        profile_background_tile: false
+        favourites_count: 12
+        screen_name: VulmonFeeds
+        notifications: 
+        url: http://vulmon.com/rss
+        created_at: Thu Dec 14 19:28:41 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 251
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 73
+            - 96
+            url: https://t.co/1HqAaAUeCk
+            expanded_url: http://FileAction.java
+            display_url: FileAction.java
+          - indices:
+            - 228
+            - 251
+            url: https://t.co/0XEV4g2EzG
+            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-18830
+            display_url: vulmon.com/vulnerabilityd…
+        full_text: |-
+          CVE-2018-18830
+
+          An issue was discovered in com\mingsoft\basic\action\web\https://t.co/1HqAaAUeCk in MCMS 4.6.5. Since the upload interface does not verify the user login status, you can use this interface to upload files wi...
+
+          https://t.co/0XEV4g2EzG
+      created_at: Thu Nov 01 12:29:43 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: 'threatmeter: CVE-2018-18830 An issue was discovered in com\mingsoft\basic\action\web\https://t.co/px3dBsSwCu
+        in MCM… https://t.co/dU2BN2tTJ1'
+      "@timestamp": '2018-10-31T03:33:20.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057475583876173824
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 85
+          - 108
+          url: https://t.co/px3dBsSwCu
+          expanded_url: http://FileAction.java
+          display_url: FileAction.java
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/dU2BN2tTJ1
+          expanded_url: https://twitter.com/i/web/status/1057475583876173824
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1540956800799'
+      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
+      in_reply_to_screen_name: 
+      id_str: '1057475583876173824'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 2818572617
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/704946588515475456/eEZ9TSax_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 1408
+        protected: false
+        id_str: '2818572617'
+        default_profile_image: false
+        listed_count: 129
+        utc_offset: 
+        statuses_count: 114885
+        description: 
+        friends_count: 1614
+        location: 
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/704946588515475456/eEZ9TSax_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: C0DEED
+        profile_banner_url: https://pbs.twimg.com/profile_banners/2818572617/1456907429
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Secure Dude
+        lang: en
+        profile_background_tile: false
+        favourites_count: 131
+        screen_name: SecurityMagnate
+        notifications: 
+        url: http://twiends.com/securedude
+        created_at: Thu Oct 09 05:49:32 +0000 2014
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 279
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 85
+            - 108
+            url: https://t.co/px3dBsSwCu
+            expanded_url: http://FileAction.java
+            display_url: FileAction.java
+          - indices:
+            - 256
+            - 279
+            url: https://t.co/LeMfblKqoP
+            expanded_url: https://ift.tt/2P1LzxK
+            display_url: ift.tt/2P1LzxK
+        full_text: 'threatmeter: CVE-2018-18830 An issue was discovered in com\mingsoft\basic\action\web\https://t.co/px3dBsSwCu
+          in MCMS 4.6.5. Since the upload interface does not verify the user login
+          status, you can use this interface to upload files without setting a coo…
+          https://t.co/LeMfblKqoP'
+      created_at: Wed Oct 31 03:33:20 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: CVE-2018-18830 An issue was discovered in com\mingsoft\basic\action\web\https://t.co/Zcpw6fJ6G2
+        in MCMS 4.6.5. Sinc… https://t.co/YWnY0nEWzM
+      "@timestamp": '2018-10-31T03:29:27.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057474606704050176
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 72
+          - 95
+          url: https://t.co/Zcpw6fJ6G2
+          expanded_url: http://FileAction.java
+          display_url: FileAction.java
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/YWnY0nEWzM
+          expanded_url: https://twitter.com/i/web/status/1057474606704050176
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1540956567823'
+      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
+      in_reply_to_screen_name: 
+      id_str: '1057474606704050176'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 3465979397
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/637160052617379840/VTN_Q4tL_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 449
+        protected: false
+        id_str: '3465979397'
+        default_profile_image: false
+        listed_count: 123
+        utc_offset: 
+        statuses_count: 131945
+        description: 'All publicly published vulnerabilities, zero-days, exploits,
+          security bulletins and advisories from various resources. By @mekinpesen
+          | #cybersecurity, #infosec'
+        friends_count: 2
+        location: İstanbul, Türkiye
+        profile_link_color: 3B94D9
+        profile_image_url: http://pbs.twimg.com/profile_images/637160052617379840/VTN_Q4tL_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: ThreatMeter
+        lang: tr
+        profile_background_tile: false
+        favourites_count: 0
+        screen_name: threatmeter
+        notifications: 
+        url: https://www.sibergah.com
+        created_at: Fri Aug 28 07:09:00 +0000 2015
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 279
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 72
+            - 95
+            url: https://t.co/Zcpw6fJ6G2
+            expanded_url: http://FileAction.java
+            display_url: FileAction.java
+          - indices:
+            - 256
+            - 279
+            url: https://t.co/1cy5b6FtEd
+            expanded_url: https://ift.tt/2P1LzxK
+            display_url: ift.tt/2P1LzxK
+        full_text: CVE-2018-18830 An issue was discovered in com\mingsoft\basic\action\web\https://t.co/Zcpw6fJ6G2
+          in MCMS 4.6.5. Since the upload interface does not verify the user login
+          status, you can use this interface to upload files without setting a cookie.
+          First, s… https://t.co/1cy5b6FtEd
+      created_at: Wed Oct 31 03:29:27 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
     - quote_count: 0
       contributors: 
       truncated: true
@@ -613,7 +3205,7 @@
   - Resource: []
     Hyperlink: https://gitee.com/mingSoft/MCMS/issues/IO0IQ
   CVSS_V3_scope: 
-  tweet_count: 7
+  tweet_count: 8
   affected_product: 
   affected_vendor: 
   affected_product_detail: 
@@ -3105,1060 +5697,6 @@
   vultype: 
   overview: An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN,
     AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices.
-    There is a heap-based buffer overflow vulnerability in the router's web server
-    -- httpd. While processing the 'mac' parameter for a post request, the value is
-    directly used in a strcpy to a variable placed on the heap, which can leak sensitive
-    information or even hijack program control flow.
-  CVSS_V3_privileges_required: 
-  CVSS_V3_user_interaction: 
-  CVSS_V3_attack_vector: 
-  tweets:
-    tweets:
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: |-
-        CVE-2018-18729
-
-        An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_… https://t.co/ZglRqCo4PY
-      "@timestamp": '2018-10-29T19:15:41.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056987955942866945
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/ZglRqCo4PY
-          expanded_url: https://twitter.com/i/web/status/1056987955942866945
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540840541240'
-      source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
-      in_reply_to_screen_name: 
-      id_str: '1056987955942866945'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 941389496771399680
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 295
-        protected: false
-        id_str: '941389496771399680'
-        default_profile_image: false
-        listed_count: 13
-        utc_offset: 
-        statuses_count: 37224
-        description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
-          account || https://vulmon.com/searchfeed?q=* for RSS feed
-        friends_count: 2
-        location: 
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: Vulmon Vulnerability Feed
-        lang: en
-        profile_background_tile: false
-        favourites_count: 12
-        screen_name: VulmonFeeds
-        notifications: 
-        url: http://vulmon.com/rss
-        created_at: Thu Dec 14 19:28:41 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 243
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 220
-            - 243
-            url: https://t.co/ITBl710cdj
-            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-18729
-            display_url: vulmon.com/vulnerabilityd…
-        full_text: |-
-          CVE-2018-18729
-
-          An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. There is a heap-based buffer overf...
-
-          https://t.co/ITBl710cdj
-      created_at: Mon Oct 29 19:15:41 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: false
-      text: CVE-2018-18729 - An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-        AC9 V15.03.05.19(6318)_CN, AC10 V15. ... https://t.co/VPRfySc601
-      "@timestamp": '2018-10-29T14:35:58.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056917564813664256
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 112
-          - 135
-          url: https://t.co/VPRfySc601
-          expanded_url: https://www.secnews24.com/2018/10/29/cve-2018-18729-an-issue-was-discovered-on-tenda-ac7-v15-03-06-44_cn-ac9-v15-03-05-196318_cn-ac10-v15/
-          display_url: secnews24.com/2018/10/29/cve…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540823758687'
-      source: <a href="https://www.secnews24.com" rel="nofollow">SecNews24</a>
-      in_reply_to_screen_name: 
-      id_str: '1056917564813664256'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 824346807039905796
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 215
-        protected: false
-        id_str: '824346807039905796'
-        default_profile_image: false
-        listed_count: 11
-        utc_offset: 
-        statuses_count: 94
-        description: IT Security, Cyber Security, Network Security, Enterprise Security,
-          Virus & Threats, Vulnerability, Exploit, Cybercrime News and more from around
-          the world.
-        friends_count: 115
-        location: 
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/824346807039905796/1487157214
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: SecNews24
-        lang: en
-        profile_background_tile: false
-        favourites_count: 0
-        screen_name: secnews24
-        notifications: 
-        url: https://www.secnews24.com
-        created_at: Wed Jan 25 20:02:49 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      created_at: Mon Oct 29 14:35:58 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: CVE-2018-18729 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/gFe7GS5nc2
-      "@timestamp": '2018-10-28T00:39:19.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056344627127742464
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/gFe7GS5nc2
-          expanded_url: https://twitter.com/i/web/status/1056344627127742464
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540687159698'
-      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
-      in_reply_to_screen_name: 
-      id_str: '1056344627127742464'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 381963910
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 206
-        protected: false
-        id_str: '381963910'
-        default_profile_image: false
-        listed_count: 135
-        utc_offset: 
-        statuses_count: 42455
-        description: I work for eyeT Systems, a niche IT integration and support company
-          in South Australia. Thoughts are my own :)
-        friends_count: 326
-        location: South Australia, Australia
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/381963910/1463629010
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: Daniel @ eyeT Systems
-        lang: en
-        profile_background_tile: false
-        favourites_count: 10
-        screen_name: eyeTSystems
-        notifications: 
-        url: https://www.eyeTSystems.com.au
-        created_at: Thu Sep 29 07:50:04 +0000 2011
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 259
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 236
-            - 259
-            url: https://t.co/zqvUDMznCP
-            expanded_url: http://bit.ly/2yErGCL
-            display_url: bit.ly/2yErGCL
-        full_text: CVE-2018-18729 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. There is a heap-based buffer overflow
-          vulnerability ... https://t.co/zqvUDMznCP
-      created_at: Sun Oct 28 00:39:19 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: |-
-        RT:
-
-        CVE-2018-18729 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06… https://t.co/TDU8mq274I
-      "@timestamp": '2018-10-28T00:34:13.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056343341338648576
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/TDU8mq274I
-          expanded_url: https://twitter.com/i/web/status/1056343341338648576
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540686853142'
-      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
-      in_reply_to_screen_name: 
-      id_str: '1056343341338648576'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 920420001965678592
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 1063
-        protected: false
-        id_str: '920420001965678592'
-        default_profile_image: false
-        listed_count: 9
-        utc_offset: 
-        statuses_count: 12394
-        description: Product Manager (PM), Reporting @Qualys. Aligning Security, Governance,
-          Risk, and Compliance with People, Processes, and Technology.⭐My tweets are
-          my own.⭐
-        friends_count: 4195
-        location: California, USA
-        profile_link_color: FB0707
-        profile_image_url: http://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/920420001965678592/1538559481
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: 'Debra M. Fezza Reed #Dare2Dream #RegisterToVote'
-        lang: en
-        profile_background_tile: false
-        favourites_count: 22683
-        screen_name: SecRiskRptSME
-        notifications: 
-        url: http://www.qualys.com
-        created_at: Tue Oct 17 22:43:23 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 279
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 241
-            - 264
-            url: https://t.co/0WZ9lxEq66
-            expanded_url: http://bit.ly/2yErGCL
-            display_url: bit.ly/2yErGCL
-        full_text: |-
-          RT:
-
-          CVE-2018-18729 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. There is a heap-based buffer overflow vulnerability ... https://t.co/0WZ9lxEq66
-
-          — CVE (CVEne…
-      created_at: Sun Oct 28 00:34:13 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: CVE-2018-18729 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/92PyEzlYkp
-      "@timestamp": '2018-10-28T00:30:38.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056342440511266816
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/92PyEzlYkp
-          expanded_url: https://twitter.com/i/web/status/1056342440511266816
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540686638368'
-      source: <a href="http://cve.mitre.org/cve/" rel="nofollow">CVENEW</a>
-      in_reply_to_screen_name: 
-      id_str: '1056342440511266816'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: true
-        contributors_enabled: false
-        id: 821806287461740544
-        default_profile: true
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
-        profile_sidebar_fill_color: DDEEF6
-        profile_text_color: '333333'
-        followers_count: 9869
-        protected: false
-        id_str: '821806287461740544'
-        default_profile_image: false
-        listed_count: 221
-        utc_offset: 
-        statuses_count: 26967
-        description: 'Official account maintained by the CVE Team to notify the community
-          of new CVE IDs. For additional data feeds see: https://cve.mitre.org/cve/data_feeds.html.'
-        friends_count: 2
-        location: 
-        profile_link_color: 1DA1F2
-        profile_image_url: http://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: F5F8FA
-        profile_banner_url: https://pbs.twimg.com/profile_banners/821806287461740544/1491503268
-        profile_background_image_url: ''
-        name: CVE
-        lang: en
-        profile_background_tile: false
-        favourites_count: 0
-        screen_name: CVEnew
-        notifications: 
-        url: https://cveform.mitre.org
-        created_at: Wed Jan 18 19:47:42 +0000 2017
-        profile_background_image_url_https: ''
-        time_zone: 
-        profile_sidebar_border_color: C0DEED
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 259
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 236
-            - 259
-            url: https://t.co/DYEE60neiE
-            expanded_url: http://bit.ly/2yErGCL
-            display_url: bit.ly/2yErGCL
-        full_text: CVE-2018-18729 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. There is a heap-based buffer overflow
-          vulnerability ... https://t.co/DYEE60neiE
-      created_at: Sun Oct 28 00:30:38 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    retweets: []
-  exploit: 0
-  exploit_date_timestamp: 
-  references:
-  - Resource: []
-    Hyperlink: https://github.com/ZIllR0/Routers/blob/master/Tenda/heapoverflow1.md
-  CVSS_V3_scope: 
-  tweet_count: 4
-  affected_product: 
-  affected_vendor: 
-  affected_product_detail: 
-  last_revised_timestamp: 1540771200000
-  CVE_ID: CVE-2018-18729
-  title: 
-  last_revised: '2018-10-29T00:00:00Z'
-  zeroday_price: 
-  CVSS_V3_base_score: 
-  exploit_date: 
-  original_release_date: '2018-10-29T00:00:00Z'
-  CVSS_V3_impact_score: 
-  CVSS_V3_attack_complexity: 
-  original_release_date_timestamp: 1540771200000
-  retweet_count: 1
-  CWEID: 
-- CVSS_V3_confidentiality: 
-  vultype: 
-  overview: An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN,
-    AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices.
-    There is a buffer overflow vulnerability in the router's web server -- httpd.
-    While processing the 'deviceList' parameter for a post request, the value is directly
-    used in a strcpy to a local variable placed on the stack, which overrides the
-    return address of the function.
-  CVSS_V3_privileges_required: 
-  CVSS_V3_user_interaction: 
-  CVSS_V3_attack_vector: 
-  tweets:
-    tweets:
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: |-
-        CVE-2018-18727
-
-        An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_… https://t.co/S6YQtGYWEk
-      "@timestamp": '2018-10-29T19:29:41.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056991479116324864
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/S6YQtGYWEk
-          expanded_url: https://twitter.com/i/web/status/1056991479116324864
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540841381230'
-      source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
-      in_reply_to_screen_name: 
-      id_str: '1056991479116324864'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 941389496771399680
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 295
-        protected: false
-        id_str: '941389496771399680'
-        default_profile_image: false
-        listed_count: 13
-        utc_offset: 
-        statuses_count: 37226
-        description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
-          account || https://vulmon.com/searchfeed?q=* for RSS feed
-        friends_count: 2
-        location: 
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: Vulmon Vulnerability Feed
-        lang: en
-        profile_background_tile: false
-        favourites_count: 12
-        screen_name: VulmonFeeds
-        notifications: 
-        url: http://vulmon.com/rss
-        created_at: Thu Dec 14 19:28:41 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 243
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 220
-            - 243
-            url: https://t.co/cuDfG8VFl9
-            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-18727
-            display_url: vulmon.com/vulnerabilityd…
-        full_text: |-
-          CVE-2018-18727
-
-          An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnera...
-
-          https://t.co/cuDfG8VFl9
-      created_at: Mon Oct 29 19:29:41 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: false
-      text: CVE-2018-18727 - An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-        AC9 V15.03.05.19(6318)_CN, AC10 V15. ... https://t.co/KmFijFyFb9
-      "@timestamp": '2018-10-29T14:35:52.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056917537336815616
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 112
-          - 135
-          url: https://t.co/KmFijFyFb9
-          expanded_url: https://www.secnews24.com/2018/10/29/cve-2018-18727-an-issue-was-discovered-on-tenda-ac7-v15-03-06-44_cn-ac9-v15-03-05-196318_cn-ac10-v15/
-          display_url: secnews24.com/2018/10/29/cve…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540823752136'
-      source: <a href="https://www.secnews24.com" rel="nofollow">SecNews24</a>
-      in_reply_to_screen_name: 
-      id_str: '1056917537336815616'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 824346807039905796
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 215
-        protected: false
-        id_str: '824346807039905796'
-        default_profile_image: false
-        listed_count: 11
-        utc_offset: 
-        statuses_count: 92
-        description: IT Security, Cyber Security, Network Security, Enterprise Security,
-          Virus & Threats, Vulnerability, Exploit, Cybercrime News and more from around
-          the world.
-        friends_count: 115
-        location: 
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/824346807039905796/1487157214
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: SecNews24
-        lang: en
-        profile_background_tile: false
-        favourites_count: 0
-        screen_name: secnews24
-        notifications: 
-        url: https://www.secnews24.com
-        created_at: Wed Jan 25 20:02:49 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      created_at: Mon Oct 29 14:35:52 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/ht3WO8jqKA
-      "@timestamp": '2018-10-28T00:39:18.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056344622467833856
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/ht3WO8jqKA
-          expanded_url: https://twitter.com/i/web/status/1056344622467833856
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540687158587'
-      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
-      in_reply_to_screen_name: 
-      id_str: '1056344622467833856'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 381963910
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 206
-        protected: false
-        id_str: '381963910'
-        default_profile_image: false
-        listed_count: 135
-        utc_offset: 
-        statuses_count: 42453
-        description: I work for eyeT Systems, a niche IT integration and support company
-          in South Australia. Thoughts are my own :)
-        friends_count: 326
-        location: South Australia, Australia
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/381963910/1463629010
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: Daniel @ eyeT Systems
-        lang: en
-        profile_background_tile: false
-        favourites_count: 10
-        screen_name: eyeTSystems
-        notifications: 
-        url: https://www.eyeTSystems.com.au
-        created_at: Thu Sep 29 07:50:04 +0000 2011
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 255
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 232
-            - 255
-            url: https://t.co/Ss4GQh1SUK
-            expanded_url: http://bit.ly/2Ppm0WF
-            display_url: bit.ly/2Ppm0WF
-        full_text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnerability
-          in the ... https://t.co/Ss4GQh1SUK
-      created_at: Sun Oct 28 00:39:18 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: |-
-        RT:
-
-        CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06… https://t.co/1IXC9bpgdl
-      "@timestamp": '2018-10-28T00:34:12.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056343337047855105
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/1IXC9bpgdl
-          expanded_url: https://twitter.com/i/web/status/1056343337047855105
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540686852119'
-      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
-      in_reply_to_screen_name: 
-      id_str: '1056343337047855105'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 920420001965678592
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 1063
-        protected: false
-        id_str: '920420001965678592'
-        default_profile_image: false
-        listed_count: 9
-        utc_offset: 
-        statuses_count: 12392
-        description: Product Manager (PM), Reporting @Qualys. Aligning Security, Governance,
-          Risk, and Compliance with People, Processes, and Technology.⭐My tweets are
-          my own.⭐
-        friends_count: 4195
-        location: California, USA
-        profile_link_color: FB0707
-        profile_image_url: http://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/920420001965678592/1538559481
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: 'Debra M. Fezza Reed #Dare2Dream #RegisterToVote'
-        lang: en
-        profile_background_tile: false
-        favourites_count: 22683
-        screen_name: SecRiskRptSME
-        notifications: 
-        url: http://www.qualys.com
-        created_at: Tue Oct 17 22:43:23 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 279
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 237
-            - 260
-            url: https://t.co/MAve3K4GeP
-            expanded_url: http://bit.ly/2Ppm0WF
-            display_url: bit.ly/2Ppm0WF
-        full_text: |-
-          RT:
-
-          CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnerability in the ... https://t.co/MAve3K4GeP
-
-          — CVE (CVEnew) O…
-      created_at: Sun Oct 28 00:34:12 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/j0aumwkvsd
-      "@timestamp": '2018-10-28T00:30:36.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056342433603162113
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/j0aumwkvsd
-          expanded_url: https://twitter.com/i/web/status/1056342433603162113
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540686636721'
-      source: <a href="http://cve.mitre.org/cve/" rel="nofollow">CVENEW</a>
-      in_reply_to_screen_name: 
-      id_str: '1056342433603162113'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: true
-        contributors_enabled: false
-        id: 821806287461740544
-        default_profile: true
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
-        profile_sidebar_fill_color: DDEEF6
-        profile_text_color: '333333'
-        followers_count: 9869
-        protected: false
-        id_str: '821806287461740544'
-        default_profile_image: false
-        listed_count: 221
-        utc_offset: 
-        statuses_count: 26965
-        description: 'Official account maintained by the CVE Team to notify the community
-          of new CVE IDs. For additional data feeds see: https://cve.mitre.org/cve/data_feeds.html.'
-        friends_count: 2
-        location: 
-        profile_link_color: 1DA1F2
-        profile_image_url: http://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: F5F8FA
-        profile_banner_url: https://pbs.twimg.com/profile_banners/821806287461740544/1491503268
-        profile_background_image_url: ''
-        name: CVE
-        lang: en
-        profile_background_tile: false
-        favourites_count: 0
-        screen_name: CVEnew
-        notifications: 
-        url: https://cveform.mitre.org
-        created_at: Wed Jan 18 19:47:42 +0000 2017
-        profile_background_image_url_https: ''
-        time_zone: 
-        profile_sidebar_border_color: C0DEED
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 255
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 232
-            - 255
-            url: https://t.co/G5bAzOlxyc
-            expanded_url: http://bit.ly/2Ppm0WF
-            display_url: bit.ly/2Ppm0WF
-        full_text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnerability
-          in the ... https://t.co/G5bAzOlxyc
-      created_at: Sun Oct 28 00:30:36 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    retweets: []
-  exploit: 0
-  exploit_date_timestamp: 
-  references:
-  - Resource: []
-    Hyperlink: https://github.com/ZIllR0/Routers/blob/master/Tenda/stack1.md
-  CVSS_V3_scope: 
-  tweet_count: 4
-  affected_product: 
-  affected_vendor: 
-  affected_product_detail: 
-  last_revised_timestamp: 1540771200000
-  CVE_ID: CVE-2018-18727
-  title: 
-  last_revised: '2018-10-29T00:00:00Z'
-  zeroday_price: 
-  CVSS_V3_base_score: 
-  exploit_date: 
-  original_release_date: '2018-10-29T00:00:00Z'
-  CVSS_V3_impact_score: 
-  CVSS_V3_attack_complexity: 
-  original_release_date_timestamp: 1540771200000
-  retweet_count: 1
-  CWEID: 
-- CVSS_V3_confidentiality: 
-  vultype: 
-  overview: An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN,
-    AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices.
     It is a buffer overflow vulnerability in the router's web server -- httpd. When
     processing the "firewallEn" parameter for a post request, the value is directly
     used in a strcpy to a local variable placed on the stack, which overrides the
@@ -4865,10 +6403,10 @@
   vultype: 
   overview: An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN,
     AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices.
-    It is a buffer overflow vulnerability in the router's web server -- httpd. When
-    processing the "page" parameter of the function "fromAddressNat" for a post request,
-    the value is directly used in a sprintf to a local variable placed on the stack,
-    which overrides the return address of the function.
+    There is a buffer overflow vulnerability in the router's web server -- httpd.
+    While processing the 'deviceList' parameter for a post request, the value is directly
+    used in a strcpy to a local variable placed on the stack, which overrides the
+    return address of the function.
   CVSS_V3_privileges_required: 
   CVSS_V3_user_interaction: 
   CVSS_V3_attack_vector: 
@@ -4878,14 +6416,14 @@
       contributors: 
       truncated: true
       text: |-
-        CVE-2018-18708
+        CVE-2018-18727
 
-        An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_… https://t.co/Bm2MPOhYpR
-      "@timestamp": '2018-10-29T21:14:41.000Z'
+        An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_… https://t.co/S6YQtGYWEk
+      "@timestamp": '2018-10-29T19:29:41.000Z'
       is_quote_status: false
       in_reply_to_status_id: 
       reply_count: 0
-      id: 1057017903655075845
+      id: 1056991479116324864
       favorite_count: 0
       entities:
         user_mentions: []
@@ -4895,15 +6433,15 @@
         - indices:
           - 117
           - 140
-          url: https://t.co/Bm2MPOhYpR
-          expanded_url: https://twitter.com/i/web/status/1057017903655075845
+          url: https://t.co/S6YQtGYWEk
+          expanded_url: https://twitter.com/i/web/status/1056991479116324864
           display_url: twitter.com/i/web/status/1…
       retweeted: false
       coordinates: 
-      timestamp_ms: '1540847681331'
+      timestamp_ms: '1540841381230'
       source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
       in_reply_to_screen_name: 
-      id_str: '1057017903655075845'
+      id_str: '1056991479116324864'
       retweet_count: 0
       in_reply_to_user_id: 
       favorited: false
@@ -4923,7 +6461,7 @@
         default_profile_image: false
         listed_count: 13
         utc_offset: 
-        statuses_count: 37241
+        statuses_count: 37226
         description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
           account || https://vulmon.com/searchfeed?q=* for RSS feed
         friends_count: 2
@@ -4963,16 +6501,16 @@
           - indices:
             - 220
             - 243
-            url: https://t.co/rOyhs0xj9V
-            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-18708
+            url: https://t.co/cuDfG8VFl9
+            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-18727
             display_url: vulmon.com/vulnerabilityd…
         full_text: |-
-          CVE-2018-18708
+          CVE-2018-18727
 
-          An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerabil...
+          An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnera...
 
-          https://t.co/rOyhs0xj9V
-      created_at: Mon Oct 29 21:14:41 +0000 2018
+          https://t.co/cuDfG8VFl9
+      created_at: Mon Oct 29 19:29:41 +0000 2018
       filter_level: low
       in_reply_to_status_id_str: 
       place: 
@@ -4980,13 +6518,13 @@
     - quote_count: 0
       contributors: 
       truncated: false
-      text: CVE-2018-18708 - An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-        AC9 V15.03.05.19(6318)_CN, AC10 V15. ... https://t.co/Qpn0bWamDj
-      "@timestamp": '2018-10-29T14:35:03.000Z'
+      text: CVE-2018-18727 - An issue was discovered on Tenda AC7 V15.03.06.44_CN,
+        AC9 V15.03.05.19(6318)_CN, AC10 V15. ... https://t.co/KmFijFyFb9
+      "@timestamp": '2018-10-29T14:35:52.000Z'
       is_quote_status: false
       in_reply_to_status_id: 
       reply_count: 0
-      id: 1056917334089232386
+      id: 1056917537336815616
       favorite_count: 0
       entities:
         user_mentions: []
@@ -4996,15 +6534,15 @@
         - indices:
           - 112
           - 135
-          url: https://t.co/Qpn0bWamDj
-          expanded_url: https://www.secnews24.com/2018/10/29/cve-2018-18708-an-issue-was-discovered-on-tenda-ac7-v15-03-06-44_cn-ac9-v15-03-05-196318_cn-ac10-v15/
+          url: https://t.co/KmFijFyFb9
+          expanded_url: https://www.secnews24.com/2018/10/29/cve-2018-18727-an-issue-was-discovered-on-tenda-ac7-v15-03-06-44_cn-ac9-v15-03-05-196318_cn-ac10-v15/
           display_url: secnews24.com/2018/10/29/cve…
       retweeted: false
       coordinates: 
-      timestamp_ms: '1540823703678'
+      timestamp_ms: '1540823752136'
       source: <a href="https://www.secnews24.com" rel="nofollow">SecNews24</a>
       in_reply_to_screen_name: 
-      id_str: '1056917334089232386'
+      id_str: '1056917537336815616'
       retweet_count: 0
       in_reply_to_user_id: 
       favorited: false
@@ -5024,7 +6562,7 @@
         default_profile_image: false
         listed_count: 11
         utc_offset: 
-        statuses_count: 77
+        statuses_count: 92
         description: IT Security, Cyber Security, Network Security, Enterprise Security,
           Virus & Threats, Vulnerability, Exploit, Cybercrime News and more from around
           the world.
@@ -5054,7 +6592,7 @@
       in_reply_to_user_id_str: 
       possibly_sensitive: false
       lang: en
-      created_at: Mon Oct 29 14:35:03 +0000 2018
+      created_at: Mon Oct 29 14:35:52 +0000 2018
       filter_level: low
       in_reply_to_status_id_str: 
       place: 
@@ -5062,13 +6600,13 @@
     - quote_count: 0
       contributors: 
       truncated: true
-      text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/ZO623qdAWp
-      "@timestamp": '2018-10-27T22:34:29.000Z'
+      text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
+        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/ht3WO8jqKA
+      "@timestamp": '2018-10-28T00:39:18.000Z'
       is_quote_status: false
       in_reply_to_status_id: 
       reply_count: 0
-      id: 1056313211329437697
+      id: 1056344622467833856
       favorite_count: 0
       entities:
         user_mentions: []
@@ -5078,15 +6616,15 @@
         - indices:
           - 117
           - 140
-          url: https://t.co/ZO623qdAWp
-          expanded_url: https://twitter.com/i/web/status/1056313211329437697
+          url: https://t.co/ht3WO8jqKA
+          expanded_url: https://twitter.com/i/web/status/1056344622467833856
           display_url: twitter.com/i/web/status/1…
       retweeted: false
       coordinates: 
-      timestamp_ms: '1540679669588'
+      timestamp_ms: '1540687158587'
       source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
       in_reply_to_screen_name: 
-      id_str: '1056313211329437697'
+      id_str: '1056344622467833856'
       retweet_count: 0
       in_reply_to_user_id: 
       favorited: false
@@ -5106,7 +6644,7 @@
         default_profile_image: false
         listed_count: 135
         utc_offset: 
-        statuses_count: 42438
+        statuses_count: 42453
         description: I work for eyeT Systems, a niche IT integration and support company
           in South Australia. Thoughts are my own :)
         friends_count: 326
@@ -5138,23 +6676,23 @@
       extended_tweet:
         display_text_range:
         - 0
-        - 252
+        - 255
         entities:
           user_mentions: []
           symbols: []
           hashtags: []
           urls:
           - indices:
-            - 229
-            - 252
-            url: https://t.co/foApyReO77
-            expanded_url: http://bit.ly/2ObgF0K
-            display_url: bit.ly/2ObgF0K
-        full_text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
+            - 232
+            - 255
+            url: https://t.co/Ss4GQh1SUK
+            expanded_url: http://bit.ly/2Ppm0WF
+            display_url: bit.ly/2Ppm0WF
+        full_text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
           AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability
-          in the ... https://t.co/foApyReO77
-      created_at: Sat Oct 27 22:34:29 +0000 2018
+          AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnerability
+          in the ... https://t.co/Ss4GQh1SUK
+      created_at: Sun Oct 28 00:39:18 +0000 2018
       filter_level: low
       in_reply_to_status_id_str: 
       place: 
@@ -5165,12 +6703,12 @@
       text: |-
         RT:
 
-        CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06… https://t.co/uZUCRA8lf9
-      "@timestamp": '2018-10-27T22:34:09.000Z'
+        CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06… https://t.co/1IXC9bpgdl
+      "@timestamp": '2018-10-28T00:34:12.000Z'
       is_quote_status: false
       in_reply_to_status_id: 
       reply_count: 0
-      id: 1056313128005320704
+      id: 1056343337047855105
       favorite_count: 0
       entities:
         user_mentions: []
@@ -5180,15 +6718,15 @@
         - indices:
           - 117
           - 140
-          url: https://t.co/uZUCRA8lf9
-          expanded_url: https://twitter.com/i/web/status/1056313128005320704
+          url: https://t.co/1IXC9bpgdl
+          expanded_url: https://twitter.com/i/web/status/1056343337047855105
           display_url: twitter.com/i/web/status/1…
       retweeted: false
       coordinates: 
-      timestamp_ms: '1540679649722'
+      timestamp_ms: '1540686852119'
       source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
       in_reply_to_screen_name: 
-      id_str: '1056313128005320704'
+      id_str: '1056343337047855105'
       retweet_count: 0
       in_reply_to_user_id: 
       favorited: false
@@ -5208,7 +6746,7 @@
         default_profile_image: false
         listed_count: 9
         utc_offset: 
-        statuses_count: 12376
+        statuses_count: 12392
         description: Product Manager (PM), Reporting @Qualys. Aligning Security, Governance,
           Risk, and Compliance with People, Processes, and Technology.⭐My tweets are
           my own.⭐
@@ -5248,18 +6786,18 @@
           hashtags: []
           urls:
           - indices:
-            - 234
-            - 257
-            url: https://t.co/Lvjtj9IJml
-            expanded_url: http://bit.ly/2ObgF0K
-            display_url: bit.ly/2ObgF0K
+            - 237
+            - 260
+            url: https://t.co/MAve3K4GeP
+            expanded_url: http://bit.ly/2Ppm0WF
+            display_url: bit.ly/2Ppm0WF
         full_text: |-
           RT:
 
-          CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability in the ... https://t.co/Lvjtj9IJml
+          CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnerability in the ... https://t.co/MAve3K4GeP
 
-          — CVE (CVEnew) Octo…
-      created_at: Sat Oct 27 22:34:09 +0000 2018
+          — CVE (CVEnew) O…
+      created_at: Sun Oct 28 00:34:12 +0000 2018
       filter_level: low
       in_reply_to_status_id_str: 
       place: 
@@ -5267,13 +6805,13 @@
     - quote_count: 0
       contributors: 
       truncated: true
-      text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/ZVlYYmaQTc
-      "@timestamp": '2018-10-27T22:30:32.000Z'
+      text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
+        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/j0aumwkvsd
+      "@timestamp": '2018-10-28T00:30:36.000Z'
       is_quote_status: false
       in_reply_to_status_id: 
       reply_count: 0
-      id: 1056312218076282889
+      id: 1056342433603162113
       favorite_count: 0
       entities:
         user_mentions: []
@@ -5283,15 +6821,15 @@
         - indices:
           - 117
           - 140
-          url: https://t.co/ZVlYYmaQTc
-          expanded_url: https://twitter.com/i/web/status/1056312218076282889
+          url: https://t.co/j0aumwkvsd
+          expanded_url: https://twitter.com/i/web/status/1056342433603162113
           display_url: twitter.com/i/web/status/1…
       retweeted: false
       coordinates: 
-      timestamp_ms: '1540679432778'
+      timestamp_ms: '1540686636721'
       source: <a href="http://cve.mitre.org/cve/" rel="nofollow">CVENEW</a>
       in_reply_to_screen_name: 
-      id_str: '1056312218076282889'
+      id_str: '1056342433603162113'
       retweet_count: 0
       in_reply_to_user_id: 
       favorited: false
@@ -5305,13 +6843,13 @@
         profile_image_url_https: https://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
         profile_sidebar_fill_color: DDEEF6
         profile_text_color: '333333'
-        followers_count: 9867
+        followers_count: 9869
         protected: false
         id_str: '821806287461740544'
         default_profile_image: false
         listed_count: 221
         utc_offset: 
-        statuses_count: 26950
+        statuses_count: 26965
         description: 'Official account maintained by the CVE Team to notify the community
           of new CVE IDs. For additional data feeds see: https://cve.mitre.org/cve/data_feeds.html.'
         friends_count: 2
@@ -5343,23 +6881,23 @@
       extended_tweet:
         display_text_range:
         - 0
-        - 252
+        - 255
         entities:
           user_mentions: []
           symbols: []
           hashtags: []
           urls:
           - indices:
-            - 229
-            - 252
-            url: https://t.co/SG3RcxSSBt
-            expanded_url: http://bit.ly/2ObgF0K
-            display_url: bit.ly/2ObgF0K
-        full_text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
+            - 232
+            - 255
+            url: https://t.co/G5bAzOlxyc
+            expanded_url: http://bit.ly/2Ppm0WF
+            display_url: bit.ly/2Ppm0WF
+        full_text: CVE-2018-18727 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
           AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability
-          in the ... https://t.co/SG3RcxSSBt
-      created_at: Sat Oct 27 22:30:32 +0000 2018
+          AC18 V15.03.05.19(6318)_CN devices. There is a buffer overflow vulnerability
+          in the ... https://t.co/G5bAzOlxyc
+      created_at: Sun Oct 28 00:30:36 +0000 2018
       filter_level: low
       in_reply_to_status_id_str: 
       place: 
@@ -5369,14 +6907,14 @@
   exploit_date_timestamp: 
   references:
   - Resource: []
-    Hyperlink: https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-05/Tenda.md
+    Hyperlink: https://github.com/ZIllR0/Routers/blob/master/Tenda/stack1.md
   CVSS_V3_scope: 
   tweet_count: 4
   affected_product: 
   affected_vendor: 
   affected_product_detail: 
   last_revised_timestamp: 1540771200000
-  CVE_ID: CVE-2018-18708
+  CVE_ID: CVE-2018-18727
   title: 
   last_revised: '2018-10-29T00:00:00Z'
   zeroday_price: 
@@ -5919,6 +7457,533 @@
   vultype: 
   overview: An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN,
     AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices.
+    It is a buffer overflow vulnerability in the router's web server -- httpd. When
+    processing the "page" parameter of the function "fromAddressNat" for a post request,
+    the value is directly used in a sprintf to a local variable placed on the stack,
+    which overrides the return address of the function.
+  CVSS_V3_privileges_required: 
+  CVSS_V3_user_interaction: 
+  CVSS_V3_attack_vector: 
+  tweets:
+    tweets:
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: |-
+        CVE-2018-18708
+
+        An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_… https://t.co/Bm2MPOhYpR
+      "@timestamp": '2018-10-29T21:14:41.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1057017903655075845
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/Bm2MPOhYpR
+          expanded_url: https://twitter.com/i/web/status/1057017903655075845
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1540847681331'
+      source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
+      in_reply_to_screen_name: 
+      id_str: '1057017903655075845'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 941389496771399680
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 295
+        protected: false
+        id_str: '941389496771399680'
+        default_profile_image: false
+        listed_count: 13
+        utc_offset: 
+        statuses_count: 37241
+        description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
+          account || https://vulmon.com/searchfeed?q=* for RSS feed
+        friends_count: 2
+        location: 
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Vulmon Vulnerability Feed
+        lang: en
+        profile_background_tile: false
+        favourites_count: 12
+        screen_name: VulmonFeeds
+        notifications: 
+        url: http://vulmon.com/rss
+        created_at: Thu Dec 14 19:28:41 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 243
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 220
+            - 243
+            url: https://t.co/rOyhs0xj9V
+            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-18708
+            display_url: vulmon.com/vulnerabilityd…
+        full_text: |-
+          CVE-2018-18708
+
+          An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerabil...
+
+          https://t.co/rOyhs0xj9V
+      created_at: Mon Oct 29 21:14:41 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: false
+      text: CVE-2018-18708 - An issue was discovered on Tenda AC7 V15.03.06.44_CN,
+        AC9 V15.03.05.19(6318)_CN, AC10 V15. ... https://t.co/Qpn0bWamDj
+      "@timestamp": '2018-10-29T14:35:03.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1056917334089232386
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 112
+          - 135
+          url: https://t.co/Qpn0bWamDj
+          expanded_url: https://www.secnews24.com/2018/10/29/cve-2018-18708-an-issue-was-discovered-on-tenda-ac7-v15-03-06-44_cn-ac9-v15-03-05-196318_cn-ac10-v15/
+          display_url: secnews24.com/2018/10/29/cve…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1540823703678'
+      source: <a href="https://www.secnews24.com" rel="nofollow">SecNews24</a>
+      in_reply_to_screen_name: 
+      id_str: '1056917334089232386'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 824346807039905796
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 215
+        protected: false
+        id_str: '824346807039905796'
+        default_profile_image: false
+        listed_count: 11
+        utc_offset: 
+        statuses_count: 77
+        description: IT Security, Cyber Security, Network Security, Enterprise Security,
+          Virus & Threats, Vulnerability, Exploit, Cybercrime News and more from around
+          the world.
+        friends_count: 115
+        location: 
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_banner_url: https://pbs.twimg.com/profile_banners/824346807039905796/1487157214
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: SecNews24
+        lang: en
+        profile_background_tile: false
+        favourites_count: 0
+        screen_name: secnews24
+        notifications: 
+        url: https://www.secnews24.com
+        created_at: Wed Jan 25 20:02:49 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      created_at: Mon Oct 29 14:35:03 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
+        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/ZO623qdAWp
+      "@timestamp": '2018-10-27T22:34:29.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1056313211329437697
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/ZO623qdAWp
+          expanded_url: https://twitter.com/i/web/status/1056313211329437697
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1540679669588'
+      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
+      in_reply_to_screen_name: 
+      id_str: '1056313211329437697'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 381963910
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 206
+        protected: false
+        id_str: '381963910'
+        default_profile_image: false
+        listed_count: 135
+        utc_offset: 
+        statuses_count: 42438
+        description: I work for eyeT Systems, a niche IT integration and support company
+          in South Australia. Thoughts are my own :)
+        friends_count: 326
+        location: South Australia, Australia
+        profile_link_color: '000000'
+        profile_image_url: http://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_banner_url: https://pbs.twimg.com/profile_banners/381963910/1463629010
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: Daniel @ eyeT Systems
+        lang: en
+        profile_background_tile: false
+        favourites_count: 10
+        screen_name: eyeTSystems
+        notifications: 
+        url: https://www.eyeTSystems.com.au
+        created_at: Thu Sep 29 07:50:04 +0000 2011
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 252
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 229
+            - 252
+            url: https://t.co/foApyReO77
+            expanded_url: http://bit.ly/2ObgF0K
+            display_url: bit.ly/2ObgF0K
+        full_text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
+          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
+          AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability
+          in the ... https://t.co/foApyReO77
+      created_at: Sat Oct 27 22:34:29 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: |-
+        RT:
+
+        CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06… https://t.co/uZUCRA8lf9
+      "@timestamp": '2018-10-27T22:34:09.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1056313128005320704
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/uZUCRA8lf9
+          expanded_url: https://twitter.com/i/web/status/1056313128005320704
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1540679649722'
+      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
+      in_reply_to_screen_name: 
+      id_str: '1056313128005320704'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: false
+        contributors_enabled: false
+        id: 920420001965678592
+        default_profile: false
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
+        profile_sidebar_fill_color: '000000'
+        profile_text_color: '000000'
+        followers_count: 1063
+        protected: false
+        id_str: '920420001965678592'
+        default_profile_image: false
+        listed_count: 9
+        utc_offset: 
+        statuses_count: 12376
+        description: Product Manager (PM), Reporting @Qualys. Aligning Security, Governance,
+          Risk, and Compliance with People, Processes, and Technology.⭐My tweets are
+          my own.⭐
+        friends_count: 4195
+        location: California, USA
+        profile_link_color: FB0707
+        profile_image_url: http://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: '000000'
+        profile_banner_url: https://pbs.twimg.com/profile_banners/920420001965678592/1538559481
+        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
+        name: 'Debra M. Fezza Reed #Dare2Dream #RegisterToVote'
+        lang: en
+        profile_background_tile: false
+        favourites_count: 22683
+        screen_name: SecRiskRptSME
+        notifications: 
+        url: http://www.qualys.com
+        created_at: Tue Oct 17 22:43:23 +0000 2017
+        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
+        time_zone: 
+        profile_sidebar_border_color: '000000'
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 279
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 234
+            - 257
+            url: https://t.co/Lvjtj9IJml
+            expanded_url: http://bit.ly/2ObgF0K
+            display_url: bit.ly/2ObgF0K
+        full_text: |-
+          RT:
+
+          CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability in the ... https://t.co/Lvjtj9IJml
+
+          — CVE (CVEnew) Octo…
+      created_at: Sat Oct 27 22:34:09 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    - quote_count: 0
+      contributors: 
+      truncated: true
+      text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
+        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/ZVlYYmaQTc
+      "@timestamp": '2018-10-27T22:30:32.000Z'
+      is_quote_status: false
+      in_reply_to_status_id: 
+      reply_count: 0
+      id: 1056312218076282889
+      favorite_count: 0
+      entities:
+        user_mentions: []
+        symbols: []
+        hashtags: []
+        urls:
+        - indices:
+          - 117
+          - 140
+          url: https://t.co/ZVlYYmaQTc
+          expanded_url: https://twitter.com/i/web/status/1056312218076282889
+          display_url: twitter.com/i/web/status/1…
+      retweeted: false
+      coordinates: 
+      timestamp_ms: '1540679432778'
+      source: <a href="http://cve.mitre.org/cve/" rel="nofollow">CVENEW</a>
+      in_reply_to_screen_name: 
+      id_str: '1056312218076282889'
+      retweet_count: 0
+      in_reply_to_user_id: 
+      favorited: false
+      user:
+        follow_request_sent: 
+        profile_use_background_image: true
+        contributors_enabled: false
+        id: 821806287461740544
+        default_profile: true
+        verified: false
+        profile_image_url_https: https://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
+        profile_sidebar_fill_color: DDEEF6
+        profile_text_color: '333333'
+        followers_count: 9867
+        protected: false
+        id_str: '821806287461740544'
+        default_profile_image: false
+        listed_count: 221
+        utc_offset: 
+        statuses_count: 26950
+        description: 'Official account maintained by the CVE Team to notify the community
+          of new CVE IDs. For additional data feeds see: https://cve.mitre.org/cve/data_feeds.html.'
+        friends_count: 2
+        location: 
+        profile_link_color: 1DA1F2
+        profile_image_url: http://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
+        following: 
+        geo_enabled: false
+        profile_background_color: F5F8FA
+        profile_banner_url: https://pbs.twimg.com/profile_banners/821806287461740544/1491503268
+        profile_background_image_url: ''
+        name: CVE
+        lang: en
+        profile_background_tile: false
+        favourites_count: 0
+        screen_name: CVEnew
+        notifications: 
+        url: https://cveform.mitre.org
+        created_at: Wed Jan 18 19:47:42 +0000 2017
+        profile_background_image_url_https: ''
+        time_zone: 
+        profile_sidebar_border_color: C0DEED
+        translator_type: none
+        is_translator: false
+      geo: 
+      in_reply_to_user_id_str: 
+      possibly_sensitive: false
+      lang: en
+      extended_tweet:
+        display_text_range:
+        - 0
+        - 252
+        entities:
+          user_mentions: []
+          symbols: []
+          hashtags: []
+          urls:
+          - indices:
+            - 229
+            - 252
+            url: https://t.co/SG3RcxSSBt
+            expanded_url: http://bit.ly/2ObgF0K
+            display_url: bit.ly/2ObgF0K
+        full_text: CVE-2018-18708 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
+          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
+          AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability
+          in the ... https://t.co/SG3RcxSSBt
+      created_at: Sat Oct 27 22:30:32 +0000 2018
+      filter_level: low
+      in_reply_to_status_id_str: 
+      place: 
+      "@version": '1'
+    retweets: []
+  exploit: 0
+  exploit_date_timestamp: 
+  references:
+  - Resource: []
+    Hyperlink: https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-05/Tenda.md
+  CVSS_V3_scope: 
+  tweet_count: 4
+  affected_product: 
+  affected_vendor: 
+  affected_product_detail: 
+  last_revised_timestamp: 1540771200000
+  CVE_ID: CVE-2018-18708
+  title: 
+  last_revised: '2018-10-29T00:00:00Z'
+  zeroday_price: 
+  CVSS_V3_base_score: 
+  exploit_date: 
+  original_release_date: '2018-10-29T00:00:00Z'
+  CVSS_V3_impact_score: 
+  CVSS_V3_attack_complexity: 
+  original_release_date_timestamp: 1540771200000
+  retweet_count: 1
+  CWEID: 
+- CVSS_V3_confidentiality: 
+  vultype: 
+  overview: An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN,
+    AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices.
     There is a buffer overflow vulnerability in the router's web server -- httpd.
     While processing the 'ntpServer' parameter for a post request, the value is directly
     used in a strcpy to a local variable placed on the stack, which overrides the
@@ -6431,533 +8496,6 @@
   affected_product_detail: 
   last_revised_timestamp: 1540771200000
   CVE_ID: CVE-2018-18732
-  title: 
-  last_revised: '2018-10-29T00:00:00Z'
-  zeroday_price: 
-  CVSS_V3_base_score: 
-  exploit_date: 
-  original_release_date: '2018-10-29T00:00:00Z'
-  CVSS_V3_impact_score: 
-  CVSS_V3_attack_complexity: 
-  original_release_date_timestamp: 1540771200000
-  retweet_count: 1
-  CWEID: 
-- CVSS_V3_confidentiality: 
-  vultype: 
-  overview: An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN,
-    AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices.
-    It is a buffer overflow vulnerability in the router's web server -- httpd. When
-    processing the "page" parameter of the function "fromDhcpListClient" for a request,
-    it is directly used in a sprintf to a local variable placed on the stack, which
-    overrides the return address of the function.
-  CVSS_V3_privileges_required: 
-  CVSS_V3_user_interaction: 
-  CVSS_V3_attack_vector: 
-  tweets:
-    tweets:
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: |-
-        CVE-2018-18706
-
-        An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_… https://t.co/2RkhRXaxc4
-      "@timestamp": '2018-10-29T21:28:41.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1057021426748792832
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/2RkhRXaxc4
-          expanded_url: https://twitter.com/i/web/status/1057021426748792832
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540848521302'
-      source: <a href="https://apps.twitter.com" rel="nofollow">vulmonfff</a>
-      in_reply_to_screen_name: 
-      id_str: '1057021426748792832'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 941389496771399680
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 295
-        protected: false
-        id_str: '941389496771399680'
-        default_profile_image: false
-        listed_count: 13
-        utc_offset: 
-        statuses_count: 37243
-        description: Vulnerability feed from http://vulmon.com || @vulmon_ for human-controlled
-          account || https://vulmon.com/searchfeed?q=* for RSS feed
-        friends_count: 2
-        location: 
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/945758793161498625/67b3PEYK_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: Vulmon Vulnerability Feed
-        lang: en
-        profile_background_tile: false
-        favourites_count: 12
-        screen_name: VulmonFeeds
-        notifications: 
-        url: http://vulmon.com/rss
-        created_at: Thu Dec 14 19:28:41 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 243
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 220
-            - 243
-            url: https://t.co/2sXiNrhqZZ
-            expanded_url: http://vulmon.com/vulnerabilitydetails?qid=CVE-2018-18706
-            display_url: vulmon.com/vulnerabilityd…
-        full_text: |-
-          CVE-2018-18706
-
-          An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerabil...
-
-          https://t.co/2sXiNrhqZZ
-      created_at: Mon Oct 29 21:28:41 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: false
-      text: CVE-2018-18706 - An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-        AC9 V15.03.05.19(6318)_CN, AC10 V15. ... https://t.co/Rk6llct74p
-      "@timestamp": '2018-10-29T14:34:55.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056917299314245634
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 112
-          - 135
-          url: https://t.co/Rk6llct74p
-          expanded_url: https://www.secnews24.com/2018/10/29/cve-2018-18706-an-issue-was-discovered-on-tenda-ac7-v15-03-06-44_cn-ac9-v15-03-05-196318_cn-ac10-v15/
-          display_url: secnews24.com/2018/10/29/cve…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540823695387'
-      source: <a href="https://www.secnews24.com" rel="nofollow">SecNews24</a>
-      in_reply_to_screen_name: 
-      id_str: '1056917299314245634'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 824346807039905796
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 215
-        protected: false
-        id_str: '824346807039905796'
-        default_profile_image: false
-        listed_count: 11
-        utc_offset: 
-        statuses_count: 75
-        description: IT Security, Cyber Security, Network Security, Enterprise Security,
-          Virus & Threats, Vulnerability, Exploit, Cybercrime News and more from around
-          the world.
-        friends_count: 115
-        location: 
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/834055256153669633/t1LCFR0m_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/824346807039905796/1487157214
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: SecNews24
-        lang: en
-        profile_background_tile: false
-        favourites_count: 0
-        screen_name: secnews24
-        notifications: 
-        url: https://www.secnews24.com
-        created_at: Wed Jan 25 20:02:49 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      created_at: Mon Oct 29 14:34:55 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: CVE-2018-18706 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/iYfrbwurhe
-      "@timestamp": '2018-10-27T22:34:28.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056313207445512192
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/iYfrbwurhe
-          expanded_url: https://twitter.com/i/web/status/1056313207445512192
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540679668662'
-      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
-      in_reply_to_screen_name: 
-      id_str: '1056313207445512192'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 381963910
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 206
-        protected: false
-        id_str: '381963910'
-        default_profile_image: false
-        listed_count: 135
-        utc_offset: 
-        statuses_count: 42436
-        description: I work for eyeT Systems, a niche IT integration and support company
-          in South Australia. Thoughts are my own :)
-        friends_count: 326
-        location: South Australia, Australia
-        profile_link_color: '000000'
-        profile_image_url: http://pbs.twimg.com/profile_images/733144294278582272/6tkqfYMy_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/381963910/1463629010
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: Daniel @ eyeT Systems
-        lang: en
-        profile_background_tile: false
-        favourites_count: 10
-        screen_name: eyeTSystems
-        notifications: 
-        url: https://www.eyeTSystems.com.au
-        created_at: Thu Sep 29 07:50:04 +0000 2011
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 252
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 229
-            - 252
-            url: https://t.co/XD1AxRVdg1
-            expanded_url: http://bit.ly/2JmmlnJ
-            display_url: bit.ly/2JmmlnJ
-        full_text: CVE-2018-18706 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability
-          in the ... https://t.co/XD1AxRVdg1
-      created_at: Sat Oct 27 22:34:28 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: |-
-        RT:
-
-        CVE-2018-18706 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06… https://t.co/mZosaZLYpX
-      "@timestamp": '2018-10-27T22:34:08.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056313123471265794
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/mZosaZLYpX
-          expanded_url: https://twitter.com/i/web/status/1056313123471265794
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540679648641'
-      source: <a href="https://ifttt.com" rel="nofollow">IFTTT</a>
-      in_reply_to_screen_name: 
-      id_str: '1056313123471265794'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: false
-        contributors_enabled: false
-        id: 920420001965678592
-        default_profile: false
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
-        profile_sidebar_fill_color: '000000'
-        profile_text_color: '000000'
-        followers_count: 1063
-        protected: false
-        id_str: '920420001965678592'
-        default_profile_image: false
-        listed_count: 9
-        utc_offset: 
-        statuses_count: 12374
-        description: Product Manager (PM), Reporting @Qualys. Aligning Security, Governance,
-          Risk, and Compliance with People, Processes, and Technology.⭐My tweets are
-          my own.⭐
-        friends_count: 4195
-        location: California, USA
-        profile_link_color: FB0707
-        profile_image_url: http://pbs.twimg.com/profile_images/1016226120360853504/l-dtDain_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: '000000'
-        profile_banner_url: https://pbs.twimg.com/profile_banners/920420001965678592/1538559481
-        profile_background_image_url: http://abs.twimg.com/images/themes/theme1/bg.png
-        name: 'Debra M. Fezza Reed #Dare2Dream #RegisterToVote'
-        lang: en
-        profile_background_tile: false
-        favourites_count: 22683
-        screen_name: SecRiskRptSME
-        notifications: 
-        url: http://www.qualys.com
-        created_at: Tue Oct 17 22:43:23 +0000 2017
-        profile_background_image_url_https: https://abs.twimg.com/images/themes/theme1/bg.png
-        time_zone: 
-        profile_sidebar_border_color: '000000'
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 279
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 234
-            - 257
-            url: https://t.co/O1cJaVkETL
-            expanded_url: http://bit.ly/2JmmlnJ
-            display_url: bit.ly/2JmmlnJ
-        full_text: |-
-          RT:
-
-          CVE-2018-18706 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability in the ... https://t.co/O1cJaVkETL
-
-          — CVE (CVEnew) Octo…
-      created_at: Sat Oct 27 22:34:08 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    - quote_count: 0
-      contributors: 
-      truncated: true
-      text: CVE-2018-18706 An issue was discovered on Tenda AC7 V15.03.06.44_CN, AC9
-        V15.03.05.19(6318)_CN, AC10 V15.03.06.23_C… https://t.co/NQUgIeAAwL
-      "@timestamp": '2018-10-27T22:30:31.000Z'
-      is_quote_status: false
-      in_reply_to_status_id: 
-      reply_count: 0
-      id: 1056312211013095424
-      favorite_count: 0
-      entities:
-        user_mentions: []
-        symbols: []
-        hashtags: []
-        urls:
-        - indices:
-          - 117
-          - 140
-          url: https://t.co/NQUgIeAAwL
-          expanded_url: https://twitter.com/i/web/status/1056312211013095424
-          display_url: twitter.com/i/web/status/1…
-      retweeted: false
-      coordinates: 
-      timestamp_ms: '1540679431094'
-      source: <a href="http://cve.mitre.org/cve/" rel="nofollow">CVENEW</a>
-      in_reply_to_screen_name: 
-      id_str: '1056312211013095424'
-      retweet_count: 0
-      in_reply_to_user_id: 
-      favorited: false
-      user:
-        follow_request_sent: 
-        profile_use_background_image: true
-        contributors_enabled: false
-        id: 821806287461740544
-        default_profile: true
-        verified: false
-        profile_image_url_https: https://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
-        profile_sidebar_fill_color: DDEEF6
-        profile_text_color: '333333'
-        followers_count: 9867
-        protected: false
-        id_str: '821806287461740544'
-        default_profile_image: false
-        listed_count: 221
-        utc_offset: 
-        statuses_count: 26948
-        description: 'Official account maintained by the CVE Team to notify the community
-          of new CVE IDs. For additional data feeds see: https://cve.mitre.org/cve/data_feeds.html.'
-        friends_count: 2
-        location: 
-        profile_link_color: 1DA1F2
-        profile_image_url: http://pbs.twimg.com/profile_images/903683253428772867/uLEvVl67_normal.jpg
-        following: 
-        geo_enabled: false
-        profile_background_color: F5F8FA
-        profile_banner_url: https://pbs.twimg.com/profile_banners/821806287461740544/1491503268
-        profile_background_image_url: ''
-        name: CVE
-        lang: en
-        profile_background_tile: false
-        favourites_count: 0
-        screen_name: CVEnew
-        notifications: 
-        url: https://cveform.mitre.org
-        created_at: Wed Jan 18 19:47:42 +0000 2017
-        profile_background_image_url_https: ''
-        time_zone: 
-        profile_sidebar_border_color: C0DEED
-        translator_type: none
-        is_translator: false
-      geo: 
-      in_reply_to_user_id_str: 
-      possibly_sensitive: false
-      lang: en
-      extended_tweet:
-        display_text_range:
-        - 0
-        - 252
-        entities:
-          user_mentions: []
-          symbols: []
-          hashtags: []
-          urls:
-          - indices:
-            - 229
-            - 252
-            url: https://t.co/J82BilDOSH
-            expanded_url: http://bit.ly/2JmmlnJ
-            display_url: bit.ly/2JmmlnJ
-        full_text: CVE-2018-18706 An issue was discovered on Tenda AC7 V15.03.06.44_CN,
-          AC9 V15.03.05.19(6318)_CN, AC10 V15.03.06.23_CN, AC15 V15.03.05.19_CN, and
-          AC18 V15.03.05.19(6318)_CN devices. It is a buffer overflow vulnerability
-          in the ... https://t.co/J82BilDOSH
-      created_at: Sat Oct 27 22:30:31 +0000 2018
-      filter_level: low
-      in_reply_to_status_id_str: 
-      place: 
-      "@version": '1'
-    retweets: []
-  exploit: 0
-  exploit_date_timestamp: 
-  references:
-  - Resource: []
-    Hyperlink: https://github.com/zsjevilhex/iot/blob/master/route/tenda/tenda-06/Tenda.md
-  CVSS_V3_scope: 
-  tweet_count: 4
-  affected_product: 
-  affected_vendor: 
-  affected_product_detail: 
-  last_revised_timestamp: 1540771200000
-  CVE_ID: CVE-2018-18706
   title: 
   last_revised: '2018-10-29T00:00:00Z'
   zeroday_price: 

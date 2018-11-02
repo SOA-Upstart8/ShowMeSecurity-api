@@ -4,7 +4,7 @@ module SMS
   module News
     # Data Mapper: NewsApi data -> News entity
     class NewsMapper
-      def initialize(api_key, gateway_class = News::Api)
+      def initialize(api_key, gateway_class = SMS::News::Api)
         @api_key = api_key
         @gateway_class = gateway_class
         @gateway = @gateway_class.new(@api_key)

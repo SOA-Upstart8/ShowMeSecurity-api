@@ -60,9 +60,7 @@ module SMS
         end
 
         def references
-          links = []
-          @data['references'].each { |source| links << source['Hyperlink'] }
-          links
+          ReferenceMapper.load_references(@data['references'])
         end
 
         def cve_id

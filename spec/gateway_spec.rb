@@ -1,22 +1,17 @@
 # frozen_string_literal: true
 
 require_relative 'spec_helper.rb'
-describe 'Tests API library' do
-  VCR.configure do |c|
-    c.cassette_library_dir = CASSETTES_FOLDER
-    c.hook_into :webmock
-    c.filter_sensitive_data('<NEWS_API_KEY>') { NEWS_API_KEY }
-    c.filter_sensitive_data('<SEC_API_KEY>') { SEC_API_KEY }
-  end
+require_relative 'helpers/vcr_helper.rb'
 
+describe 'Tests API library' do
   before do
-    VCR.insert_cassette CASSETTE_FILE, record: :new_episodes,
-                                       match_requests_on: %i[method uri headers]
+    VcrHelper.configure_vcr_for_api
   end
 
   after do
-    VCR.eject_cassette
+    VcrHelper.eject_vcr
   end
+
   describe 'News information' do
     it 'HAPPY: should provide correct news information' do
       news = SMS::News::NewsMapper
@@ -43,9 +38,9 @@ describe 'Tests API library' do
 
   describe 'SEC information' do
     it 'HAPPY: should provide correct CVE information' do
-      CVEs = SMS::CVE::CVEMapper
-        .new(SEC_API_KEY).search
-      CVEs.each_with_index do |cve, id|
+      cves = SMS::CVE::CVEMapper
+        .new(SEC_API_KEY).search('web')
+      cves.each_with_index do |cve, id|
         _(cve.overview).must_equal CORRECTCVE[id]['overview']
         _(cve.CVE_ID).must_equal CORRECTCVE[id]['CVE_ID']
         _(cve.tweet_count).must_equal CORRECTCVE[id]['tweet_count']

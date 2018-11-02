@@ -11,11 +11,15 @@ module SMS
       attribute :id, Integer.optional
       attribute :overview, Strict::String
       attribute :tweet_count, Strict::Integer
-      attribute :references, Strict::Array
+      attribute :references, Strict::Array.of(Reference)
       attribute :CVE_ID, Strict::String
       attribute :release_date, Params::DateTime
       attribute :revise_date, Params::DateTime
       attribute :tweets, Strict::Array.of(Tweet)
+
+      def to_attr_hash
+        to_hash.reject { |key, _| %i[id references tweets].include? key }
+      end
     end
   end
 end
