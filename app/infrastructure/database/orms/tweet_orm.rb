@@ -7,9 +7,6 @@ module SMS
       many_to_one :cve,
                   class: :'SMS::Database::CVEOrm'
 
-      many_to_one :owner,
-                  class: :'SMS::Database::ExpertOrm'
-
       plugin :timestamps, update_on_create: true
     end
   end

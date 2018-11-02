@@ -25,7 +25,10 @@ module SMS
             reply_count: reply_count,
             favorite_count: favorite_count,
             retweet_count: retweet_count,
-            owner: owner,
+            owner_id: owner_id,
+            owner_image: owner_image,
+            owner_name: owner_name,
+            owner_page: owner_page,
             time: time
           )
         end
@@ -48,8 +51,20 @@ module SMS
           @data['retweet_count']
         end
 
-        def owner
-          ExpertMapper.build_entity(@data['user'])
+        def owner_id
+          @data['user']['id']
+        end
+
+        def owner_image
+          @data['user']['profile_image_url_https']
+        end
+
+        def owner_name
+          @data['user']['name']
+        end
+
+        def owner_page
+          'https://twitter.com/intent/user?user_id=' + @data['user']['id_str']
         end
 
         def time

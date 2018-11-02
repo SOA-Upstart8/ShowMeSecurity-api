@@ -6,8 +6,7 @@ module SMS
       ENTITY_NEWS = {
         Entity::CVE => CVEs,
         Entity::Reference => References,
-        Entity::Tweet => Tweets,
-        Entity::Expert => Experts
+        Entity::Tweet => Tweets
       }.freeze
 
       def self.klass(entity_klass)

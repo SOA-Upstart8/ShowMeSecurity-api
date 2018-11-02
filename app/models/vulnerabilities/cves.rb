@@ -52,8 +52,7 @@ module SMS
               db_cve.add_reference(Database::ReferenceOrm.create(ref.to_attr_hash))
             end
             @entity.tweets.each do |tweet|
-              puts tweet.owner.name
-              db_cve.add_tweet(Tweets.create(tweet))
+              db_cve.add_tweet(Database::TweetOrm.create(tweet.to_attr_hash))
             end
           end
         end

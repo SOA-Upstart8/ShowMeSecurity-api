@@ -65,10 +65,9 @@ describe 'Integration Tests of News and Sec API and Database' do
           _(found.content).must_equal(tweet.content)
           _(found.favorite_count).must_equal(tweet.favorite_count)
           _(found.reply_count).must_equal(tweet.reply_count)
-          found_owner = SMS::Vulnerability::Expert.find(tweet.owner)
-          _(found_owner.user_id).must_equal(tweet.owner.user_id)
-          _(found_owner.name).must_equal(tweet.owner.name)
-          _(found_owner.user_page).must_equal(tweet.owner.user_page)
+          _(found.owner_id).must_equal(tweet.owner_id)
+          _(found.owner_name).must_equal(tweet.owner_name)
+          _(found.owner_page).must_equal(tweet.owner_page)
         end
       end
     end

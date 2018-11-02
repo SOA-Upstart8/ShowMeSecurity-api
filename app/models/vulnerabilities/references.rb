@@ -9,7 +9,7 @@ module SMS
       end
 
       def self.find(entity)
-        find_id(entity.id)
+        rebuild_entity Database::ReferenceOrm.first(link: entity.link)
       end
 
       def self.rebuild_entity(db_record)
@@ -23,11 +23,11 @@ module SMS
 
       def self.rebuild_many(db_records)
         db_records.map do |db_ref|
-          References.rebuild_entity(db_ref)
+          rebuild_entity(db_ref)
         end
       end
 
-      private_class_method :rebuild_entity, :rebuild_many
+      private_class_method :rebuild_entity
     end
   end
 end

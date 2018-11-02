@@ -49,8 +49,8 @@ describe 'Tests API library' do
           _(cve.tweets[index].content).must_equal tweet['text']
           _(cve.tweets[index].favorite_count).must_equal tweet['favorite_count']
           _(cve.tweets[index].reply_count).must_equal tweet['reply_count']
-          _(cve.tweets[index].owner.user_id).must_equal tweet['user']['id']
-          _(cve.tweets[index].owner.name).must_equal tweet['user']['name']
+          _(cve.tweets[index].owner_id).must_equal tweet['user']['id']
+          _(cve.tweets[index].owner_name).must_equal tweet['user']['name']
         end
       end
     end
