@@ -18,7 +18,7 @@ module SMS
       routing.root do
         latest_cve = CVE::CVEMapper.new(App.config.SEC_API_KEY).latest
         latest_cve.each do |cve|
-          Vulnerability::For.entity(cve).create(cve)
+          Repository::For.entity(cve).create(cve)
         end
         view 'home', locals: { latest: latest_cve }
       end
@@ -38,7 +38,7 @@ module SMS
           routing.get do
             cve_result = CVE::CVEMapper.new(App.config.SEC_API_KEY).search(query)
             cve_result.each do |cve|
-              Vulnerability::For.entity(cve).create(cve)
+              Repository::For.entity(cve).create(cve)
             end
             view 'cve', locals: { cve: cve_result, search: query }
           end

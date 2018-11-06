@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module SMS
-  module Vulnerability
-    # Vulnerability for Tweets
+  module Repository
+    # Repository for Tweets
     class Tweets
       def self.find_id(id)
         rebuild_entity Database::TweetOrm.first(id: id)

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module SMS
-  module News
-    # DB_News to News Entity
+  module Repository
+    # Repository to News Entity
     class News
       def self.all
         Database::NewsOrm.all.map { |news| rebuild_entity(news) }

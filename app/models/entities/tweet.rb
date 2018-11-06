@@ -20,7 +20,7 @@ module SMS
       attribute :time, Params::DateTime
 
       def to_attr_hash
-        to_hash.reject { |key, _| %i[id owner].include? key }
+        to_hash.reject { |key, _| %i[id].include? key }
       end
     end
   end

@@ -1,12 +1,13 @@
 # frozen_string_literal: true
 
 module SMS
-  module Vulnerability
+  module Repository
     class For
       ENTITY_NEWS = {
         Entity::CVE => CVEs,
         Entity::Reference => References,
-        Entity::Tweet => Tweets
+        Entity::Tweet => Tweets,
+        Entity::News => News
       }.freeze
 
       def self.klass(entity_klass)

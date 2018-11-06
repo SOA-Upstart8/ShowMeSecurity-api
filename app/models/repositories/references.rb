@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module SMS
-  module Vulnerability
-    # Vulnerability for References
+  module Repository
+    # Repository for References
     class References
       def self.find_id(id)
         rebuild_entity Database::ReferenceOrm.first(id: id)

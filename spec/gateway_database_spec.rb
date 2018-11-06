@@ -26,10 +26,10 @@ describe 'Integration Tests of News and Sec API and Database' do
         .new(NEWS_API_KEY).search(QUERY, FROM, TO, SOURCE)
 
       newss.each do |news|
-        SMS::News::For.entity(news).create(news)
+        SMS::Repository::For.entity(news).create(news)
       end
 
-      rebuilt = SMS::News::News.all
+      rebuilt = SMS::Repository::News.all
 
       rebuilt.each_with_index do |news, id|
         _(news.source).must_equal(newss[id].source)
@@ -47,21 +47,21 @@ describe 'Integration Tests of News and Sec API and Database' do
       cves = SMS::CVE::CVEMapper
         .new(SEC_API_KEY).search('Web')
       cves.each do |cve|
-        SMS::Vulnerability::For.entity(cve).create(cve)
+        SMS::Repository::For.entity(cve).create(cve)
       end
-      rebuilt = SMS::Vulnerability::CVEs.all
+      rebuilt = SMS::Repository::CVEs.all
       rebuilt.each_with_index do |cve, id|
         _(cve.overview).must_equal(cves[id].overview)
         _(cve.CVE_ID).must_equal(cves[id].CVE_ID)
         _(cve.tweet_count).must_equal(cves[id].tweet_count)
 
         cves[id].references.each do |ref|
-          found = SMS::Vulnerability::References.find(ref)
+          found = SMS::Repository::References.find(ref)
           _(found.link).must_equal(ref.link)
         end
 
         cves[id].tweets.each do |tweet|
-          found = SMS::Vulnerability::Tweets.find(tweet)
+          found = SMS::Repository::Tweets.find(tweet)
           _(found.content).must_equal(tweet.content)
           _(found.favorite_count).must_equal(tweet.favorite_count)
           _(found.reply_count).must_equal(tweet.reply_count)

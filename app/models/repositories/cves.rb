@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 module SMS
-  module Vulnerability
-    # Vulnerability for CVEs
+  module Repository
+    # Repository for CVEs
     class CVEs
       def self.all
         Database::CVEOrm.all.map { |db_cve| rebuild_entity(db_cve) }
