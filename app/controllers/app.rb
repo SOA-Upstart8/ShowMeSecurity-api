@@ -43,6 +43,27 @@ module SMS
             view 'cve', locals: { cve: cve_result, search: query }
           end
         end
+
+        routing.on 'cve_category' do
+          routing.is do
+            # POST /cve_category/
+            routing.post do
+              query = routing.params['category_query']
+  
+              routing.redirect "cve/#{query}"
+            end
+          end
+  
+          routing.on String do |query|
+            # GET /cve_category/query
+            routing.get do
+              cve_result = Mapper::CVEMapper.new(query).filter
+              cve_result.each do |cve|
+                Repository::For.entity(cve).create(cve)
+              end
+              view 'cve_category', locals: { cve: cve_result, category: query }
+            end
+          end
       end
     end
   end

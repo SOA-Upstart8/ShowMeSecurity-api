@@ -1,0 +1,68 @@
+---
+Injection:
+- sql
+- php
+- ldap
+- os
+- query
+- command
+- inject
+- santiizate
+Authentication:
+- session
+- log
+- cookie
+- credential
+- multifactor
+- authentication
+Exposure:
+- exposure
+- data
+- cache
+- encode
+- sensitive
+XXE:
+- xml
+- convert
+- sanitize
+- parse
+- entity
+- external
+Access:
+- admin
+- token
+- cookie
+- password
+- unauthorize
+- control
+Security misconfigurations:
+- directory
+- default
+- admin
+- config
+- error
+- weak
+Cross Site Scripting:
+- reflect
+- store
+- dom
+- script
+- escape
+- encode
+Deserialization:
+- serialize
+- object
+- insecure
+- date
+Vulnerabilities:
+- vulner
+- out
+- dated
+- patch
+- unpatch
+- version
+Monitoring:
+- login
+- suspicious
+- dos
+- request

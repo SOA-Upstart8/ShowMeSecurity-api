@@ -9,6 +9,9 @@ gem 'puma', '~> 3.11'
 gem 'roda', '~> 3.8'
 gem 'slim', '~> 3.0'
 
+# String Matching
+gem 'fuzzy-string-match'
+
 # Entity gems
 gem 'dry-struct', '~> 0.5'
 gem 'dry-types', '~> 0.5'
