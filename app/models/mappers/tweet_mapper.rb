@@ -40,15 +40,15 @@ module SMS
         end
 
         def reply_count
-          @data['reply_count']
+          @data['reply_count'].nil? ? 0 : @data['reply_count']
         end
 
         def favorite_count
-          @data['favorite_count']
+          @data['favorite_count'].nil? ? 0 : @data['favorite_count']
         end
 
         def retweet_count
-          @data['retweet_count']
+          @data['retweet_count'].nil? ? 0 : @data['retweet_count']
         end
 
         def owner_id
