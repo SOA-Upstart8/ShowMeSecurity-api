@@ -2,6 +2,7 @@
 
 require 'dry-struct'
 require_relative 'tweet.rb'
+require_relative 'reference.rb'
 module SMS
   module Entity
     # Model for CVE
