@@ -4,15 +4,16 @@ require 'yaml'
 module SMS
   module Value
     class Overview < SimpleDelegator
-      keyword = YAML.safe_load('keywords.yml')
 
       def initialize(overview, category)
+        @keywords = YAML.load_file('keywords.yml')
+        puts @keywords
         @category = category
         @overview = overview.downcase
-        overview_match(overview)
+        overview_match(overview, category)
       end
 
-      def overview_match(overview)
+      def overview_match(overview, category)
         keyword = get_keyword(category)
         overview = overview.split(' ')
         overview.each do |word|
@@ -24,7 +25,7 @@ module SMS
       end
 
       def get_keyword(category)
-        keyword[category]
+        @keywords[category]
       end
 
     end

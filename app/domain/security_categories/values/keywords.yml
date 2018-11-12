@@ -35,14 +35,14 @@ Access:
 - password
 - unauthorize
 - control
-Security misconfigurations:
+Misconfigurations:
 - directory
 - default
 - admin
 - config
 - error
 - weak
-Cross Site Scripting:
+XSS:
 - reflect
 - store
 - dom

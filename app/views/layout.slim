@@ -37,37 +37,56 @@ html[lang="en"]
                 .col-lg-6
                   ul.list-unstyled.mb-0
                     li
-                      a[href="#"]
-                        | Injection
+                      form role="form" action="/cve_category" method='POST' id='show-injection-form'
+                        input.form-control[type="hidden" name="category" value="Injection"]
+                          button.btn.btn-link[type="submit"]
+                            | Injection
                     li
-                      a[href="#"]
-                        | Broken Authenication
+                      form role="form" action="/cve_category" method='POST' id='show-authentication-form'
+                        input.form-control[type="hidden" name="category" value="Authentication"]
+                          button.btn.btn-link[type="submit"]
+                            | Broken Authenication
                     li
-                      a[href="#"]
-                        | Sensitive Data Exposure
+                      form role="form" action="/cve_category" method='POST' id='show-exposure-form'
+                        input.form-control[type="hidden" name="category" value="Exposure"]
+                          button.btn.btn-link[type="submit"]
+                            | Sensitive Data Exposure
                     li
-                      a[href="#"]
-                        | XEE
+                      form role="form" action="/cve_category" method='POST' id='show-xxe-form'
+                        input.form-control[type="hidden" name="category" value="XXE"]
+                          button.btn.btn-link[type="submit"]
+                            | XXE
                     li
-                      a[href="#"]
-                        | Broken Access Control
-                .col-lg-6
-                  ul.list-unstyled.mb-0
+                      form role="form" action="/cve_category" method='POST' id='show-access-form'
+                        input.form-control[type="hidden" name="category" value="Access"]
+                          button.btn.btn-link[type="submit"]
+                            | Broken Access Control
+
                     li
-                      a[href="#"]
-                        | Security Misconfiguration
+                      form role="form" action="/cve_category" method='POST' id='show-misconfiguration-form'
+                        input.form-control[type="hidden" name="category" value="Misconfiguration"]
+                          button.btn.btn-link[type="submit"]
+                            | Security Misconfiguration
                     li
-                      a[href="#"]
-                        | XSS
+                      form role="form" action="/cve_category" method='POST' id='show-xss-form'
+                        input.form-control[type="hidden" name="category" value="XSS"]
+                          button.btn.btn-link[type="submit"]
+                            | XSS
                     li
-                      a[href="#"]
-                        | Insecure Deserialization
+                      form role="form" action="/cve_category" method='POST' id='show-deserialization-form'
+                        input.form-control[type="hidden" name="category" value="Deserialization"]
+                          button.btn.btn-link[type="submit"]
+                            | Insecure Deserialization
                     li
-                      a[href="#"]
-                        | Using Components with Known Vulnerabilities
+                      form role="form" action="/cve_category" method='POST' id='show-vulnerabilities-form'
+                        input.form-control[type="hidden" name="category" value="Vulnerabilities"]
+                          button.btn.btn-link[type="submit"]
+                            | Using Components with Known Vulnerabilities
                     li
-                      a[href="#"]
-                        | Insufficient Logging & Monitoring
+                      form role="form" action="/cve_category" method='POST' id='show-monitoring-form'
+                        input.form-control[type="hidden" name="category" value="Monitoring"]
+                          button.btn.btn-link[type="submit"]
+                            | Insufficient Logging & Monitoring
           .card.my-4
             h5.card-header
               | Side Widget

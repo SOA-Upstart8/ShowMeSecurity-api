@@ -9,9 +9,7 @@ module SMS
       IS_MATCH = 1
       NOT_MATCH = 0
 
-      attr_reader :overview, :category
-
-      def initialize(overview:, category:)
+      def initialize(overview, category)
         @overview = Value::Overview.new(overview, category)
       end
 
