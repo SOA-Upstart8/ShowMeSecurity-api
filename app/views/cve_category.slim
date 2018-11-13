@@ -3,8 +3,7 @@
             | Show Me Security
             small
               |    (SMS)
-          h4.my-4
-            | CVE Results for #{category}
+
           - cve.each do |cve|
             .card.mb-4
               .card-body
@@ -12,7 +11,7 @@
                   = cve.CVE_ID
                 p.card-text
                   = cve.overview
-                a.btn.btn-primary[ target="_blank"]
+                a.btn.btn-primary[href="#{cve.references[0].link}" target="_blank"]
                   | Read More →
               .card-footer.text-muted
                 |  Released on #{cve.release_date}

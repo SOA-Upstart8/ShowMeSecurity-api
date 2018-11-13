@@ -1,19 +1,20 @@
 # frozen_string_literal: true
 require 'yaml'
+require 'fuzzystringmatch'
 
 module SMS
   module Value
     class Overview < SimpleDelegator
 
       def initialize(overview, category)
-        @keywords = YAML.load_file('keywords.yml')
-        puts @keywords
+        @keywords = YAML.safe_load(File.read(File.join('app/domain/security_categories/values', 'keywords.yml')))
         @category = category
         @overview = overview.downcase
         overview_match(overview, category)
       end
 
       def overview_match(overview, category)
+        jarow = FuzzyStringMatch::JaroWinkler.create( :native )
         keyword = get_keyword(category)
         overview = overview.split(' ')
         overview.each do |word|

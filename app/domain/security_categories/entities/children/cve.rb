@@ -10,7 +10,8 @@ module SMS
       NOT_MATCH = 0
 
       def initialize(overview, category)
-        @overview = Value::Overview.new(overview, category)
+        @overview = overview
+        @category = category
       end
 
       def match
@@ -18,7 +19,7 @@ module SMS
       end
 
       def useful?
-        Value::Overview.new(overview, category)
+        Value::Overview.new(@overview, @category)
       end
 
     end
