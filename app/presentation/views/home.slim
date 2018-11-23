@@ -1,0 +1,23 @@
+- if latest.any?
+  .col-md-8
+            h1.my-4 id='main_header'
+              | Show Me Security
+
+            h4.my-4
+              | latest common vulnerables and exposures
+            - latest.each do |latest|
+              .card.mb-4
+                .card-body
+                  h2.card-title
+                    = latest.cve_id
+                  p.card-text
+                    = latest.overview
+                  a.btn.btn-primary[href="#{latest.link}" target="_blank"]
+                    | Read More →
+                  
+                  form role="form" action="cve_favorite" method='POST' id='show-favorite' style="display: inline-block; margin-left: 10px;"
+                          input.form-control[type="hidden" name="favorite" value="#{latest.cve_id}"]
+                            button.btn.btn-danger[type="submit" id="#{latest.cve_id}"]
+                              i.fas.fa-heart
+                .card-footer.text-muted
+                  |  Released on #{latest.date}
