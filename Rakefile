@@ -1,10 +1,16 @@
 # frozen_string_literal: true
 require 'rake/testtask'
 
-desc 'Run tests once'
+desc 'Run unit and integration tests'
 Rake::TestTask.new(:spec) do |t|
   t.pattern = 'spec/*_spec.rb'
   t.warning = false
+end
+
+desc 'Run acceptance tests'
+task :spec_accept do
+  puts 'NOTE: run `rake run:test` in another process'
+  sh 'ruby spec/acceptance_spec.rb'
 end
 
 desc 'Keep rerunning tests upon changes'

@@ -8,6 +8,7 @@ html[lang="en"]
     title
       | SMS
     link[rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"]
+    link[rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"]
     == assets(:css)
   body
     script[src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"]
@@ -15,7 +16,10 @@ html[lang="en"]
     script[src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"]
     
     .container
+      include :flash_bar
+      
       .row
+
         == yield
 
         .col-md-4
@@ -25,9 +29,9 @@ html[lang="en"]
             .card-body
               form role="form" action="/cve" method='POST' id='show-search-form'
                 .input-group
-                  input.form-control[type="text" name="query" placeholder="Search for..."]
+                  input.form-control[type="text" name="query" id="query_input" placeholder="Search for..." required]
                   span.input-group-btn
-                    button.btn.btn-secondary[type="submit"]
+                    button.btn.btn-secondary[type="submit" id="query_submit"]
                       | Go!
           .card.my-4
             h5.card-header
