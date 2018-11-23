@@ -1,12 +1,12 @@
 # frozen_string_literal: true
+
 require 'yaml'
 
 module SMS
   module Value
     class Overview < SimpleDelegator
-
       def initialize(overview, category)
-        @keywords = YAML.load_file('keywords.yml')
+        @keywords = YAML.safe_load(File.open('keywords.yml'))
         puts @keywords
         @category = category
         @overview = overview.downcase
@@ -27,7 +27,6 @@ module SMS
       def get_keyword(category)
         @keywords[category]
       end
-
     end
   end
 end
