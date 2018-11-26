@@ -5,19 +5,19 @@
 
             h4.my-4
               | latest common vulnerables and exposures
-            - latest.each do |latest|
-              .card.mb-4
+            - latest.each_with_index do |cve,index|
+              .card.mb-4 id="card_#{index}"
                 .card-body
                   h2.card-title
-                    = latest.cve_id
+                    = cve.cve_id
                   p.card-text
-                    = latest.overview
-                  a.btn.btn-primary[href="#{latest.link}" target="_blank"]
+                    = cve.overview
+                  a.btn.btn-primary[href="#{cve.link}" target="_blank"]
                     | Read More →
                   
                   form role="form" action="cve_favorite" method='POST' id='show-favorite' style="display: inline-block; margin-left: 10px;"
-                          input.form-control[type="hidden" name="favorite" value="#{latest.cve_id}"]
-                            button.btn.btn-danger[type="submit" id="#{latest.cve_id}"]
+                          input.form-control[type="hidden" name="favorite" value="#{cve .cve_id}"]
+                            button.btn.btn-danger[type="submit" id="#{cve.cve_id}"]
                               i.fas.fa-heart
                 .card-footer.text-muted
                   |  Released on #{latest.date}

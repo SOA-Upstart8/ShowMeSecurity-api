@@ -1,10 +1,7 @@
 # frozen_string_literal: true
 
-require_relative 'spec_helper.rb'
-require_relative 'helpers/database_helper.rb'
-require_relative 'helpers/vcr_helper.rb'
-require 'headless'
-require 'watir'
+require_relative '../helpers/acceptance_helper.rb'
+require_relative 'pages/home_page.rb'
 
 describe 'Acceptance Tests' do
   DatabaseHelper.setup_database_cleaner

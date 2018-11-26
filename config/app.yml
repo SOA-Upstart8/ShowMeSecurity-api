@@ -5,3 +5,11 @@ development:
 
 test:
   DB_FILENAME: app/infrastructure/database/local/test.db
+
+app_test:
+  DB_FILENAME: app/infrastructure/database/local/test.db
+  #application info
+  APP_HOST: http://localhost:9000
+
+production:
+  
