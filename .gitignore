@@ -2,3 +2,4 @@ config/secrets.yml
 coverage/
 *.db
 .bundle
+.idea

@@ -45,7 +45,7 @@ describe 'Integration Tests of News and Sec API and Database' do
 
     it 'HAPPY: should be able to save remote cve data to database' do
       cves = SMS::CVE::CVEMapper
-        .new(SEC_API_KEY).search('Web')
+        .new(SEC_API_KEY).search('broken')
       cves.each do |cve|
         SMS::Repository::For.entity(cve).create(cve)
       end

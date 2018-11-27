@@ -24,7 +24,7 @@ module SMS
 
       def self.create(entity)
         return if find_cve_id(entity.CVE_ID)
-
+        
         db_cve = PersistCVE.new(entity).call
         rebuild_entity(db_cve)
       end
