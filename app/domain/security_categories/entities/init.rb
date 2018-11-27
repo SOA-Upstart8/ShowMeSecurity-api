@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-folders = %w[entities mappers repositories]
+folders = %w[children root]
 folders.each do |folder|
   require_relative "#{folder}/init.rb"
 end

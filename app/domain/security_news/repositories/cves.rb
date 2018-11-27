@@ -8,6 +8,12 @@ module SMS
         Database::CVEOrm.all.map { |db_cve| rebuild_entity(db_cve) }
       end
 
+      def self.find_list_id(list)
+        list.map do |cve_id|
+          find_cve_id(cve_id)
+        end
+      end
+
       def self.find_id(id)
         rebuild_entity Database::CVEOrm.first(id: id)
       end
