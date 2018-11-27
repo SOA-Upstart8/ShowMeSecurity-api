@@ -35,15 +35,8 @@ module SMS
           # POST /cve/
           routing.post do
             query = routing.params['query']
-            unless (query.include? '/') ||
-                   (query.include? '"') ||
-                   (query.include? '\'') ||
-                   (query.include? ';') ||
-                   (query.include? '<') ||
-                   (query.include? '>') ||
-                   (query.include? '=')
-              routing.redirect "cve/#{query}"
-            end
+            result = SMS::Forms::Query.call(routing.params)
+            routing.redirect "cve/#{query}" unless result.success?
 
             flash[:error] = 'Invalid Input'
             response.status = 400
@@ -54,7 +47,12 @@ module SMS
         routing.on String do |query|
           # GET /cve/query
           routing.get do
-            cve_result = CVE::CVEMapper.new(App.config.SEC_API_KEY).search(query)
+            begin
+              cve_result = CVE::CVEMapper.new(App.config.SEC_API_KEY).search(query)
+            rescue StandardError
+              flash[:error] = 'We can\'t find any content :<'
+              routing.redirect '/'
+            end
             cve_result.each do |cve|
               Repository::For.entity(cve).create(cve)
             end
@@ -102,23 +100,14 @@ module SMS
           end
         end
 
-        routing.on String do |cve_id|
+        routing.on String do |_cve_id|
           # GET /cve_favorite/cve_id
           routing.get do
             # Get cve from database instead of Secbuzzer
-            begin
-              cve = Repository::For.klass(Entity::CVE)
-                .find_cve_id(cve_id)
-              # Add new cve to watched set in cookies
-              session[:favorite].insert(0, cve.CVE_ID).uniq!
-              # session[:favorite].delete_at(0)
+            result = Service::CVEList.new.call(session[:favorite])
 
-              if cve.nil?
-                flash[:error] = 'CVE not found'
-                routing.redirect '/'
-              end
-            rescue StandardError
-              flash[:error] = 'Having trouble accessing the database'
+            if result.failure?
+              flash[:error] = result.failure
               routing.redirect '/'
             end
 
@@ -126,7 +115,6 @@ module SMS
           end
         end
       end
-
     end
   end
 end

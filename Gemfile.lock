@@ -41,16 +41,30 @@ GEM
     dry-core (0.4.7)
       concurrent-ruby (~> 1.0)
     dry-equalizer (0.2.1)
+    dry-events (0.1.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4)
+      dry-equalizer (~> 0.2)
     dry-inflector (0.1.2)
     dry-logic (0.4.2)
       dry-container (~> 0.2, >= 0.2.6)
       dry-core (~> 0.2)
       dry-equalizer (~> 0.2)
+    dry-matcher (0.7.0)
+    dry-monads (1.1.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer
     dry-struct (0.6.0)
       dry-core (~> 0.4, >= 0.4.3)
       dry-equalizer (~> 0.2)
       dry-types (~> 0.13)
       ice_nine (~> 0.11)
+    dry-transaction (0.13.0)
+      dry-container (>= 0.2.8)
+      dry-events (>= 0.1.0)
+      dry-matcher (>= 0.7.0)
+      dry-monads (>= 0.4.0)
     dry-types (0.13.2)
       concurrent-ruby (~> 1.0)
       dry-container (~> 0.3)
@@ -58,6 +72,13 @@ GEM
       dry-equalizer (~> 0.2)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-logic (~> 0.4, >= 0.4.2)
+    dry-validation (0.12.2)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+      dry-core (~> 0.2, >= 0.2.1)
+      dry-equalizer (~> 0.2)
+      dry-logic (~> 0.4, >= 0.4.0)
+      dry-types (~> 0.13.1)
     econfig (2.1.0)
     equalizer (0.0.11)
     faker (1.9.1)
@@ -95,16 +116,17 @@ GEM
     minitest (5.11.3)
     minitest-rg (5.2.0)
       minitest (~> 5.0)
+    page-object (2.2.5)
+      page_navigation (>= 0.10)
+      selenium-webdriver (~> 3.0)
+      watir (~> 6.8)
     page_navigation (0.10)
       data_magic (>= 0.22)
-    page_object (1.1.3)
-      page_navigation (>= 0.9)
-      selenium-webdriver (>= 2.44.0)
-      watir-webdriver (>= 0.6.11)
     parallel (1.12.1)
     parser (2.5.3.0)
       ast (~> 2.4.0)
     path_expander (1.0.3)
+    pg (0.21.0)
     powerpack (0.1.2)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -173,8 +195,6 @@ GEM
     watir (6.15.0)
       regexp_parser (~> 1.2)
       selenium-webdriver (~> 3.4, >= 3.4.1)
-    watir-webdriver (0.9.9)
-      selenium-webdriver (>= 2.46.2)
     webmock (3.4.2)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -187,26 +207,30 @@ PLATFORMS
 DEPENDENCIES
   database_cleaner
   debase
+  dry-monads
   dry-struct (~> 0.5)
+  dry-transaction
   dry-types (~> 0.5)
+  dry-validation
   econfig (~> 2.1)
   flog
   fuzzy-string-match
   headless (~> 2.3)
-  hirb
+  hirb (~> 0.7)
   http (~> 3.0)
   minitest (~> 5.11)
   minitest-rg (~> 5.2)
-  page_object
+  page-object
+  pg (~> 0.18)
   pry
   puma (~> 3.11)
-  rake
+  rake (~> 12.3)
   reek
-  rerun (~> 0.13)
+  rerun
   roda (~> 3.8)
   rubocop
   ruby-debug-ide
-  sequel
+  sequel (~> 5.13)
   simplecov (~> 0.16)
   slim (~> 3.0)
   sqlite3

@@ -5,8 +5,8 @@
 
             h4.my-4
               | latest common vulnerables and exposures
-            - latest.each_with_index do |cve,index|
-              .card.mb-4 id="card_#{index}"
+            - latest.each do |cve|
+              .card.mb-4
                 .card-body
                   h2.card-title
                     = cve.cve_id
@@ -20,4 +20,4 @@
                             button.btn.btn-danger[type="submit" id="#{cve.cve_id}"]
                               i.fas.fa-heart
                 .card-footer.text-muted
-                  |  Released on #{latest.date}
+                  |  Released on #{cve.date}

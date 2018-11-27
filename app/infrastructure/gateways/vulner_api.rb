@@ -48,8 +48,10 @@ module SMS
         Unauthorized = Class.new(StandardError)
         InvalidCredential = Class.new(StandardError)
         LimitExceeded = Class.new(StandardError)
+        NoContent = Class.new(StandardError)
 
         HTTP_ERROR = {
+          204 => NoContent,
           401 => Unauthorized,
           403 => InvalidCredential,
           404 => NotFound,
