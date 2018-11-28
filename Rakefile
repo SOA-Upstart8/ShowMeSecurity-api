@@ -74,7 +74,7 @@ namespace :db do
 
   desc 'Delete dev or test database file'
   task :drop => :config do
-    if app.environment == :production
+    if @app.environment == :production
       puts 'Cannot remove production database!'
       return
     end

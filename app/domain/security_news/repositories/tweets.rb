@@ -22,16 +22,16 @@ module SMS
         return nil unless db_record
 
         Entity::Tweet.new(
-          id:             db_record.id,
-          content:        db_record.content,
-          reply_count:    db_record.reply_count,
+          id: db_record.id,
+          content: db_record.content,
+          reply_count: db_record.reply_count,
           favorite_count: db_record.favorite_count,
-          retweet_count:  db_record.retweet_count,
-          time:           db_record.time,
-          owner_id:       db_record.owner_id,
-          owner_image:    db_record.owner_image,
-          owner_name:     db_record.owner_name,
-          owner_page:     db_record.owner_page
+          retweet_count: db_record.retweet_count,
+          time: db_record.time,
+          owner_id: db_record.owner_id,
+          owner_image: db_record.owner_image,
+          owner_name: db_record.owner_name,
+          owner_page: db_record.owner_page
         )
       end
       private_class_method :rebuild_entity
