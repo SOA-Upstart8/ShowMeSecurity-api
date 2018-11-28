@@ -56,16 +56,14 @@ namespace :db do
     require 'sequel'
     require_relative 'config/environment.rb' # load config info
     require_relative 'spec/helpers/database_helper.rb'
-    def app
-      SMS::App
-    end
+    @app = SMS::App
   end
 
   desc 'Run migrations'
   task :migrate => :config do
     Sequel.extension :migration
-    puts "Migration #{app.environment} database to latest"
-    Sequel::Migrator.run(app.DB, 'app/infrastructure/database/migrations')
+    puts "Migration #{@app.environment} database to latest"
+    Sequel::Migrator.run(@app.DB, 'app/infrastructure/database/migrations')
   end
 
   desc 'Wipe records from all tables'
