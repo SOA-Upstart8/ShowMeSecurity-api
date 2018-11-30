@@ -3,12 +3,12 @@
 source 'https://rubygems.org'
 ruby '2.5.1'
 
+# PRESENTATION LAYER
+gem 'multi_json'
+gem 'roar'
 
 # String Matching
 gem 'fuzzy-string-match'
-
-# PRESENTATION LAYER
-gem 'slim', '~> 3.0'
 
 # APPLICATION LAYER
 # Web application related

@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
 require_relative './init.rb'
-run SMS::App.freeze.app
+run SMS::Api.freeze.app

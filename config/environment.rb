@@ -5,7 +5,7 @@ require 'econfig'
 
 module SMS
   # Configuration for the App
-  class App < Roda
+  class Api < Roda
     plugin :environments
 
     extend Econfig::Shortcut
