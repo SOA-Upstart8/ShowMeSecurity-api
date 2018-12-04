@@ -4,17 +4,19 @@ require 'dry/monads/result'
 
 module SMS
   module Service
-    # Transaction to add Cve
+    # Return all database cves
     class CVEList
       include Dry::Monads::Result::Mixin
 
-      def call(cve_list)
-        cves = Repository::For.klass(Entity::CVE)
-          .find_list_id(cve_list)
-
-        Success(cves)
+      def retrieve_cves
+        Repository::For.klass(Entity::CVE)
+          .all
+          .yield_self do |cve|
+            Success(Value::Result.new(status: :ok, message: cve))
+          end
       rescue StandardError
-        Failure('Could not access database')
+        Failure(Value::Result.new(status: :internal_error,
+                                  message: 'Cannot access database'))
       end
     end
   end

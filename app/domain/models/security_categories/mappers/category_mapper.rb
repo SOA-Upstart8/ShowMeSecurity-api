@@ -11,7 +11,6 @@ module SMS
       def filter
         Entity::CVE_ARR.new(@cve_array, @query).filter_match
       end
-
     end
   end
 end
