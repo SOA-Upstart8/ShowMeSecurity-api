@@ -5,7 +5,7 @@ module SMS
     class CVEMapper
       def initialize(query)
         @query = query
-        @cve_array = SMS::CVE::CVEMapper.new(SMS::App.config.SEC_API_KEY).search(@query)
+        @cve_array = SMS::CVE::CVEMapper.new(SMS::Api.config.SEC_API_KEY).search(@query)
       end
 
       def filter

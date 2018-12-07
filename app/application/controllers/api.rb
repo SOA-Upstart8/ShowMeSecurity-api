@@ -3,7 +3,7 @@
 require 'roda'
 
 module SMS
-  # Web App
+  # Web Api
   class Api < Roda
     include RouteHelpers
 
@@ -29,11 +29,25 @@ module SMS
       routing.on 'api/v1' do
         routing.on 'cves' do
           routing.is do
-            # GET /cves?query={base64 json array of cve}
+            # GET /cves
             routing.get do
-              result = Service::CVEList.new.call(
-                query_request: Value::QueryRequest.new(routing.params)
-              )
+              result = Service::CVEList.new.call
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              Representer::CVEsList.new(result.value!.message).to_json
+            end
+          end
+
+          routing.on String do |category|
+            # GET /cves/{category}
+            routing.get do
+              result = Service::CVEOwasp.new.call(category)
 
               if result.failure?
                 failed = Representer::HttpResponse.new(result.failure)

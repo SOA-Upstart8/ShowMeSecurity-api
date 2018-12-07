@@ -8,11 +8,13 @@ module SMS
     class CVEOwasp
       include Dry::Transaction
 
-      step :validate_input
-      step :get_cve
-      step :return_cve
+      # step :validate_input
+      step :get_cves
+      step :return_cves
 
       private
+
+      SMS_NOT_FOUND_MSG = 'Could not find cves on Secbuzzer'
 
       OWASP_TOP10 = %w[injection authentication exposure xxe access
                        misconfigurations xss deserialization vulnerabilities monitoring].freeze
@@ -21,7 +23,8 @@ module SMS
       def validate_input(input)
         OWASP_TOP10.each do |word|
           input = input.downcase
-          Success(word: word) if input.include? word
+
+          Success(Value::Result.new(status: :ok, message: input)) if input.include? word
         end
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
@@ -30,19 +33,26 @@ module SMS
 
       # call search_cve(category)
       def get_cves(input)
-        Success(result: CVE::Mapper::CVEMapper.new(input[:word]).filter)
+        input[:result] = cve_from_secbuzzer(input)
+        Success(input)
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
                                   message: error.to_s))
       end
 
-      def return_cve(input)
+      def return_cves(input)
         input[:result].each do |cve|
           Success(Value::Result.new(status: :ok, message: cve))
         end
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
                                   message: error.to_s))
+      end
+
+      def cve_from_secbuzzer(input)
+        Mapper::CVEMapper.new(input).filter
+      rescue StandardError
+        raise SMS_NOT_FOUND_MSG
       end
     end
   end

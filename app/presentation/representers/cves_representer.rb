@@ -7,12 +7,12 @@ require_relative 'cve_representer'
 
 module SMS
   module Representer
-    # Represents list of projects for API output
+    # Represents list of cves for API output
     class CVEsList < Roar::Decorator
       include Roar::JSON
 
       collection :cves, extend: Representer::CVE,
-                        class: Value::OpenStructWithLinks
+                        class: OpenStruct
     end
   end
 end

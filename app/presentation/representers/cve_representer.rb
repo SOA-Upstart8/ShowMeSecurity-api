@@ -10,12 +10,22 @@ module SMS
       include Roar::Hypermedia
       include Roar::Decorator::HypermediaConsumer
 
-      property :cve_id
+      property :CVE_ID
       property :overview
-      property :date
+      property :release_date
 
-      link :self do
-        "#{Api.config.API_HOST}/cves/#{query}"
+      private
+
+      def cve_id
+        represented.CVE_ID
+      end
+
+      def overview
+        represented.overview
+      end
+
+      def date
+        represented.release_date
       end
     end
   end
