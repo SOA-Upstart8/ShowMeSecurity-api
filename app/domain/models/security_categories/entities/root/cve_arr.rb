@@ -19,7 +19,6 @@ module SMS
           match_array << cve if cve_match == 1
         end
       end
-
     end
   end
 end

@@ -8,7 +8,7 @@ module SMS
     class CVEOwasp
       include Dry::Transaction
 
-      # step :validate_input
+      step :validate_input
       step :get_cves
       step :return_cves
 
@@ -16,24 +16,23 @@ module SMS
 
       SMS_NOT_FOUND_MSG = 'Could not find cves on Secbuzzer'
 
-      OWASP_TOP10 = %w[injection authentication exposure xxe access
-                       misconfigurations xss deserialization vulnerabilities monitoring].freeze
+      OWASP_TOP10 = %w[Injection Authentication Exposure XXE Access
+                       Misconfigurations XSS Deserialization Vulnerabilities Monitoring].freeze
 
       # validate user query
       def validate_input(input)
+        found = false, query = ''
         OWASP_TOP10.each do |word|
-          input = input.downcase
-
-          Success(Value::Result.new(status: :ok, message: input)) if input.include? word
+          found = true, query = word if input.casecmp(word).zero?
         end
+        Success(query) if found
       rescue StandardError => error
-        Failure(Value::Result.new(status: :not_found,
-                                  message: error.to_s))
+        Failure(Value::Result.new(status: :not_found, message: error.to_s))
       end
 
       # call search_cve(category)
       def get_cves(input)
-        input[:result] = cve_from_secbuzzer(input)
+        input = cve_from_secbuzzer(input)
         Success(input)
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
@@ -41,16 +40,17 @@ module SMS
       end
 
       def return_cves(input)
-        input[:result].each do |cve|
-          Success(Value::Result.new(status: :ok, message: cve))
-        end
+        input.each { |cve| Value::CVEList.new(cve) }
+          .yield_self do |list|
+            Success(Value::Result.new(status: :ok, message: list))
+          end
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
                                   message: error.to_s))
       end
 
       def cve_from_secbuzzer(input)
-        Mapper::CVEMapper.new(input).filter
+        SMS::Mapper::CVEMapper.new(input).filter
       rescue StandardError
         raise SMS_NOT_FOUND_MSG
       end

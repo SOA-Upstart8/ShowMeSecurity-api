@@ -7,7 +7,7 @@ module SMS
   module Value
     class Overview < SimpleDelegator
       def initialize(overview, category)
-        @keywords = YAML.safe_load(File.read(File.join('app/domain/security_categories/values', 'keywords.yml')))
+        @keywords = YAML.safe_load(File.read(File.join('app/domain/models/security_categories/values', 'keywords.yml')))
         @category = category
         @overview = overview.downcase
         overview_match(overview, category)

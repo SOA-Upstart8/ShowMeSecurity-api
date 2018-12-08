@@ -12,7 +12,7 @@ module SMS
       include Roar::JSON
 
       collection :cves, extend: Representer::CVE,
-                        class: OpenStruct
+                        class: Value::OpenStructWithLinks
     end
   end
 end

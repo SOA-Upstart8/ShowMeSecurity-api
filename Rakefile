@@ -56,7 +56,7 @@ namespace :db do
     require 'sequel'
     require_relative 'config/environment.rb' # load config info
     require_relative 'spec/helpers/database_helper.rb'
-    @app = SMS::App
+    @app = SMS::Api
   end
 
   desc 'Run migrations'
