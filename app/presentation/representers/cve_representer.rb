@@ -3,8 +3,11 @@
 require 'roar/decorator'
 require 'roar/json'
 
+require_relative 'cve_representer'
+
 module SMS
   module Representer
+    # Represents list of cves for API output
     class CVE < Roar::Decorator
       include Roar::JSON
       include Roar::Hypermedia
@@ -13,20 +16,7 @@ module SMS
       property :CVE_ID
       property :overview
       property :release_date
-
-      private
-
-      def cve_id
-        represented.CVE_ID
-      end
-
-      def overview
-        represented.overview
-      end
-
-      def date
-        represented.release_date
-      end
+      collection :references, extend: Representer::Reference, class: OpenStruct
     end
   end
 end
