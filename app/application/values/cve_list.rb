@@ -6,6 +6,6 @@ require 'dry-struct'
 module SMS
   module Value
     # List of CVEs
-    CVEList = Struct.new(:CVEs)
+    CVEsList = Struct.new(:CVE)
   end
 end

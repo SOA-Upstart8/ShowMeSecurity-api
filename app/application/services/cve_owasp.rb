@@ -40,7 +40,7 @@ module SMS
       end
 
       def return_cves(input)
-        input.each { |cve| Value::CVEList.new(cve) }
+        input.each { |cve| Value::CVEsList.new(cve) }
           .yield_self do |list|
             Success(Value::Result.new(status: :ok, message: list))
           end

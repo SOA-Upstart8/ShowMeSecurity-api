@@ -40,7 +40,11 @@ module SMS
 
               http_response = Representer::HttpResponse.new(result.value!)
               response.status = http_response.http_status_code
-              Representer::CVEsList.new(result.value!.message).to_json
+
+              cves_arr = result.value!.message[0]
+              cves = cves_arr[1]
+
+              Representer::CVE.new(cves).to_json
             end
           end
 
@@ -56,8 +60,8 @@ module SMS
 
               http_response = Representer::HttpResponse.new(result.value!)
               response.status = http_response.http_status_code
-              cves = result.value!.message
-              # puts result
+              cves = result.value!.message[0]
+
               Representer::CVE.new(cves).to_json
             end
           end

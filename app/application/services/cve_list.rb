@@ -13,7 +13,7 @@ module SMS
 
       def retrieve_cves
         Repository::For.klass(Entity::CVE).all
-          .yield_self { |cve| Value::CVEList.new(cve) }
+          .yield_self { |cve| Value::CVEsList.new(cve) }
           .yield_self do |list|
             Success(Value::Result.new(status: :ok, message: list))
           end
