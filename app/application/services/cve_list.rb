@@ -12,11 +12,10 @@ module SMS
       step :retrieve_cves
 
       def retrieve_cves
-        Repository::For.klass(Entity::CVE).all
-          .yield_self { |cve| Value::CVEsList.new(cve) }
-          .yield_self do |list|
-            Success(Value::Result.new(status: :ok, message: list))
-          end
+        cves = Repository::For.klass(Entity::CVE).all
+        list = SMS::Entity::CVEs.new(cves: cves)
+
+        Success(Value::Result.new(status: :ok, message: list))
       rescue StandardError
         Failure(Value::Result.new(status: :internal_error,
                                   message: 'Cannot access database'))
