@@ -13,6 +13,10 @@ module SMS
         Request.new(@api_key).latest.parse
       end
 
+      def fetch_all(from, to)
+        Request.new(@api_key).fetch(from, to).parse
+      end
+
       def search_cve(query)
         Request.new(@api_key).search(query).parse
       end
@@ -21,6 +25,7 @@ module SMS
       class Request
         LATEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&X-API-KEY='.freeze
         SEARCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/search?'.freeze
+        FETCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&'.freeze
 
         def initialize(key)
           @api_key = key
@@ -28,6 +33,10 @@ module SMS
 
         def latest
           get(LATEST_PATH + @api_key)
+        end
+
+        def fetch(from, to)
+          get(FETCH_PATH + "time_to=#{to}&time_from=#{from}&size=100&X-API-KEY=" + @api_key)
         end
 
         def search(query)

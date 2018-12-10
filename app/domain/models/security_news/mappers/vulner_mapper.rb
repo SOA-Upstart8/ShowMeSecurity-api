@@ -18,6 +18,14 @@ module SMS
         end
       end
 
+      def fetch_all(from, to)
+        data = @gateway.fetch_all(from, to)
+        data = data['cves']
+        data.map do |cve|
+          CVEMapper.build_entity(cve)
+        end
+      end
+
       def search(query)
         data = @gateway.search_cve(query)
         data = data['cves']

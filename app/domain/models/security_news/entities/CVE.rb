@@ -13,7 +13,7 @@ module SMS
       attribute :overview, Strict::String
       attribute :tweet_count, Strict::Integer
       attribute :references, Strict::Array.of(Reference)
-      attribute :CVE_ID, Strict::String
+      attribute :CVE_ID, Coercible::String
       attribute :release_date, Params::DateTime
       attribute :revise_date, Params::DateTime
       attribute :tweets, Strict::Array.of(Tweet)

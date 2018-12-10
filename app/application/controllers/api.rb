@@ -40,10 +40,7 @@ module SMS
 
               http_response = Representer::HttpResponse.new(result.value!)
               response.status = http_response.http_status_code
-
-              cves = result.value!.message
-
-              Representer::CVEsList.new(cves).to_json
+              Representer::CVEsList.new(result.value!.message).to_json
             end
           end
 
@@ -61,8 +58,46 @@ module SMS
               response.status = http_response.http_status_code
               cves = result.value!.message
               cve_list = Entity::CVEs.new(cves: cves)
-              # puts cve_list.cves[5]
+              Representer::CVEsList.new(cve_list).to_json
+            end
+          end
+        end
 
+        routing.on 'search' do
+          routing.on String do |query|
+            # GET /search/{query}
+            routing.get do
+              result = Service::CVESearch.new.call(query)
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              cves = result.value!.message
+              cve_list = Entity::CVEs.new(cves: cves)
+              Representer::CVEsList.new(cve_list).to_json
+            end
+          end
+        end
+
+        routing.on 'latest' do
+          routing.is do
+            # GET /latest
+            routing.get do
+              result = Service::CVELatest.new.call
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              cves = result.value!.message
+              cve_list = Entity::CVEs.new(cves: cves)
               Representer::CVEsList.new(cve_list).to_json
             end
           end
