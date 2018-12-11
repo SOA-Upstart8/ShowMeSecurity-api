@@ -31,6 +31,7 @@ module SMS
           routing.is do
             # GET /cves
             routing.get do
+              response.cache_controlpublic :true, max_age: 30
               result = Service::CVEList.new.call
 
               if result.failure?
@@ -47,6 +48,7 @@ module SMS
           routing.on String do |category|
             # GET /cves/{category}
             routing.get do
+              response.cache_controlpublic :true, max_age: 30
               result = Service::CVEOwasp.new.call(category)
 
               if result.failure?
@@ -67,6 +69,7 @@ module SMS
           routing.on String do |query|
             # GET /search/{query}
             routing.get do
+              response.cache_controlpublic :true, max_age: 30
               result = Service::CVESearch.new.call(query)
 
               if result.failure?
@@ -87,6 +90,7 @@ module SMS
           routing.is do
             # GET /latest
             routing.get do
+              response.cache_controlpublic :true, max_age: 30
               result = Service::CVELatest.new.call
 
               if result.failure?
@@ -104,9 +108,10 @@ module SMS
         end
 
         routing.on 'analysis' do
-          routing.on String do |month|
-            #GET /analysis/month
+          routing.on String do |_month|
+            # GET /analysis/month
             routing.get do
+              response.cache_controlpublic :true, max_age: 30
               result = Service::CVEOrderMonth.new.call
 
               if result.failure?

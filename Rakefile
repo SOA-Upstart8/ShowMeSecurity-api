@@ -24,6 +24,29 @@ task :rerack do
   sh "rerun -c rackup --ignore 'coverage/*'"
 end
 
+namespace :cache do
+  task :config do
+    require_relative 'config/environment.rb' # load config info
+    require_relative 'app/infrastructure/cache/init.rb' # load cache client
+    @api = SMS::Api
+  end
+
+  namespace :list do
+    task :dev do
+      puts 'Finding development cache'
+      list = `ls _cache`
+      puts 'No local cache found' if list.empty?
+      puts list
+    end
+
+    task :production => :config do
+      puts 'Finding production cache'
+      keys = SMS::Cache::Client.new(@api.config).keys
+      puts 'No keys found' if keys.none?
+      keys.each { |key| puts "Key: #{key}" }
+    end
+  end
+
 namespace :vcr do
   desc 'delete cassette fixtures'
   task :wipe do
