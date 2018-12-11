@@ -46,7 +46,7 @@ namespace :cache do
       keys.each { |key| puts "Key: #{key}" }
     end
   end
-
+end
 namespace :vcr do
   desc 'delete cassette fixtures'
   task :wipe do
