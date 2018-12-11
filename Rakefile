@@ -46,6 +46,22 @@ namespace :cache do
       keys.each { |key| puts "Key: #{key}" }
     end
   end
+
+  namespace :wipe do
+    task :dev do
+      puts 'Deleting development cache'
+      sh 'rm -rf _cache/*'
+    end
+
+    task :production => :config do
+      print 'Are you sure you wish to wipe the production cache? (y/n) '
+      if STDIN.gets.chomp.downcase == 'y'
+        puts 'Deleting production cache'
+        wiped = CodePraise::Cache::Client.new(@api.config).wipe
+        wiped.keys.each { |key| puts "Wiped: #{key}" }
+      end
+    end
+  end
 end
 namespace :vcr do
   desc 'delete cassette fixtures'
