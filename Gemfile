@@ -46,9 +46,9 @@ group :production do
 end
 
 # DEBUGGING
-group :development do
-  gem 'debase'
-  gem 'ruby-debug-ide'
+group :development, :test do
+  gem 'pry-rescue'
+  gem 'pry-stack_explorer'
 end
 
 # TESTING
@@ -56,10 +56,8 @@ group :test do
   gem 'headless', '~> 2.3'
   gem 'minitest', '~> 5.11'
   gem 'minitest-rg', '~> 5.2'
-  gem 'page-object'
   gem 'simplecov', '~> 0.16'
   gem 'vcr', '~> 4.0'
-  gem 'watir', '~> 6.14'
   gem 'webmock', '~> 3.4'
 end
 
@@ -73,6 +71,7 @@ end
 # UTILITIES
 gem 'pry'
 gem 'rake', '~> 12.3'
+gem 'travis'
 
 group :development, :test do
   gem 'rerun'
