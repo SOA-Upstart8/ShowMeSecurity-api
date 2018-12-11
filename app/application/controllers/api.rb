@@ -102,6 +102,25 @@ module SMS
             end
           end
         end
+
+        routing.on 'analysis' do
+          routing.on String do |month|
+            #GET /analysis/month
+            routing.get do
+              result = Service::CVEOrderMonth.new.call
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              result_month = Value::MonthsList.new(result.value!.message)
+              Representer::MonthsList.new(result_month).to_json
+            end
+          end
+        end
       end
     end
   end
