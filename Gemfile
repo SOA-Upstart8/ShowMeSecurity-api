@@ -14,6 +14,9 @@ gem 'fuzzy-string-match'
 # Web application related
 gem 'econfig', '~> 2.1'
 gem 'puma', '~> 3.11'
+gem 'rack-cache', '~> 1.8'
+gem 'redis', '~> 4.0'
+gem 'redis-rack-cache', '~> 2.0'
 gem 'roda', '~> 3.8'
 
 # Controllers and services
