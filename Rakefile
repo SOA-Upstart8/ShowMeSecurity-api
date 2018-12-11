@@ -79,8 +79,8 @@ namespace :db do
       puts 'Cannot remove production database!'
       return
     end
-    FileUtils.rm(SMS::App.config.DB_FILENAME)
-    puts "Deleted #{SMS::App.config.DB_FILENAME}"
+    FileUtils.rm(SMS::Api.config.DB_FILENAME)
+    puts "Deleted #{SMS::Api.config.DB_FILENAME}"
   end
 end
 

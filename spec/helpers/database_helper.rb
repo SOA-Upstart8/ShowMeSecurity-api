@@ -11,8 +11,8 @@ class DatabaseHelper
   end
 
   def self.wipe_database
-    SMS::App.DB.run('PRAGMA foreign_keys = OFF')
+    SMS::Api.DB.run('PRAGMA foreign_keys = OFF')
     DatabaseCleaner.clean
-    SMS::App.DB.run('PRAGMA foreign_keys = ON')
+    SMS::Api.DB.run('PRAGMA foreign_keys = ON')
   end
 end
