@@ -33,8 +33,8 @@ gem 'http', '~> 3.0'
 gem 'hirb', '~> 0.7'
 gem 'sequel', '~> 5.13'
 
+gem 'database_cleaner'
 group :development, :test do
-  gem 'database_cleaner'
   gem 'sqlite3'
 end
 
