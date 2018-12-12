@@ -33,7 +33,7 @@ module SMS
 
       # call search_cve(category)
       def get_cves(input)
-        Messaging::Queue.new(Api.config.FILITER_QUEUE.URL, Api.config)
+        Messaging::Queue.new(Api.config.FILITER_QUEUE_URL, Api.config)
           .send(input)
         Failure(Value::Result.new(status: :processing, message: PROCESSING_MSG))
       rescue StandardError => error

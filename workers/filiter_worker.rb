@@ -17,7 +17,7 @@ class FiliterWorker
     region: config.AWS_REGION
   )
 
-  include Shoryuken.worker
+  include Shoryuken::Worker
   shoryuken_options queue: config.FILITER_QUEUE_URL, auto_delete: true
 
   def perform(_sqs_msg, request)
