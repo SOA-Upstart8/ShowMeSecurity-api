@@ -40,11 +40,11 @@ namespace :queues do
   desc 'Create SQS queue for Shoryuken'
   task :create => :config do
     puts "Environment: #{@api.environment}"
-    @sqs.create_queue(queue_name: @api.config.CLONE_QUEUE)
+    @sqs.create_queue(queue_name: @api.config.FILITER_QUEUE)
 
-    q_url = @sqs.get_queue_url(queue_name: @api.config.CLONE_QUEUE).queue_url
+    q_url = @sqs.get_queue_url(queue_name: @api.config.FILITER_QUEUE).queue_url
     puts 'Queue created:'
-    puts "  Name: #{@api.config.CLONE_QUEUE}"
+    puts "  Name: #{@api.config.FILITER_QUEUE}"
     puts "  Region: #{@api.config.AWS_REGION}"
     puts "  URL: #{q_url}"
   rescue StandardError => error
@@ -53,9 +53,9 @@ namespace :queues do
 
   desc 'Purge messages in SQS queue for Shoryuken'
   task :purge => :config do
-    q_url = @sqs.get_queue_url(queue_name: @api.config.CLONE_QUEUE).queue_url
+    q_url = @sqs.get_queue_url(queue_name: @api.config.FILITER_QUEUE).queue_url
     @sqs.purge_queue(queue_url: q_url)
-    puts "Queue #{queue_name} purged"
+    puts "Queue #{@api.config.FILITER_QUEUE} purged"
   rescue StandardError => error
     puts "Error purging queue: #{error}"
   end
@@ -65,17 +65,17 @@ namespace :worker do
   namespace :run do
     desc 'Run the background cloning worker in development mode'
     task :development => :config do
-      sh 'RACK_ENV=development bundle exec shoryuken -r ./workers/git_clone_worker.rb -C ./workers/shoryuken_dev.yml'
+      sh 'RACK_ENV=development bundle exec shoryuken -r ./workers/filiter_worker.rb -C ./workers/shoryuken_dev.yml'
     end
 
     desc 'Run the background cloning worker in testing mode'
     task :test => :config do
-      sh 'RACK_ENV=test bundle exec shoryuken -r ./workers/git_clone_worker.rb -C ./workers/shoryuken_test.yml'
+      sh 'RACK_ENV=development bundle exec shoryuken -r ./workers/filiter_worker.rb -C ./workers/shoryuken_test.yml'
     end
 
     desc 'Run the background cloning worker in production mode'
     task :production => :config do
-      sh 'RACK_ENV=production bundle exec shoryuken -r ./workers/git_clone_worker.rb -C ./workers/shoryuken.yml'
+      sh 'RACK_ENV=production bundle exec shoryuken -r ./workers/filiter_worker.rb -C ./workers/shoryuken.yml'
     end
   end
 end
