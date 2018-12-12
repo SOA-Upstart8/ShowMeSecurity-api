@@ -132,7 +132,7 @@ module SMS
           routing.is do
             # GET /top_5
             routing.get do
-              # response.cache_control public: true, max_age: 30
+              response.cache_control public: true, max_age: 30
               result = Service::CVETop.new.call
 
               if result.failure?
