@@ -3,34 +3,37 @@
 module SMS
   module CVE
     # Data Mapper: NewsApi data -> News entity
-    class CVEMapper
+    class BestMapper
       def initialize(api_key, gateway_class = CVE::Api)
         @api_key = api_key
         @gateway_class = gateway_class
         @gateway = @gateway_class.new(@api_key)
       end
 
-      def latest
-        data = @gateway.latest_cve
-        data = data['cves']
+      def best
+        data = @gateway.best_cve
+        data = data['top']
+        t1 = price(data['_topPrice'])
+        t2 = popular(data['_topPopular'])
+        t3 = severity(data['_topSeverity'])
+        t1 + t2 + t3
+      end
+
+      def popular(data)
         data.map do |cve|
-          CVEMapper.build_entity(cve)
+          BestMapper.build_entity(cve)
         end
       end
 
-      def fetch_all(from, to)
-        data = @gateway.fetch_all(from, to)
-        data = data['cves']
+      def price(data)
         data.map do |cve|
-          CVEMapper.build_entity(cve)
+          BestMapper.build_entity(cve)
         end
       end
 
-      def search(query)
-        data = @gateway.search_cve(query)
-        data = data['cves']
+      def severity(data)
         data.map do |cve|
-          CVEMapper.build_entity(cve)
+          BestMapper.build_entity(cve)
         end
       end
 
@@ -45,22 +48,22 @@ module SMS
         end
 
         def build_entity
-          SMS::Entity::CVE.new(
+          SMS::Entity::BESTCVE.new(
             id: nil,
-            overview: overview,
+            type: type,
             tweet_count: tweet_count,
             references: references,
             CVE_ID: cve_id,
             release_date: release_date,
-            revise_date: revise_date,
-            tweets: tweets
+            affected_product: affected_product
           )
         end
 
         private
 
-        def overview
-          @data['overview']
+        def type
+          @data['vultype'] = [] if @data['vultype'].nil?
+          @data['vultype']
         end
 
         def tweet_count
@@ -79,12 +82,9 @@ module SMS
           @data['original_release_date']
         end
 
-        def revise_date
-          @data['last_revised']
-        end
-
-        def tweets
-          TweetMapper.load_tweets(@data['tweets']['tweets'])
+        def affected_product
+          @data['affected_product'] = [] if @data['affected_product'].nil?
+          @data['affected_product']
         end
       end
     end

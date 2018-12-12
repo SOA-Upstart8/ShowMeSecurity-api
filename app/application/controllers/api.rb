@@ -127,6 +127,27 @@ module SMS
             end
           end
         end
+
+        routing.on 'top_5' do
+          routing.is do
+            # GET /top_5
+            routing.get do
+              # response.cache_control public: true, max_age: 30
+              result = Service::CVETop.new.call
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              cves = result.value!.message
+              cve_list = Entity::BESTCVEs.new(cves: cves)
+              Representer::TopCVEsList.new(cve_list).to_json
+            end
+          end
+        end
       end
     end
   end
