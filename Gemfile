@@ -7,6 +7,10 @@ ruby '2.5.1'
 gem 'multi_json'
 gem 'roar'
 
+# Queues
+gem 'aws-sdk-sqs', '~> 1'
+gem 'shoryuken', '~> 4'
+
 # String Matching
 gem 'fuzzy-string-match'
 

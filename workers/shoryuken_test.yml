@@ -1,0 +1,2 @@
+queue: 
+  - https://sqs.ap-northeast-1.amazonaws.com/638298042489/SMS-test

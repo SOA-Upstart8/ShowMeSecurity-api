@@ -15,6 +15,7 @@ module SMS
       private
 
       SMS_NOT_FOUND_MSG = 'Could not find cves on Secbuzzer'
+      PROCESSING_MSG = 'We are searching the database, please wait 3 sec!'
 
       OWASP_TOP10 = %w[Injection Authentication Exposure XXE Access
                        Misconfigurations XSS Deserialization Vulnerabilities Monitoring].freeze
@@ -32,8 +33,9 @@ module SMS
 
       # call search_cve(category)
       def get_cves(input)
-        input = cve_from_secbuzzer(input)
-        Success(input)
+        Messaging::Queue.new(Api.config.FILITER_QUEUE.URL, Api.config)
+          .send(input)
+        Failure(Value::Result.new(status: :processing, message: PROCESSING_MSG))
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
                                   message: error.to_s))

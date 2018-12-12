@@ -25,7 +25,7 @@ module SMS
         MONTHS.each_with_index do |month, index|
           next if index == 12
 
-          number = Repository::For.klass(Entity::CVE).count_num(MONTHS[index], MONTHS[index+1])
+          number = Repository::For.klass(Entity::CVE).count_num(MONTHS[index], MONTHS[index + 1])
           month_arr << SMS::Value::Month.new(month, number)
         end
         Success(month_arr)
