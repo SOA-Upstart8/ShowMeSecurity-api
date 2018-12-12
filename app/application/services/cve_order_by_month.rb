@@ -9,7 +9,7 @@ module SMS
     class CVEOrderMonth
       include Dry::Transaction
 
-      step :get_cves
+      step :gets_cves
       step :count_number
       step :return_result
 
@@ -21,7 +21,7 @@ module SMS
                 '2018-09-30', '2018-10-31', '2018-11-30', '2018-12-31'].freeze
 
       # call search_cve(category)
-      def get_cves
+      def gets_cves
         input = Repository::For.klass(Entity::CVE).all
         Success(input)
       rescue StandardError => error

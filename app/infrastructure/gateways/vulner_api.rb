@@ -26,6 +26,7 @@ module SMS
         LATEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&X-API-KEY='.freeze
         SEARCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/search?'.freeze
         FETCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&'.freeze
+        BEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/3?time_to=2018-12-31&time_from=2018-01-01&X-API-KEY='.freeze
 
         def initialize(key)
           @api_key = key
@@ -41,6 +42,10 @@ module SMS
 
         def search(query)
           get(SEARCH_PATH + "q=#{query}&fields=tweet&X-API-KEY=" + @api_key)
+        end
+
+        def best
+          get(BEST_PATH + @api_key)
         end
 
         def get(url)

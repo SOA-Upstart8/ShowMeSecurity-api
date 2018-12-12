@@ -18,6 +18,7 @@ module SMS
         end
       end
 
+
       def fetch_all(from, to)
         data = @gateway.fetch_all(from, to)
         data = data['cves']
