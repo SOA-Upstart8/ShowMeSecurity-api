@@ -28,7 +28,7 @@ namespace :queues do
   task :config do
     require 'aws-sdk-sqs'
     require_relative 'config/environment.rb' # load config info
-    @api = CodePraise::Api
+    @api = SMS::Api
 
     @sqs = Aws::SQS::Client.new(
       access_key_id: @api.config.AWS_ACCESS_KEY_ID,
@@ -113,7 +113,7 @@ namespace :cache do
       print 'Are you sure you wish to wipe the production cache? (y/n) '
       if STDIN.gets.chomp.downcase == 'y'
         puts 'Deleting production cache'
-        wiped = CodePraise::Cache::Client.new(@api.config).wipe
+        wiped = SMS::Cache::Client.new(@api.config).wipe
         wiped.keys.each { |key| puts "Wiped: #{key}" }
       end
     end
