@@ -25,12 +25,17 @@ module SMS
         Request.new(@api_key).best.parse
       end
 
+      def get_every_month(from, to)
+        Request.new(@api_key).every_month(from, to).parse
+      end
+
       # The Request class is responsible for send a http request.
       class Request
         LATEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&X-API-KEY='.freeze
         SEARCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/search?'.freeze
         FETCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&'.freeze
         BEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/5?time_to=2018-12-31&time_from=2018-01-01&X-API-KEY='.freeze
+        MONTH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/1?'.freeze
 
         def initialize(key)
           @api_key = key
@@ -52,6 +57,10 @@ module SMS
           get(BEST_PATH + @api_key)
         end
 
+        def every_month(from, to)
+          get(MONTH_PATH + "time_to=#{to}&time_from=#{from}&size=100&X-API-KEY=" + @api_key)
+        end 
+        
         def get(url)
           result = HTTP.get(url)
           Response.new(result).tap do |response|

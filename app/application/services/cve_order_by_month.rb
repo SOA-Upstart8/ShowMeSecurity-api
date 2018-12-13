@@ -25,7 +25,7 @@ module SMS
         MONTHS.each_with_index do |month, index|
           next if index == 12
 
-          number = Repository::For.klass(Entity::CVE).count_num(MONTHS[index], MONTHS[index + 1])
+          number = get_every_month(MONTHS[index], MONTHS[index + 1])
           month_arr << SMS::Value::Month.new(month, number)
         end
         Success(month_arr)
@@ -37,6 +37,11 @@ module SMS
       def return_result(input)
         Success(Value::Result.new(status: :ok,
                                   message: input))
+      end
+
+      def get_every_month(from, to)
+        SMS::CVE::CVEMapper.new(Api.config.SEC_API_KEY)
+          .every_month_num(from, to)
       end
     end
   end

@@ -34,6 +34,11 @@ module SMS
         end
       end
 
+      def every_month_num(from, to)
+        data = @gateway.get_every_month(from, to)
+        data['cveCount'].to_i
+      end
+
       def self.build_entity(data)
         DataMapper.new(data).build_entity
       end
