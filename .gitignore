@@ -4,4 +4,3 @@ coverage/
 .bundle
 .idea
 _cache/
-fetch_data.rb
