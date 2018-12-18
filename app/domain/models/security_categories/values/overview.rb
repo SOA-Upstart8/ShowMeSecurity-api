@@ -14,13 +14,12 @@ module SMS
       end
 
       def overview_match(overview, category)
-        jarow = FuzzyStringMatch::JaroWinkler.create( :native )
+        jarow = FuzzyStringMatch::JaroWinkler.create(:native)
         keyword = get_keyword(category)
         overview = overview.split(' ')
         overview.each do |word|
           keyword.each do |key|
             score = jarow.getDistance(word, key)
-            puts score
             return true if score > 0.7
           end
         end
