@@ -1,2 +1,4 @@
 update
 build-essential
+gcc-c++
+g++
