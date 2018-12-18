@@ -6,7 +6,6 @@ Injection:
 - os
 - query
 - command
-- inject
 - santiizate
 Authentication:
 - session
@@ -14,9 +13,7 @@ Authentication:
 - cookie
 - credential
 - multifactor
-- authentication
 Exposure:
-- exposure
 - data
 - cache
 - encode
