@@ -16,6 +16,7 @@ module SMS
         match_array = []
         @cve_array.each do |cve|
           cve_match = CVEMatch.new(cve.overview, @category).match
+          puts cve_match
           match_array << cve if cve_match == 1
         end
       end
