@@ -21,7 +21,6 @@ class FiliterWorker
   shoryuken_options queue: config.FILITER_QUEUE_URL, auto_delete: true
 
   def perform(_sqs_msg, request)
-    puts SMS::Mapper::CVEMapper.new(request).filter
-    
+    SMS::Mapper::CVEMapper.new(request).filter
   end
 end
