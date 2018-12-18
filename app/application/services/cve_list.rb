@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'dry/monads/result'
+require 'dry/transaction'
 
 module SMS
   module Service
