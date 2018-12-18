@@ -2,6 +2,7 @@
 
 require_relative '../init.rb'
 
+require 'fuzzy-string-match'
 require 'econfig'
 require 'shoryuken'
 
