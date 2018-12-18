@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 require 'yaml'
-require 'fuzzystringmatch'
+require 'amatch'
+include Amatch
 
 module SMS
   module Value
@@ -13,12 +14,12 @@ module SMS
       end
 
       def overview_match
-        jarow = FuzzyStringMatch::JaroWinkler.create(:native)
         keyword = get_keyword(@category)
         overview = @overview.split(' ')
         overview.each do |word|
+          jarow = JaroWinkler.new(word)
           keyword.each do |key|
-            score = jarow.getDistance(word, key)
+            score = jarow.match(key)
             return true if score > 0.7
           end
         end

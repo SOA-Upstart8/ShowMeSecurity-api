@@ -12,7 +12,7 @@ gem 'aws-sdk-sqs', '~> 1'
 gem 'shoryuken', '~> 4'
 
 # String Matching
-gem 'fuzzy-string-match'
+gem 'amatch'
 
 # APPLICATION LAYER
 # Web application related
