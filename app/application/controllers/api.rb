@@ -54,8 +54,6 @@ module SMS
 
               if result.failure?
                 failed = Representer::HttpResponse.new(result.failure)
-                puts failed.http_status_code
-                puts failed.to_json
                 routing.halt failed.http_status_code, failed.to_json
               end
 

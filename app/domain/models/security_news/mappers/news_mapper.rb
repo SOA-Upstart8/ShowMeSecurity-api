@@ -20,7 +20,6 @@ module SMS
 
       def search_headlines(country)
         data = @gateway.get_headlines(country)
-        puts 'data'
         data = data['articles']
         data.map do |news|
           NewsMapper.build_entity(news)

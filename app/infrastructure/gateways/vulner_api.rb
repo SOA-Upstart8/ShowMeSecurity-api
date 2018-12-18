@@ -50,7 +50,7 @@ module SMS
         end
 
         def search(query)
-          get(SEARCH_PATH + "q=#{query}&fields=tweet&X-API-KEY=" + @api_key)
+          get(SEARCH_PATH + "q=#{query}&size=100&fields=tweet&X-API-KEY=" + @api_key)
         end
 
         def best
