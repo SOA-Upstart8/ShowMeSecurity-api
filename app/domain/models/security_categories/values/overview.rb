@@ -20,6 +20,7 @@ module SMS
         overview.each do |word|
           keyword.each do |key|
             score = jarow.getDistance(word, key)
+            puts score
             return true if score > 0.7
           end
         end
