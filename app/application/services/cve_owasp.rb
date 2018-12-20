@@ -29,16 +29,19 @@ module SMS
         return(Success(query)) unless query.empty?
 
         Failure(Value::Result.new(status: :not_found, message: SMS_NOT_FOUND_MSG))
-      rescue StandardError 
+      rescue StandardError
         Failure(Value::Result.new(status: :not_found, message: SMS_NOT_FOUND_MSG))
       end
 
       # call search_cve(category)
       def get_cves(input)
-        puts input
-        Messaging::Queue.new(Api.config.FILITER_QUEUE_URL, Api.config)
-          .send(input)
-        Failure(Value::Result.new(status: :processing, message: PROCESSING_MSG))
+        if check_database_exist?(input)
+          Success(SMS::Repository::Owasps.find_category(input))
+        else
+          Messaging::Queue.new(Api.config.FILITER_QUEUE_URL, Api.config)
+            .send(input)
+          Failure(Value::Result.new(status: :processing, message: PROCESSING_MSG))
+        end
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
                                   message: error.to_s))
@@ -52,6 +55,10 @@ module SMS
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
                                   message: error.to_s))
+      end
+
+      def check_database_exist?(query)
+        SMS::Repository::Owasps.find_category_count(query).zero? ? false : true
       end
 
       def cve_from_secbuzzer(input)

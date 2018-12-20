@@ -26,6 +26,5 @@ class FiliterWorker
     result.each do |cve|
       SMS::Repository::Owasps.create(cve)
     end
-    puts result.size
   end
 end

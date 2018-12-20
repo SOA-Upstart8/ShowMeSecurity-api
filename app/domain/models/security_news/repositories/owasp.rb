@@ -19,6 +19,11 @@ module SMS
       end
 
       def self.find_category(owasp)
+        Database::OwaspOrm.where(category: owasp)
+          .map { |db_cve| rebuild_entity(db_cve) }
+      end
+
+      def self.find_category_count(owasp)
         Database::OwaspOrm.where(category: owasp).count
       end
 

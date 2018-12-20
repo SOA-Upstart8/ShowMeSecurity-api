@@ -56,12 +56,12 @@ module SMS
                 failed = Representer::HttpResponse.new(result.failure)
                 routing.halt failed.http_status_code, failed.to_json
               end
-
               http_response = Representer::HttpResponse.new(result.value!)
               response.status = http_response.http_status_code
-              cves = result.value!.message
-              cve_list = Entity::CVEs.new(cves: cves)
-              Representer::CVEsList.new(cve_list).to_json
+              owasps = result.value!.message
+              cve_list = Entity::Owasps.new(owasps: owasps)
+              puts '123'
+              Representer::OwaspsList.new(cve_list).to_json
             end
           end
         end
