@@ -187,6 +187,6 @@ end
 desc 'Wipe tempory datas from Owasp table'
 task :wipe_owasp do
   require_relative 'init.rb'
-  SMS::Database::OwaspRefOrm.truncate
-  SMS::Database::OwaspOrm.truncate
+  SMS::Database::OwaspRefOrm.truncate(cascade: true, only: true, restart: true)
+  SMS::Database::OwaspOrm.truncate(cascade: true, only: true, restart: true)
 end
