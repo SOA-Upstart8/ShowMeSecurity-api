@@ -10,6 +10,7 @@ gem 'roar'
 # Queues
 gem 'aws-sdk-sqs', '~> 1'
 gem 'shoryuken', '~> 4'
+gem 'faye', '~> 1'
 
 # String Matching
 gem 'amatch'

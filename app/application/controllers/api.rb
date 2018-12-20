@@ -32,7 +32,6 @@ module SMS
           routing.is do
             # GET /cves
             routing.get do
-              response.cache_control public: true, max_age: 30
               result = Service::CVEList.new.call
 
               if result.failure?
@@ -49,7 +48,7 @@ module SMS
           routing.on String do |category|
             # GET /cves/{category}
             routing.get do
-              response.cache_control public: true, max_age: 30
+              response.cache_control public: true, max_age: 5
               result = Service::CVEOwasp.new.call(category)
 
               if result.failure?
@@ -60,7 +59,6 @@ module SMS
               response.status = http_response.http_status_code
               owasps = result.value!.message
               cve_list = Entity::Owasps.new(owasps: owasps)
-              puts '123'
               Representer::OwaspsList.new(cve_list).to_json
             end
           end
