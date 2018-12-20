@@ -5,7 +5,7 @@ require 'dry-struct'
 module SMS
   module Entity
     # Model for Reference
-    class Reference < Dry::Struct
+    class OwaspRef < Dry::Struct
       include Dry::Types.module
 
       attribute :id, Integer.optional

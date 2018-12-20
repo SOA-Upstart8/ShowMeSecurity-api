@@ -22,7 +22,10 @@ class FiliterWorker
   shoryuken_options queue: config.FILITER_QUEUE_URL, auto_delete: true
 
   def perform(_sqs_msg, request)
-    array = SMS::Mapper::CVEMapper.new(request).filter
-    puts array.size
+    result = SMS::Mapper::CVEMapper.new(request).filter
+    result.each do |cve|
+      SMS::Repository::Owasps.create(cve)
+    end
+    puts result.size
   end
 end

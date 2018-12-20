@@ -111,7 +111,7 @@ namespace :cache do
 
     task :production => :config do
       print 'Are you sure you wish to wipe the production cache? (y/n) '
-      if STDIN.gets.chomp.downcase == 'y'
+      if STDIN.gets.chomp.casecmp('y').zero?
         puts 'Deleting production cache'
         wiped = SMS::Cache::Client.new(@api.config).wipe
         wiped.keys.each { |key| puts "Wiped: #{key}" }
@@ -182,4 +182,10 @@ end
 desc 'Run application console (pry)'
 task :console do
   sh 'pry -r ./init.rb'
+end
+
+desc 'Wipe tempory datas from Owasp table'
+task :wipe_owasp do
+  require_relative 'init.rb'
+  SMS::Database::OwaspOrm.truncate
 end

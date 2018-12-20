@@ -7,6 +7,8 @@ class DatabaseHelper
   def self.setup_database_cleaner
     DatabaseCleaner.allow_remote_database_url = true
     DatabaseCleaner.strategy = :deletion
+    DatabaseCleaner.allow_production = true
+    DatabaseCleaner.allow_remote_database_url = true
     DatabaseCleaner.start
   end
 
