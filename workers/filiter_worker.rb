@@ -33,7 +33,6 @@ module Filter
       reporter.publish(Monitor.percent('RETRIEVE'))
 
       total = result.size
-      puts total * 0.3
       thirty = (total * 0.3).round
       sixty  = (total * 0.6).round
       ninety = (total * 0.9).round
