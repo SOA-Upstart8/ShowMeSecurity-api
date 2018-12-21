@@ -22,11 +22,12 @@ module SMS
 
       # validate user query
       def validate_input(input)
-        found = false, query = ''
+        query = ''
         OWASP_TOP10.each do |word|
-          found = true, query = word if input.casecmp(word).zero?
+          query = word if input[:category].casecmp(word).zero?
         end
-        return(Success(query)) unless query.empty?
+        input[:query] = query unless query.empty?
+        return(Success(input)) unless query.empty?
 
         Failure(Value::Result.new(status: :not_found, message: SMS_NOT_FOUND_MSG))
       rescue StandardError
@@ -35,12 +36,13 @@ module SMS
 
       # call search_cve(category)
       def get_cves(input)
-        if check_database_exist?(input)
-          Success(SMS::Repository::Owasps.find_category(input))
+        if check_database_exist?(input[:query])
+          Success(SMS::Repository::Owasps.find_category(input[:query]))
         else
           Messaging::Queue.new(Api.config.FILITER_QUEUE_URL, Api.config)
-            .send(input)
-          Failure(Value::Result.new(status: :processing, message: PROCESSING_MSG))
+            .send(request_json(input))
+          Failure(Value::Result.new(status: :processing,
+                                    message: { request_id: input[:request_id] }))
         end
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
@@ -59,6 +61,12 @@ module SMS
 
       def check_database_exist?(query)
         SMS::Repository::Owasps.find_category_count(query).zero? ? false : true
+      end
+
+      def request_json(input)
+        Value::Request.new(input[:query], input[:request_id])
+          .yield_self { |request| Representer::Request.new(request) }
+          .yield_self(&:to_json)
       end
 
       def cve_from_secbuzzer(input)

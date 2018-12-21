@@ -48,7 +48,14 @@ module SMS
           routing.on String do |category|
             # GET /cves/{category}
             routing.get do
-              result = Service::CVEOwasp.new.call(category)
+              response.cache_control public: true, max_age: 30
+
+              request_id = [request.env, request.path, Time.now.to_f].hash
+
+              result = Service::CVEOwasp.new.call(
+                category: category,
+                request_id: request_id
+              )
 
               if result.failure?
                 failed = Representer::HttpResponse.new(result.failure)
