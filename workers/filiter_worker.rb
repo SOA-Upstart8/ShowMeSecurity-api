@@ -31,8 +31,8 @@ module Filter
       reporter.publish(Monitor.starting_percent)
       result = SMS::Mapper::CVEMapper.new(request[:category]).filter
       reporter.publish(Monitor.percent('RETRIEVE'))
-      puts result.size
-      total = result.size, thirty = (total * 0.3).round
+      
+      total = result.size, puts total*0.3 , thirty = (total * 0.3).round
       sixty = (total * 0.6).round, ninety = (total * 0.9).round
       result.each_with_index do |cve, index|
         SMS::Repository::Owasps.create(cve)
