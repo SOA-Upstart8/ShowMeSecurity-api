@@ -14,7 +14,6 @@ module Filter
     extend Econfig::Shortcut
     Econfig.env = ENV['RACK_ENV'] || 'development'
     Econfig.root = File.expand_path('..', File.dirname(__FILE__))
-
     Shoryuken.sqs_client = Aws::SQS::Client.new(
       access_key_id: config.AWS_ACCESS_KEY_ID,
       secret_access_key: config.AWS_SECRET_ACCESS_KEY,
@@ -26,10 +25,10 @@ module Filter
     shoryuken_options queue: config.FILITER_QUEUE_URL, auto_delete: true
 
     def perform(_sqs_msg, request)
-      request = eval(request)
+      request = JSON.parse request
       reporter = setup_job(request['request_id'])
       reporter.publish(Monitor.starting_percent)
-      result = SMS::Mapper::CVEMapper.new(request[:category]).filter
+      result = SMS::Mapper::CVEMapper.new(request['category']).filter
       reporter.publish(Monitor.percent('RETRIEVE'))
 
       total = result.size
@@ -48,7 +47,7 @@ module Filter
     end
 
     def setup_job(request_id)
-      api_host = 'https://showme-api.herokuapp.com'
+      api_host = FilterWorker.config.API_HOST
       ProgressReporter.new(api_host, request_id)
     end
 

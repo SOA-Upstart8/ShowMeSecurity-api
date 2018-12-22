@@ -18,7 +18,7 @@ module SMS
       PROCESSING_MSG = 'We are searching the database, please wait 3 seconds!'
 
       OWASP_TOP10 = %w[Injection Authentication Exposure XXE Access
-                       Misconfigurations XSS Deserialization Vulnerabilities Monitoring].freeze
+                       Misconfiguration XSS Deserialization Vulnerabilities Monitoring].freeze
 
       # validate user query
       def validate_input(input)

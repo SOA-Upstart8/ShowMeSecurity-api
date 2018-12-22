@@ -32,7 +32,7 @@ Access:
 - password
 - unauthorize
 - control
-Misconfigurations:
+Misconfiguration:
 - directory
 - default
 - admin
