@@ -5,7 +5,7 @@ Some people are curious about what are the latest security issues or news they s
 The website has three main function:
 1. First, We provide the latest/hottest security issues or vulnerabilities to user.
 2. Secound, We classify the issues to make searching more convenient for users.
-3. Third, Every issue we will attach expert opinions from twitter and solution(If it exists).
+3. Third, We filter the cves by OWASP top10 vulnerabilities categories about web applications.
 
 ## Routes
 
