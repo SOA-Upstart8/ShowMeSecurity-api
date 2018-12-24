@@ -1,4 +1,4 @@
-# ShowMeSecurity-api
+# ShowMeSecurity-api [ ![Codeship Status for SOA-Upstart8/ShowMeSecurity-api](https://app.codeship.com/projects/97712160-e99f-0136-5136-2e8d26a7fd23/status?branch=master)](https://app.codeship.com/projects/319687)
 
 ## Overview
 Some people are curious about what are the latest security issues or news they should be careful. But there are too many information on the Internet, resulting in people can't easily find what they want or need. So we will integrate and classify data that we get from SecBuzzer and News API. Provide a useful and friendly website for everyone to use.
