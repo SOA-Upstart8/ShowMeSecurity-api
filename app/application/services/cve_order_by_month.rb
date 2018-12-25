@@ -32,7 +32,7 @@ module SMS
             .execute
         end
 
-        sleep(2)
+        sleep(3)
         month_arr = month_arr.sort_by(&:date)
         Success(month_arr)
       rescue StandardError => error
