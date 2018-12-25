@@ -55,7 +55,8 @@ module SMS
             references: references,
             CVE_ID: cve_id,
             release_date: release_date,
-            affected_product: affected_product
+            affected_product: affected_product,
+            retweet_count: retweet_count
           )
         end
 
@@ -68,6 +69,10 @@ module SMS
 
         def tweet_count
           @data['tweet_count']
+        end
+
+        def retweet_count
+          @data['retweet_count']
         end
 
         def references

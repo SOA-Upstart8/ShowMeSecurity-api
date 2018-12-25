@@ -18,6 +18,7 @@ module SMS
       property :type
       property :release_date
       property :tweet_count
+      property :retweet_count
       property :affected_product
       collection :references, extend: Representer::Reference, class: OpenStruct
     end

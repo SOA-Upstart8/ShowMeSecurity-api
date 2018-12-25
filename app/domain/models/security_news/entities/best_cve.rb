@@ -11,6 +11,7 @@ module SMS
       attribute :id, Integer.optional
       attribute :type, Strict::Array.of(String)
       attribute :tweet_count, Strict::Integer
+      attribute :retweet_count, Strict::Integer
       attribute :references, Strict::Array.of(Reference)
       attribute :CVE_ID, Coercible::String
       attribute :release_date, Params::DateTime
