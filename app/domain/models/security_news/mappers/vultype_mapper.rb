@@ -13,14 +13,14 @@ module SMS
       def best
         data = @gateway.best_cve
         data = data['stat']
-        puts data
         t1 = vultype(data['_vulTypeAgg'])
         t1
       end
 
       def vultype(data)
         data.map do |type|
-          BestMapper.build_entity(type)
+          puts type
+          VulMapper.build_entity(type)
         end
       end
 

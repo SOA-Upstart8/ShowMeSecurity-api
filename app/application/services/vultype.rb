@@ -36,8 +36,7 @@ module SMS
 
       def data_from_secbuzzer
         SMS::CVE::VulMapper.new(Api.config.SEC_API_KEY).best
-      rescue StandardError
-        raise SMS_NOT_FOUND_MSG
+      
       end
     end
   end
