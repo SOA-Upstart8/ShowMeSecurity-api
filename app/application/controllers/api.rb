@@ -152,6 +152,27 @@ module SMS
             end
           end
         end
+
+        routing.on 'vultype' do
+          routing.is do
+            # GET /vultype
+            routing.get do
+              response.cache_control public: true, max_age: 30
+              result = Service::Vultype.new.call
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              vultypes = result.value!.message
+              type_list = Entity::Vultypes.new(vultypes: vultypes)
+              Representer::VultypesList.new(type_list).to_json
+            end
+          end
+        end
       end
     end
   end

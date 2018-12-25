@@ -59,8 +59,8 @@ module SMS
 
         def every_month(from, to)
           get(MONTH_PATH + "time_to=#{to}&time_from=#{from}&size=100&X-API-KEY=" + @api_key)
-        end 
-        
+        end
+
         def get(url)
           result = HTTP.get(url)
           Response.new(result).tap do |response|
