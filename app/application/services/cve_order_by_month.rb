@@ -2,6 +2,7 @@
 
 require 'dry/transaction'
 require 'time'
+require 'concurrent'
 
 module SMS
   module Service
@@ -25,9 +26,14 @@ module SMS
         MONTHS.each_with_index do |month, index|
           next if index == 12
 
-          number = get_every_month(MONTHS[index], MONTHS[index + 1])
-          month_arr << SMS::Value::Month.new(month, number)
+          Concurrent::Promise
+            .new { get_every_month(MONTHS[index], MONTHS[index + 1]) }
+            .then { |number| month_arr << SMS::Value::Month.new(month, number) }
+            .execute
         end
+
+        sleep(2)
+        month_arr = month_arr.sort_by(&:date)
         Success(month_arr)
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
