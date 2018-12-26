@@ -5,6 +5,10 @@ Sequel.migration do
     create_table(:cves) do
       primary_key :id
       String      :overview
+      String      :vultype
+      String      :zeroday_price
+      String      :affected_product
+      String      :affected_vendor
       Integer     :tweet_count
       String      :CVE_ID, unique: true, null: false
       DateTime    :release_date

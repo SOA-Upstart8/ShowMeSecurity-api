@@ -13,8 +13,8 @@ module SMS
         Request.new(@api_key).latest.parse
       end
 
-      def fetch_all(from, to)
-        Request.new(@api_key).fetch(from, to).parse
+      def search_owasp(query)
+        Request.new(@api_key).owasp(query).parse
       end
 
       def search_cve(query)
@@ -33,7 +33,6 @@ module SMS
       class Request
         LATEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&X-API-KEY='.freeze
         SEARCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/search?'.freeze
-        FETCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/?fields=tweet&'.freeze
         BEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/5?time_to=2018-12-31&time_from=2018-01-01&X-API-KEY='.freeze
         MONTH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/1?'.freeze
 
@@ -45,12 +44,12 @@ module SMS
           get(LATEST_PATH + @api_key)
         end
 
-        def fetch(from, to)
-          get(FETCH_PATH + "time_to=#{to}&time_from=#{from}&size=100&X-API-KEY=" + @api_key)
+        def owasp(query)
+          get(SEARCH_PATH + "q=#{query}&size=100&fields=tweet&X-API-KEY=" + @api_key)
         end
 
         def search(query)
-          get(SEARCH_PATH + "q=#{query}&size=100&fields=tweet&X-API-KEY=" + @api_key)
+          get(SEARCH_PATH + "q=#{query}&size=20&fields=tweet&X-API-KEY=" + @api_key)
         end
 
         def best

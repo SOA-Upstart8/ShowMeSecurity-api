@@ -11,7 +11,7 @@ module SMS
       end
 
       def search(query)
-        data = @gateway.search_cve(query)
+        data = @gateway.search_owasp(query)
         data = data['cves']
         data.map do |cve|
           OwaspMapper.build_entity(cve, query)
