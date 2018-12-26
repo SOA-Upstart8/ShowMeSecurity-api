@@ -39,8 +39,8 @@ module SMS
         cve = SMS::CVE::CVEMapper.new(Api.config.SEC_API_KEY).find_by_cveid(cve_id)
         puts cve
         Repository::For.entity(cve).create(cve)
-      rescue StandardError => error
-        raise error.to_s
+      rescue StandardError
+        raise DATABASE_ERROR_MSG
       end
     end
   end

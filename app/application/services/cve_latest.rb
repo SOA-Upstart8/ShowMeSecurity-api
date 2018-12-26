@@ -8,7 +8,7 @@ module SMS
     class CVELatest
       include Dry::Transaction
 
-      step :get_cves
+      step :retrieve_cves
       step :return_cves
 
       private
@@ -16,7 +16,7 @@ module SMS
       SMS_NOT_FOUND_MSG = 'Could not get cves on Secbuzzer'
 
       # call search_cve(category)
-      def get_cves
+      def retrieve_cves
         result = cve_from_secbuzzer
         Success(result)
       rescue StandardError => error
@@ -39,8 +39,8 @@ module SMS
         result.each do |cve|
           Repository::For.entity(cve).create(cve)
         end
-      rescue StandardError => error
-        raise error.to_s
+      rescue StandardError
+        raise SMS_NOT_FOUND_MSG
       end
     end
   end
