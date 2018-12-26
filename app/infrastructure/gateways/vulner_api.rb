@@ -1,6 +1,7 @@
 # frozen_string_literal: false
 
 require 'http'
+
 module SMS
   module CVE
     # The NewsAPI class is responsible for get news detail.
@@ -21,6 +22,10 @@ module SMS
         Request.new(@api_key).search(query).parse
       end
 
+      def find_by_cveid(cve_id)
+        Request.new(@api_key).find_cve_id(cve_id).parse
+      end
+
       def best_cve
         Request.new(@api_key).best.parse
       end
@@ -35,7 +40,7 @@ module SMS
         SEARCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/search?'.freeze
         BEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/5?time_to=2018-12-31&time_from=2018-01-01&X-API-KEY='.freeze
         MONTH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/1?'.freeze
-
+        FIND_ID_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/'
         def initialize(key)
           @api_key = key
         end
@@ -50,6 +55,10 @@ module SMS
 
         def search(query)
           get(SEARCH_PATH + "q=#{query}&size=20&fields=tweet&X-API-KEY=" + @api_key)
+        end
+        
+        def find_cve_id(cve_id)
+          get(FIND_ID_PATH + "#{cve_id}?fields=tweet&X-API-KEY=" + @api_key)
         end
 
         def best

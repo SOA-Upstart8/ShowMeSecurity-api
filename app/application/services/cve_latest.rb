@@ -16,9 +16,9 @@ module SMS
       SMS_NOT_FOUND_MSG = 'Could not get cves on Secbuzzer'
 
       # call search_cve(category)
-      def get_cves(input)
-        input = cve_from_secbuzzer
-        Success(input)
+      def get_cves
+        result = cve_from_secbuzzer
+        Success(result)
       rescue StandardError => error
         Failure(Value::Result.new(status: :not_found,
                                   message: error.to_s))
@@ -39,8 +39,8 @@ module SMS
         result.each do |cve|
           Repository::For.entity(cve).create(cve)
         end
-      rescue StandardError
-        raise SMS_NOT_FOUND_MSG
+      rescue StandardError => error
+        raise error.to_s
       end
     end
   end

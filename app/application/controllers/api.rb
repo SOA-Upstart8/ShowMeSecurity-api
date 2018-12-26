@@ -173,6 +173,27 @@ module SMS
             end
           end
         end
+
+        routing.on 'find_by_id' do
+          routing.on String do |cve_id|
+            # GET /find_by_id/{cve_id}
+            routing.get do
+              response.cache_control public: true, max_age: 30
+              result = Service::FindCVE.new.call(cve_id)
+
+              if result.failure?
+                failed = Representer::HttpResponse.new(result.failure)
+                routing.halt failed.http_status_code, failed.to_json
+              end
+
+              http_response = Representer::HttpResponse.new(result.value!)
+              response.status = http_response.http_status_code
+              cve = result.value!.message
+              puts cve
+              Representer::CVE_detail.new(cve).to_json
+            end
+          end
+        end
       end
     end
   end

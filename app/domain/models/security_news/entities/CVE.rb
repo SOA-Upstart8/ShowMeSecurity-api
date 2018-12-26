@@ -11,6 +11,10 @@ module SMS
 
       attribute :id, Integer.optional
       attribute :overview, Strict::String
+      attribute :vultype, Strict::String
+      attribute :zeroday_price, Coercible::String
+      attribute :affected_product, Strict::String
+      attribute :affected_vendor, Strict::String
       attribute :tweet_count, Strict::Integer
       attribute :references, Strict::Array.of(Reference)
       attribute :CVE_ID, Coercible::String

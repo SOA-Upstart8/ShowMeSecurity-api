@@ -18,6 +18,11 @@ module SMS
         end
       end
 
+      def find_by_cveid(cve_id)
+        data = @gateway.find_by_cveid(cve_id)
+          CVEMapper.build_entity(data)
+      end
+
       def search(query)
         data = @gateway.search_cve(query)
         data = data['cves']
@@ -45,6 +50,10 @@ module SMS
           SMS::Entity::CVE.new(
             id: nil,
             overview: overview,
+            vultype: vultype,
+            zeroday_price: zeroday_price,
+            affected_product: affected_product,
+            affected_vendor: affected_vendor,
             tweet_count: tweet_count,
             references: references,
             CVE_ID: cve_id,
@@ -60,6 +69,29 @@ module SMS
           @data['overview']
         end
 
+        def vultype
+          if @data['vultype'].nil?
+            'N/A'
+          else
+            @data['vultype'].map(&:to_s).join(',')
+          end
+        end
+
+        def zeroday_price
+          price = @data['zeroday_price'].nil? ? 'N/A' : @data['zeroday_price']['range']
+          price
+        end
+
+        def affected_product
+          product = @data['affected_product'].nil? ? 'N/A' : @data['affected_product'][0]
+          product
+        end
+
+        def affected_vendor
+          vendor = @data['affected_vendor'].nil? ? 'N/A' : @data['affected_vendor'][0]
+          vendor
+        end
+        
         def tweet_count
           @data['tweet_count']
         end
