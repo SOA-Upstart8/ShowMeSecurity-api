@@ -14,24 +14,25 @@ module SMS
 
       private
 
-      SMS_NOT_FOUND_MSG = 'Please check your query again.'
+      NOT_FOUND_MSG = 'Please check your query again.'
       PROCESSING_MSG = 'We are searching the database, please wait 3 seconds!'
 
       OWASP_TOP10 = %w[Injection Authentication Exposure XXE Access
-                       Misconfiguration XSS Deserialization Vulnerabilities Monitoring].freeze
+                       Misconfiguration XSS Deserialization Vulnerabilities
+                       Monitoring].freeze
 
       # validate user query
       def validate_input(input)
         query = ''
-        OWASP_TOP10.each do |word|
-          query = word if input[:category].casecmp(word).zero?
+        OWASP_TOP10.each do |type|
+          query = type if input[:category].casecmp(type).zero?
         end
         input[:query] = query unless query.empty?
         return(Success(input)) unless query.empty?
 
-        Failure(Value::Result.new(status: :not_found, message: SMS_NOT_FOUND_MSG))
+        Failure(Value::Result.new(status: :not_found, message: NOT_FOUND_MSG))
       rescue StandardError
-        Failure(Value::Result.new(status: :not_found, message: SMS_NOT_FOUND_MSG))
+        Failure(Value::Result.new(status: :not_found, message: NOT_FOUND_MSG))
       end
 
       # call search_cve(category)

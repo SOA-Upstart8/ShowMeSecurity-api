@@ -10,9 +10,9 @@ module SMS
       include Dry::Transaction
       include Dry::Monads::Result::Mixin
 
-      step :retrieve_cves
+      step :acquire_cves
 
-      def retrieve_cves
+      def acquire_cves
         cves = Repository::For.klass(Entity::CVE).all
         list = SMS::Entity::CVEs.new(cves: cves)
 

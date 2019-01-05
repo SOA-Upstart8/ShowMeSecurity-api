@@ -22,11 +22,6 @@ module SMS
         rebuild_entity Database::CVEOrm.first(CVE_ID: cve_id)
       end
 
-      def self.count_num(from, to)
-        Database::CVEOrm.where { release_date < to }
-          .where { release_date >= from }.count
-      end
-
       def self.create(entity)
         return if find_cve_id(entity.CVE_ID)
 

@@ -117,7 +117,7 @@ module SMS
             # GET /analysis/month
             routing.get do
               response.cache_control public: true, max_age: 30
-              result = Service::CVEOrderMonth.new.call
+              result = Service::MonthNumber.new.call
 
               if result.failure?
                 failed = Representer::HttpResponse.new(result.failure)

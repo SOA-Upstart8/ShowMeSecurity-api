@@ -7,7 +7,7 @@ require 'concurrent'
 module SMS
   module Service
     # Return number of cve every month
-    class CVEOrderMonth
+    class MonthNumber
       include Dry::Transaction
 
       step :count_number

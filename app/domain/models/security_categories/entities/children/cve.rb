@@ -19,9 +19,8 @@ module SMS
       end
 
       def useful?
-        Value::Overview.new(@overview, @category).overview_match
+        Value::Overview.new(@overview, @category).overview_filter
       end
-
     end
   end
 end

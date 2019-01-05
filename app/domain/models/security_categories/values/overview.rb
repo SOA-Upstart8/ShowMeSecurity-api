@@ -2,18 +2,20 @@
 
 require 'yaml'
 require 'amatch'
-include Amatch
 
 module SMS
   module Value
+    # Filter CVE by their overview
     class Overview < SimpleDelegator
+      include Amatch
       def initialize(overview, category)
-        @keywords = YAML.safe_load(File.read(File.join('app/domain/models/security_categories/values', 'keywords.yml')))
+        path = 'app/domain/models/security_categories/values'
+        @keywords = YAML.safe_load(File.read(File.join(path, 'keywords.yml')))
         @category = category
         @overview = overview.downcase
       end
 
-      def overview_match
+      def overview_filter
         keyword = get_keyword(@category)
         overview = @overview.split(' ')
         overview.each do |word|
