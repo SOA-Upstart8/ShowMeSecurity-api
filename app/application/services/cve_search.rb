@@ -8,7 +8,7 @@ module SMS
     class CVESearch
       include Dry::Transaction
 
-      step :get_cves
+      step :acquire_cves
       step :return_cves
 
       private
@@ -16,7 +16,7 @@ module SMS
       SMS_NOT_FOUND_MSG = 'Could not get cves on Secbuzzer'
 
       # call search_cve(category)
-      def get_cves(input)
+      def acquire_cves(input)
         input = cve_from_secbuzzer(input)
         Success(input)
       rescue StandardError => error

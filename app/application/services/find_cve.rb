@@ -8,7 +8,7 @@ module SMS
     class FindCVE
       include Dry::Transaction
 
-      step :retrieve_data
+      step :acquire_data
       step :return_cve
 
       private
@@ -16,7 +16,7 @@ module SMS
       DATABASE_ERROR_MSG = 'Could not access database'
 
       # call search_cve(category)
-      def retrieve_data(input)
+      def acquire_data(input)
         puts "cveID=#{input}"
         cve_entity = cve_from_database(input)
         Success(cve_entity)

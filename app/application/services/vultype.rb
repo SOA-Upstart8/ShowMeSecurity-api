@@ -8,7 +8,7 @@ module SMS
     class Vultype
       include Dry::Transaction
 
-      step :get_data
+      step :acquire_data
       step :return_data
 
       private
@@ -16,7 +16,7 @@ module SMS
       SMS_NOT_FOUND_MSG = 'Could not retrieve data from Secbuzzer'
 
       # call VulMapper
-      def get_data
+      def acquire_data
         input = data_from_secbuzzer
         Success(input)
       rescue StandardError => error
@@ -36,7 +36,6 @@ module SMS
 
       def data_from_secbuzzer
         SMS::CVE::VulMapper.new(Api.config.SEC_API_KEY).best
-      
       end
     end
   end

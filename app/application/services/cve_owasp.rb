@@ -9,7 +9,7 @@ module SMS
       include Dry::Transaction
 
       step :validate_input
-      step :get_cves
+      step :acquire_cves
       step :return_cves
 
       private
@@ -35,7 +35,7 @@ module SMS
       end
 
       # call search_cve(category)
-      def get_cves(input)
+      def acquire_cves(input)
         if check_database_exist?(input[:query])
           Success(SMS::Repository::Owasps.find_category(input[:query]))
         else

@@ -4,32 +4,38 @@ require 'http'
 
 module SMS
   module CVE
-    # The NewsAPI class is responsible for get news detail.
+    # The SECAPI class is responsible for get CVEs detail.
     class Api
       def initialize(key)
         @api_key = key
       end
 
+      # return the latest CVE
       def latest_cve
         Request.new(@api_key).latest.parse
       end
 
-      def search_owasp(query)
-        Request.new(@api_key).owasp(query).parse
+      # return CVE related to the vulname
+      def search_owasp(vulname)
+        Request.new(@api_key).owasp(vulname).parse
       end
 
+      # search CVE by user's query
       def search_cve(query)
         Request.new(@api_key).search(query).parse
       end
 
+      # search CVE by CVE_ID
       def find_by_cveid(cve_id)
         Request.new(@api_key).find_cve_id(cve_id).parse
       end
 
+      # return top 5 CVE info
       def best_cve
         Request.new(@api_key).best.parse
       end
 
+      # return number of every month CVEs
       def get_every_month(from, to)
         Request.new(@api_key).every_month(from, to).parse
       end
@@ -40,7 +46,7 @@ module SMS
         SEARCH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/search?'.freeze
         BEST_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/5?time_to=2018-12-31&time_from=2018-01-01&X-API-KEY='.freeze
         MONTH_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/top/1?'.freeze
-        FIND_ID_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/'
+        FIND_ID_PATH = 'https://api.sb.cyber00rn.org/api/vulnerability/'.freeze
         def initialize(key)
           @api_key = key
         end
@@ -50,15 +56,18 @@ module SMS
         end
 
         def owasp(query)
-          get(SEARCH_PATH + "q=#{query}&size=100&fields=tweet&X-API-KEY=" + @api_key)
+          get(SEARCH_PATH +
+            "q=#{query}&size=100&fields=tweet&X-API-KEY=" + @api_key)
         end
 
         def search(query)
-          get(SEARCH_PATH + "q=#{query}&size=20&fields=tweet&X-API-KEY=" + @api_key)
+          get(SEARCH_PATH +
+            "q=#{query}&size=20&fields=tweet&X-API-KEY=" + @api_key)
         end
-        
+
         def find_cve_id(cve_id)
-          get(FIND_ID_PATH + "#{cve_id}?fields=tweet&X-API-KEY=" + @api_key)
+          get(FIND_ID_PATH +
+            "#{cve_id}?fields=tweet&X-API-KEY=" + @api_key)
         end
 
         def best
@@ -66,7 +75,8 @@ module SMS
         end
 
         def every_month(from, to)
-          get(MONTH_PATH + "time_to=#{to}&time_from=#{from}&size=100&X-API-KEY=" + @api_key)
+          get(MONTH_PATH +
+            "time_to=#{to}&time_from=#{from}&size=100&X-API-KEY=" + @api_key)
         end
 
         def get(url)
