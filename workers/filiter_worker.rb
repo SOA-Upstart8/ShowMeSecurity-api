@@ -34,7 +34,9 @@ module Filter
       thirty, sixty, ninety = count_ratio(result.size)
       result.each_with_index do |cve, index|
         SMS::Repository::Owasps.create(cve)
-        check_progress(index, thirty, sixty, ninety)
+        reporter.publish(Monitor.percent('THIRTY')) if index == thirty
+        reporter.publish(Monitor.percent('SIXTY')) if index == sixty
+        reporter.publish(Monitor.percent('NINETY')) if index == ninety
       end
       # Keep sending finished status to any latecoming subscribers
       each_second(5) { reporter.publish(Monitor.finished_percent) }
@@ -45,12 +47,6 @@ module Filter
       sixty  = (total * 0.6).round
       ninety = (total * 0.9).round
       [thirty, sixty, ninety]
-    end
-
-    def check_progress(index, thirty, sixty, ninety)
-      reporter.publish(Monitor.percent('THIRTY')) if index == thirty
-      reporter.publish(Monitor.percent('SIXTY')) if index == sixty
-      reporter.publish(Monitor.percent('NINETY')) if index == ninety
     end
 
     def setup_job(request_id)
