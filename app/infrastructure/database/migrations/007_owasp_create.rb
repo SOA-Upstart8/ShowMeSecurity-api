@@ -6,8 +6,8 @@ Sequel.migration do
       primary_key :id
       String      :overview
       Integer     :tweet_count
-      String      :CVE_ID, unique: true, null: false
-      String      :category, unique: true, null: false
+      String      :CVE_ID
+      String      :category
       DateTime    :release_date
       DateTime    :revise_date
 
