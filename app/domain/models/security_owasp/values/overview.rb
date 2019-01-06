@@ -9,7 +9,7 @@ module SMS
     class Overview < SimpleDelegator
       include Amatch
       def initialize(overview, category)
-        path = 'app/domain/models/security_categories/values'
+        path = 'app/domain/models/security_owasp/values'
         @keywords = YAML.safe_load(File.read(File.join(path, 'keywords.yml')))
         @category = category
         @overview = overview.downcase
