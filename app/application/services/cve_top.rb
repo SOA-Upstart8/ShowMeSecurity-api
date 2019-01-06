@@ -16,7 +16,7 @@ module SMS
       SMS_NOT_FOUND_MSG = 'Could not find cves on Secbuzzer'
 
       # call best_cve
-      def acquirecves
+      def acquire_cves
         input = cve_from_secbuzzer
         Success(input)
       rescue StandardError => error

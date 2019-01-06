@@ -53,7 +53,7 @@ module Filter
       api_host = FilterWorker.config.API_HOST
       ProgressReporter.new(api_host, request_id)
     end
-    
+
     def each_second(seconds)
       seconds.times do
         sleep(1)
