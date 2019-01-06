@@ -7,7 +7,7 @@ Sequel.migration do
       String      :overview
       Integer     :tweet_count
       String      :CVE_ID, unique: true, null: false
-      String      :category
+      String      :category, unique: true, null: false
       DateTime    :release_date
       DateTime    :revise_date
 
